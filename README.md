@@ -1,4 +1,4 @@
-# Price-Compare-Team-22
+# Team 22_Price Compare Project
 # PriceZilla - A Price Comparison Platform
 
 
