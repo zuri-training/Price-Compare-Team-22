@@ -1,10 +1,11 @@
+{% load static from static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./styles/contact.css" />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/contact.css'%}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,18 +60,18 @@
       <footer>
         <div class="row">
           <div class="col-1">
-            <img src="assets/icons/phone-icon.png" />
+            <img src="{% static '/assets/icons/phone-icon.png'%}" />
             <p>Phone Enquiries</p>
             <p>0803336677</p>
           </div>
           <div class="col-2">
-            <img src="assets/icons/user-icon.png" />
+            <img src="{% static '/assets/icons/user-icon.png'%}" />
             <p>follow us</p>
             <div class="social-links">
-              <a href="#"><img src="assets/icons/twitter-icon.png"></a>
-              <a href="#"><img src="assets/icons/fb-icon.png"></a>
-              <a href="#"><img src="assets/icons/u-icon.png"></a>
-              <a href="#"><img src="assets/icons/linkedin-icon.png"></a>
+              <a href="#"><img src="{% static '/assets/icons/twitter-icon.png'%}"></a>
+              <a href="#"><img src="{% static '/assets/icons/fb-icon.png'%}"></a>
+              <a href="#"><img src="{% static '/assets/icons/u-icon.png'%}"></a>
+              <a href="#"><img src="{% static '/assets/icons/linkedin-icon.png'%}"></a>
             </div>
           </div>
         </div>
