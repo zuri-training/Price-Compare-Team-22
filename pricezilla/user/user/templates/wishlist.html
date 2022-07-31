@@ -1,0 +1,83 @@
+{%load static from static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static pricezilla\static\user\wishlist.css"/>
+    <title>Wishlist</title>
+
+    
+</head>
+<body>
+    <header class="wishlist-header">
+        <nav class="wishlift-nav">
+            <a class= "pricezilla-logo">
+                <img src="{%static 'pricezilla\static\assets\Pricezilla logo.png}">
+                Price
+                <span>Zilla</span>
+              </a>
+
+              <!--Nav bar menu-->
+
+              <ul>
+                <li>
+                    <a class="" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="" href="#">About Us</a>
+                </li>
+                <li>
+
+                    <!--Creating dropdown menu for Categories -->
+
+                    <a class="" href="#" role="button">Categories</a>
+                        <div class="wishlist-dropdown">
+                          <ul>
+                            <li>
+                                <a class="dropdown-furniture" href="#">Furniture</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-appliances " href="#">Home Appliances</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-kitchen" href="#">Kitchen Utensils</a>
+                            </li>
+                            <a class="dropdown-exercise" href="#">Exercise Equipments</a>
+                          </ul>
+                      </div>
+                </li>
+                <li>
+                    <a class="" href="#">Wishlist</a>
+                </li>
+              </ul>
+              <div class="">
+                <img src="" alt="Profile Photo" class="profile-img">
+              </div>
+        </nav>
+    </header>
+
+<!--Content in the Main tag-->
+
+    <main id="wishlist-box">
+        <div class>
+            <img src="" alt="" class="">
+        </div>
+        <h2 class="empty-wishlist">
+            Your wishlist is empty
+        </h2>
+        <p class="heart">
+            Tap the heart button to start saving your favourite items
+        </p>
+        <button type="submit" class="">
+            Add Now
+        </button>
+
+    </main>
+
+
+        
+</body>
+</html>
