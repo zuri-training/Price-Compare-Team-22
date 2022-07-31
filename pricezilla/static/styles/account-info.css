@@ -1,0 +1,69 @@
+ *{
+    scroll-behavior: smooth;
+    font-family:  'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.acc{
+    font-weight: bold;
+    font-size: .5rem;
+    text-align: center;
+}
+#select{
+    width: 300px;
+    margin-left: 10px;
+    border: .2px solid rgb(212, 193, 193);
+    border-radius: 5px;
+    height: 30px;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+input, label{
+
+display: block;
+margin: 5px 10px;
+}
+#name, #ad, #email, #pass, #num{
+    width:300px;
+    height: 30px;
+    border: .2px solid rgb(212, 193, 193);
+    border-radius: 5px;
+}
+
+.frm {
+  padding: 70px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow:2px 3px 2px 3px rgb(175, 158, 158)
+}
+
+.click{
+    margin-left: 10px;
+    padding: 20px 5px;
+}
+.but{
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-evenly;
+}
+
+.bot1, .bot2{
+    width: 85px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.bot1{
+    background-color: orangered;
+    color: #fff;
+    border: none;
+}
+.bot2{
+    border: 1px solid orangered;
+}
