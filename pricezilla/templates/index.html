@@ -56,15 +56,15 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
+              <a class="nav-link" href="{% url 'about'%}">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Wishlist</a>
             </li>
           </ul>
           <div class="form-inline my-lg-0 login-signup">
-            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+            <a class="header-btn  my-sm-0" href="{% url 'login'%}">Login</a>
+            <a class="header-btn  my-sm-0"  href="{% url 'signup'%}"> Sign Up</a>
           </div>
         </div>
       </nav>
@@ -159,11 +159,206 @@ function changeImg(){
 
 window.onload = changeImg;
 </script>
+<style>
+  
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
 
-<section class="img-slider">
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+.slides input{
+display: none;  
 
-<img class="image" name="slide"  alt="img" width="100%" height="500px">
-</section>
+}
+.slide{
+  width:20%;
+  transition: 2s;
+}
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+/* css for manual slide navigation*/
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -30px;
+display: flex;
+justify-content: center;
+
+}
+
+.manual-btn{
+  border: 2px solid #40D3Dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3Dc;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+/*css for automatic navigation*/
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 470px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3Dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #40D3Dc;
+
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+background: #40D3Dc;
+
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+background: #40D3Dc;
+
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+background: #40D3Dc;
+
+}
+.slide{
+  position: relative;
+}
+.slide img{
+  max-width: 100%;
+  height: auto;
+}
+.img-text{
+position: absolute;
+top: 25%;
+color: #fff;
+padding: 10px;
+}
+.img-text h4{
+  font-size: 26px;
+  font-weight: bold;
+
+}
+.fth{
+  color: aqua;
+}
+</style>
+<!--Image sliders -->
+
+<div class="slider">
+  <div class="slides">
+    <!--radio button start-->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!--radio button ends-->
+    <!--start slide images-->
+      <div class="slide first">
+          <img src="{% static '/assets/pexel3.jpg '%}" width="1178px" height="400px" alt="">
+          <div class="img-text">
+            <p><b>Up to</b> </p> 
+            <h1>40%</h1>
+            <p><b>off for your</b></p>
+            <h1>HOME DECOR</h1>
+          </div>
+      </div>
+      <div class="slide t">
+        <img src="{% static '/assets/pexel1.jpg'%}"  width="1178px" height="400px" alt="static">
+         <div class="img-text">
+            <p><b>Up to</b> </p> 
+            <h1>40%</h1>
+            <p><b>off for your</b></p>
+            <h1>HOME DECOR</h1>
+          </div>
+      </div>
+      <div class="slide 2t">
+        <img src="{% static '/assets/pexel2.jpg'%}" width="1178px" height="400px" alt="static">
+         <div class="img-text">
+            <p><b>Up to</b> </p> 
+            <h1>40%</h1>
+            <p><b>off for your</b></p>
+            <h1>HOME DECOR</h1>
+          </div>
+      </div>
+      <div class="slide th">
+        <img src="{% static '/assets/pexel4.jpg'%}" width="1178px" height="400px" alt="static">
+         <div class="img-text fth">
+            <p><b>Up to</b> </p> 
+            <h1>40%</h1>
+            <p><b>off for your</b></p>
+            <h1>HOME DECOR</h1>
+          </div>
+      </div>
+    <!--end slide images-->
+    <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"> </div>
+        <div class="auto-btn2"> </div>
+        <div class="auto-btn3"> </div>
+        <div class="auto-btn4"> </div>
+      </div>
+
+    <!--automatic navigation ends-->
+  </div>
+  <!--Manual navigation starts-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+
+  </div>
+  <!--Manual navigation ends-->
+</div>
+<!-- image slider ends-->
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+document.getElementById('radio' + counter).checked = true;
+counter++;
+if(counter > 4){
+  counter=1;
+}
+}, 5000);
+
+</script>
 </main>
    
 
@@ -236,10 +431,10 @@ window.onload = changeImg;
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
+                    <img src="{% static '/assets/facebook-icon.png'%}" alt="facebook-icon"/>
+                    <img src="{% static '/assets/twitter-icon.png'%}" alt="facebook-icon"/>
+                    <img src="{% static '/assets/youtube-icon.png'%}" alt="facebook-icon"/>
+                    <img src="{% static '/assets/instagram-icon.png'%}" alt="facebook-icon"/>
 
                 </div>
             </div>
