@@ -16,8 +16,8 @@ urlpatterns = [
     path('contact/',views.contact, name="contact"),
     path('account/', views.account, name='account'),
     path('sign-up/', views.sign, name='sign'),
-    path('user/', include('user.urls')),
     path('search/', views.searchbar, name='search'),
+    path('product/', include('product.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
