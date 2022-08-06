@@ -41,29 +41,29 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'product',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
+    # 'django.contrib.sites',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
 ]
 
-SITE_ID = 1
+# SITE_ID = 1
 
-# Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        # For each OAuth based provider, either add a ``SocialApp``
-        # (``socialaccount`` app) containing the required client
-        # credentials, or list them here:
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
-    }
-}
+# # Provider specific settings
+# SOCIALACCOUNT_PROVIDERS = {
+#     'google': {
+#         # For each OAuth based provider, either add a ``SocialApp``
+#         # (``socialaccount`` app) containing the required client
+#         # credentials, or list them here:
+#         'APP': {
+#             'client_id': '123',
+#             'secret': '456',
+#             'key': ''
+#         }
+#     }
+# }
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -96,15 +96,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'pricezilla.wsgi.application'
 
 
-AUTHENTICATION_BACKENDS = [
+# AUTHENTICATION_BACKENDS = [
     
-    # Needed to login by username in Django admin, regardless of `allauth`
-    'django.contrib.auth.backends.ModelBackend',
+#     # Needed to login by username in Django admin, regardless of `allauth`
+#     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
+#     # `allauth` specific authentication methods, such as login by e-mail
+#     'allauth.account.auth_backends.AuthenticationBackend',
     
-]
+# ]
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -167,5 +167,5 @@ AUTH_USER_MODEL = 'user.User'
 MEDIA_URL = 'images/'
 
 
-LOGIN_REDIRECT_URL = reverse("index")
-LOGOUT_REDIRECT_URL = reverse("login")
+LOGIN_REDIRECT_URL =  "/home"
+LOGOUT_REDIRECT_URL = "accounts/login"
