@@ -79,12 +79,10 @@
         <section class=" hero">
             <div class="hero-search">
                 <h1>Search household items from different platforms around you</h1>
-                <form>
-                  <div class="top-form">
-                    <img src="{% static '/assets/search2.svg'%}" alt="">
-                    <input type="text" required>
-                  </div>
-                  <button type="submit">Search</button>
+                <form action="{% url 'search' %}" method="get" class="d-flex">
+                  <input class="form-control me-2" type="text" name="query" placeholder="Search" value="{{request.GET.namee}}" aria-label="Search">
+                  
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </section>
