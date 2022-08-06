@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from product.models import Product
 
 def index(request):
     return render(request, "index.html")
@@ -22,14 +21,3 @@ def sign(request):
 def profile(request):
     return render(request, "profile.html")
 
-
-
-def searchbar(request):
-    if request.method == 'GET':
-        query = request.GET.get('query')
-        if query:
-            products = Product.objects.filter(name__icontains=query) 
-            print("Available Products")
-            return render(request, 'search.html', {'products':products})
-
-        
