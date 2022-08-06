@@ -13,6 +13,9 @@ from django.urls import reverse
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,12 +44,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'product',
+<<<<<<< HEAD
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
     # 'allauth.socialaccount',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.google',
+=======
+    'rest_framework',
+    'requests',
+    'django_extensions'
+>>>>>>> 79724dd4e770e7b2c9cac0a3254999213398dfc0
 ]
 
 # SITE_ID = 1
@@ -72,6 +81,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'pricezilla.urls'
@@ -157,6 +167,8 @@ STATICFILES_DIRS = (
      os.path.join(BASE_DIR, 'static'),
 )
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -167,5 +179,9 @@ AUTH_USER_MODEL = 'user.User'
 MEDIA_URL = 'images/'
 
 
+<<<<<<< HEAD
 LOGIN_REDIRECT_URL =  "/home"
 LOGOUT_REDIRECT_URL = "accounts/login"
+=======
+django_heroku.settings(locals())
+>>>>>>> 79724dd4e770e7b2c9cac0a3254999213398dfc0

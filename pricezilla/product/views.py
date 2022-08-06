@@ -1,24 +1,14 @@
+from unicodedata import category
 from django.shortcuts import render
-from .models import Comment
-from django.shortcuts import render, get_object_or_404 
+from django.core.paginator import Paginator
+from .models import Product, Category
 
-# Create your views here.
+def furniture(request):
+    category = Category.objects.filter(name='Furnitures')
+    product_list = Product.objects.filter(category=category[0])
+    paginator = Paginator(product_list, 30) # Show 30 contacts per page.
 
-def post_detail(request, slug):
-    template_name = 'post_detail.html'
-    content = get_object_or_404(content, slug=slug)
-    comments = content.Comments.filter(active=True)
-    new_comment = None
-    if request.method == 'CONTENT':
-        comment_serializers = Comment(data=request.CONTENT)
-        if comment_serializers.is_valid():
-            new_comment = comment_serializers.save(commit=False)
-            new_comment.content = content
-            new_comment.save()
-        else:
-            comment_serializers = Comment()
-
-    return render(request, template_name, {'post': content,
-                                           'comments': comments,
-                                           'new_comment': new_comment,
-                                           'comment_form': comment_serializers})
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    loop = range(3)
+    return render(request, 'product/furnitures.html', {'page_obj': page_obj, 'loop': loop})
