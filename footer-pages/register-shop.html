@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/footerlinks.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PriceZilla</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <nav class="navbar">
+        <a class="navbar-brand"><img src="../assets/Pricezilla logo.png" alt="PriceZilla logo"></a>
+        <div class="newsletter">
+          <h5>Subscribe to our newsletter</h5>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn" type="button" id="button-addon2">subscribe</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section">
+          <span
+            ><a href="../index.html">Home</a> <i class="fa-solid fa-greater-than"></i> Register and feature your
+            shop</span
+          >
+          <h1>Register and feature your shop</h1>
+          <p>
+            Pricezilla is one of UK’s biggest price and product comparison
+            sites. We make it easy for consumers to find the right product, at
+            the right price, and the right shop. We show prices from all online
+            shops that we know of.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Register your shop for free</h2>
+          <p>
+            You can register your shop. It’s free and it only takes a few
+            minutes.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>As a registered shop you can:</h2>
+          <ol>
+            <li>
+              Log in to your own shop’s site in our tool ’Pricezilla Analytics’
+            </li>
+            <li>Answer customer reviews</li>
+            <li>Edit your shop info</li>
+            <li>Name what methods of payment your shop is using</li>
+          </ol>
+
+          <p>
+            Fill in our registration form to register your shop. There’s no
+            start-up fee, and no on-going fee.
+          </p>
+          <p>
+            Once you have registered your shop, we will review and approve it.
+            Once done, we will send you a link that you use to sign in to
+            Pricezilla Analytics. We will also start indexing your products and
+            prices, if we do not have them already (we recommend that your shop
+            has a price file, which you can read more about below).
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Faster updates – give us your price file</h2>
+
+          <p>
+            A price file helps to index the products and prices in your shop. It
+            is placed on your servers and contains information about, for
+            example, products, prices and stock status. We read the price file
+            several times per day to keep the information on Pricezilla updated.
+            If you use an e-commerce system, it’s very likely that it can create
+            a price file automatically. <br />
+            You register your price file while registering your shop. You can
+            also register it afterwards by contacting our support. We only need
+            the link to the file, not the entire file. If you rename the price
+            file, move it to another location, or make other changes that may
+            affect our reading, please email us again.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Price file requirements:</h2>
+          <ol>
+            <li>
+              The price file should have a static URL that doesn't change.
+            </li>
+            <li>
+              The file does not have to be static, but can consist of a script
+              that dynamically retrieves the information directly from the
+              shop's database. If the file is static, make sure it’s updated
+              frequently so that we always display the correct information on
+              Pricezilla.
+            </li>
+            <li>
+              The file does not have to be static, but can consist of a script
+              that dynamically retrieves the information directly from the
+              shop's database. If the file is static, make sure it’s updated
+              frequently so that we always display the correct information on
+              Pricezilla.
+            </li>
+            <li>
+              The price file can be a regular text file. We prefer text files to
+              complex XML standards, but we fully support Google Shopping’s XML
+              file. However, we do not support Excel files (xlxs, xls) or the
+              like.
+            </li>
+            <li>
+              The fields in the price file should be separated by tabs,
+              semicolons, or other appropriate characters not used in product
+              names or other fields. Specify what each field contains in the
+              first row of the file.
+            </li>
+            <li>
+              Different versions of the product, such as sizes or colours,
+              should be listed as a new product with a unique name and article
+              number. We group them in our system if appropriate.
+            </li>
+            <li>The price file must contain your entire shop range.</li>
+          </ol>
+        </section>
+
+        <section class="section">
+          <h2>These fields should be included in the price file</h2>
+          <p>
+            Product ID, or the shop’s article number (required): <br />
+            Must be unique to each product. Never change, and never reuse for
+            other products. Max 36 characters.
+          </p>
+          <p>
+            Category (required):<br /> Must be the the full category, in tree
+            structure, with as deep a category level as possible. The categories
+            should be based on product type, and not brand, trademark or themes
+            with mixed product content (eg, sales categories). Only one category
+            can be specified per product. If the product is in several
+            categories, the primary category should be specified.
+          </p>
+          <p>
+            Brand / Manufacturer (required):<br /> The product's brand should, if
+            possible, be available in a separate field. If this is not possible,
+            it should be listed first in the product name field. Products that
+            are missing a brand, or have an incorrectly defined brand are not
+            indexed.
+          </p>
+          <p>
+            Product name (required):<br /> The naming of the product, with model name
+            and / or model number that makes it possible to identify the product
+            is required. If a separate brand / manufacturer field is missing,
+            the brand or manufacturer must be added first in the product name
+            field (a separate brand / manufacturer field is ====strongly
+            recommended). For products with different versions, the unique
+            attributes of the current version should appear in the product name,
+            such as colour, material, and model year. For products sold in
+            different pack sizes (such as perfume, shampoo and food), the volume
+            or weight should be stated in the product name. If it is a multiple
+            pack, or bundle of multiple products, this should also be stated in
+            the product name.
+          </p>
+          <p>
+            URL (required):<br /> URL to the shop’s product page. If the product page
+            doesn't contain its own URL, you can use the URL for the category
+            page. If the shop uses UTM tracking, the tracking code should be
+            added to a separate field in the price file. If the shop uses
+            parameters in the URL to differentiate between product variants (eg.
+            colour and size), the URL field in the price file should contain the
+            whole URL, including the parameters.
+          </p>
+          <p>
+            Price (required):<br /> Price of product, exclusive of shipping. Can be
+            entered with or without VAT. If stated without VAT, it should be
+            specified in the field’s header. The prices must be quoted in the
+            official currency of the market where the shop will be listed. The
+            price should be specified for the same sales unit as specified in
+            the product name (for example, speakers sold in pairs must have
+            price information per pair).
+          </p>
+          <p>
+            Condition / Product Format (required):<br /> Specifies the condition in
+            which the product is sold or in what format. If all products in the
+            shop are sold in new condition, and are physical products, the field
+            can be omitted completely.
+            <pre> 
+            "New" indicates that the product is sold in new order, in unbroken packaging.
+            "Demo" indicates that the product has been used as a preview copy.
+            "Used" indicates that the product is opened and used or restored (refurbished). 
+            "Download" indicates that the product, such as a computer game, is delivered in digital format via download, 
+          and not on physical medium.</pre>
+          </p>
+          <p>
+            MPN / manufacturer SKU (strongly recommended): <br> Manufacturer's unique
+            article number for the product., which allows us to index the shop's
+            products much faster and more accurately.
+          </p>
+          <p>
+            EAN-13 / GTIN-13 (strongly recommended): <br> The unique 13-digit barcode
+            number for the product. Allows us to index the shop's products much
+            faster and more accurately.
+          </p>
+          <p>
+            Image links (strongly recommended): <br> One or more links to the product
+            image. If there are multiple images, the link to the primary image
+            is displayed first. The images should be without watermarks and
+            other types of shop or manufacturer marks. The pictures should
+            preferably be high resolution and have a white background. The
+            images should correspond to the product variant, specified in the
+            product name and in other fields, for example colour and packaging
+            size.
+          </p>
+          <p>
+            Shipping (strongly recommended): <br> Shipping price of the product. The
+            total price of the product including shipping may also be stated.
+            Specify in the field header if it's the shipping price or the total
+            price, and if it's with or without VAT.
+          </p>
+          <p>
+            Product description (recommended): <br> A more detailed description of
+            the product than is included in the product name field.
+          </p>
+          <p>
+            Multi-pack or bundle (recommended): <br> Specified if it is about the
+            shop's own multi-pack or bundle, not if it is a multi-pack or
+            bundle, that comes directly from the manufacturer. If there is no
+            separate field for this, and the shop sells multi-packs or bundles,
+            it should be clearly stated in the product name.
+          </p>
+          <p>
+            Stock status (highly recommended): <br> Indicates the stock status of the
+            product in the shop. Availability must be clearly stated so that we
+            can also show it on PriceSpy. If the stock status is incorrectly
+            stated, we reserve the right to hide the display of the shop’s
+            inventory status.
+            <pre> 
+              "In stock" indicates that the product is delivered to the customer within six business days. 
+              "Out of stock" indicates that the product is out of stock in the shop. 
+              "Incoming [date]" indicates that the product is not in stock, but is expected to be in stock in the shop at a 
+            known date. 
+              "Pre-order [date]" indicates that the product has not yet been released, but has a known launch date. 
+            </pre>
+          </p>
+          <p>
+            Availability (required): <br> It is not mandatory to indicate stock
+            status, but if the shop shows products that can’t be ordered at the
+            moment, or can’t be sent to the customer, you must specify
+            availability. "Can not be ordered" indicates that the product has a
+            specified price in the shop, but it can’t be bought at the moment.
+            "Pickup" indicates that the product is only available for physical
+            collection, and can’t be ordered for home delivery.
+          </p>
+          <p>
+            Colour or pattern (strongly recommended): <br> The colour or pattern of
+            the product in question, if applicable to the product type. As far
+            as possible, use the manufacturer's name (for example, "summit
+            white" or "space gray").
+          </p>
+          <p>
+            Gender and audience (recommended): <br> The gender or target group that
+            the manufacturer considers fits the product if it is applicable to
+            the product type. It may be, for example, womens, mens, unisex,
+            girl, boy or child. If the shop does not have a separate field for
+            this, and it is important for the product type, it should be clearly
+            stated in the product name.
+          </p>
+          <p>
+            Size (strongly recommended): <br> The size of the current product if
+            applicable to the product type. Must be specified including size
+            (for example, EU45 / US11 / UK12 for shoes), if there are several
+            different size types.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Here’s how we index</h2>
+          <p>
+            We index all products that fit our active categories on PriceSpy. To
+            index a product, we need to know the name of the manufacturer and
+            the brand name. We usually do not index any "no name" products.
+          </p>
+          <p>
+            We update PriceSpy several times a day to capture price adjustments
+            and stock status at shops. When a shop adds new products in their
+            assortment, which are not added to PriceSpy already, they must be
+            indexed manually by us.
+          </p>
+          <p>
+            If a shop makes many changes in a short period of time, it is
+            possible to get ahead of the indexing queue to update the PriceSpy
+            information faster. The shop can control this in our PriceSpy
+            Analytics service.
+          </p>
+          <p>
+            If a shop makes really big changes in the price file, the changes
+            are placed in our quarantine for manual review. This reduces the
+            risk of errors. If you know in advance that the price file will
+            change significantly at some point, for example during a sales
+            period, please email us to avoid the quarantine.
+          </p>
+          <p>
+            If your products or prices are missing on PriceSpy, or if we display
+            incorrect information, please notify us through our feedback
+            feature. Feel free to go to the respective product or category page
+            if it only concerns a few products or prices. If it concerns a
+            larger amount of products or prices, please contact us via email.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo"><h1>Pricezilla</h1></div>
+
+        <!--           DESKTOP VIEW FOOTER      -->
+
+        <div class="desktop-footer">
+          <div class="footer-flexbox">
+            <div class="footer-list">
+              <h5>Information</h5>
+              <a href="">About PriceZilla</a>
+              <a href="./how-we-show-reviews.html">Reviews</a>
+              <a href="./contact-pricezilla.html">Contact - PriceZilla</a>
+              <a href="#">Register your shop</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="footer-list guidelines">
+              <h5>Guidelines</h5>
+              <a href="./rules-and-guidelines.html">Terms and Conditions</a>
+              <a href="">Disclaimer</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookie Policy</a>
+              <a href="">Privacy Settings</a>
+            </div>
+            <div class="footer-list on-pricezilla">
+              <h5>On PriceZilla</h5>
+              <a href="">Themes and Campaigns</a>
+              <a href="">Newsroom</a>
+              <a href="">Articles</a>
+              <a href="">Shop of the year</a>
+              <a href="">Categories</a>
+            </div>
+          </div>
+
+          <div class="news-email-flexbox">
+            <div class="newsletter">
+              <h5>Subscribe to our newsletter</h5>
+              <form>
+                <input
+                  type="email"
+                  placeholder="enter email address"
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="email-support">
+              <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                  <img src="../assets/facebook-icon.png" alt="facebook-icon" />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/twitter-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/youtube-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/instagram-icon.png"
+                    alt="facebook-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--                MOBILE VIEW FOOTER                    -->
+
+        <div class="mobile-footer">
+          <div class="footer-flexbox1">
+            <div class="footer-list-mobile information-mobile">
+              <h5>Information</h5>
+              <a href="">About PriceZilla</a>
+              <a href="./how-we-show-reviews.html">Reviews</a>
+              <a href="./contact-pricezilla.html">Contact - PriceZilla</a>
+              <a href="#">Register your shop</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="footer-list-mobile guidelines-mobile">
+              <h5>Guidelines</h5>
+              <a href="./rules-and-guidelines.html">Terms and Conditions</a>
+              <a href="">Disclaimer</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookie Policy</a>
+              <a href="">Privacy Settings</a>
+            </div>
+          </div>
+
+          <div class="footer-flexbox2">
+            <div class="footer-list-mobile pricezilla-mobile">
+              <h5>On PriceZilla</h5>
+              <a href="">Themes and Campaigns</a>
+              <a href="">Newsroom</a>
+              <a href="">Articles</a>
+              <a href="">Shop of the year</a>
+              <a href="">Categories</a>
+            </div>
+
+            <div class="email-support">
+              <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                  <img src="../assets/facebook-icon.png" alt="facebook-icon" />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/twitter-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/youtube-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="../assets/instagram-icon.png"
+                    alt="facebook-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h5>Subscribe to our newsletter</h5>
+            <form>
+              <input type="email" placeholder="enter email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      type="text/javascript"
+      src="../PriceZilla-Front/scripts/index.js"
+    ></script>
+  </body>
+</html>
