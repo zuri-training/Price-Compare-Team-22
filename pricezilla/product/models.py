@@ -1,5 +1,5 @@
 from django.db import models
-from user.models import User
+from django.conf import settings
 
 class Category(models.Model):
     class Meta:
@@ -30,10 +30,19 @@ class Product(models.Model):
         return self.name
 
 class Comment(models.Model):
-    comment = models.TextField()
-    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    content = models.TextField(max_length = 200)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     product =models.ForeignKey(Product, on_delete=models.CASCADE)
 
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
+
+
+    class Meta:
+        ordering = ['created_on']
+
+    def __str__(self):
+        return 'Comment {} by {}'.format(self.content, self.name)
 
