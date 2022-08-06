@@ -17,8 +17,6 @@ urlpatterns = [
     path('account/', views.account, name='account'),
     path('sign-up/', views.sign, name='sign'),
     path('user/', include('user.urls')),
-    path('search/', views.searchbar, name='search'),
-   
 ]
 
 urlpatterns += staticfiles_urlpatterns()
