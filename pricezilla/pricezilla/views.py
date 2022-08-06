@@ -31,5 +31,5 @@ def searchbar(request):
             return render(request, 'search.html', {'products':products})
         else:
             print("No product found")
-            return render(request, 'search.html', {'products':products})
+            return render(request, 'search.html', {})
     return render(request, 'search.html', {})   
