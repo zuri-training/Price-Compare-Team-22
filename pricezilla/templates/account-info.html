@@ -1,3 +1,4 @@
+{% load static from static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,17 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,100;1,200;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap.min.css'%}" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" 
-rel="stylesheet"
-     />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/index.css'%}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -28,303 +28,203 @@ rel="stylesheet"
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" href="./styles/account-info.css" />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/account-info.css'%}" />
     <title>PriceZilla</title>
+
   </head>
   <body>
     <header class="header"> 
-      <div class="header-inner" id="navscroll">
-        <div class="container">
-          <nav class="navbar navbar-expand-md my-navbar">
+        <div class="header-inner" id="navscroll">
+          <div class="container">
+            <nav class="navbar navbar-expand-md my-navbar">
 
-              <div class="account-icon">
-                <!-- <i class="bi bi-person-circle h1"></i> --><a href="./profile.html"> <img src="./assets/profile-picture.jpg" alt="profile-pic"> </a>
+                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
+        <a class="navbar-brand logo" href="#"><span>
+          <img src="{% static '/assets/Pricezilla logo.png'%}"  style="width: 8rem "></span>
+        </a>
+        <button class="navbar-toggler slime" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+                 href="#" id="navbarDropdown" 
+                 role="button" 
+                 data-toggle="dropdown" 
+                 aria-haspopup="true" 
+                 aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Laptops</a>
+                <a class="dropdown-item" href="#">Phones</a>
+                <a class="dropdown-item" href="#">Accessories</a>
+                <a class="dropdown-item" href="#">Home Appliances</a>
               </div>
-      <a class="navbar-brand logo" href="./index.html"><span>
-        <img src="./assets/Pricezilla logo.png"  ></span>
-      </a>
-      <button class="navbar-toggler slime" 
-              type="button" 
-              data-toggle="collapse" 
-              data-target="#navbarSupportedContent" 
-              aria-controls="navbarSupportedContent" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" 
-               href="#" id="navbarDropdown" 
-               role="button" 
-               data-toggle="dropdown" 
-               aria-haspopup="true" 
-               aria-expanded="false">
-              Categories
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Furniture</a>
-              <a class="dropdown-item" href="#">Kitchen Equipment</a>
-              <a class="dropdown-item" href="#">Laundry / Dry cleaning</a>
-              <a class="dropdown-item" href="#">Home Entertainment</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./wishlist.html">Wishlist</a>
-          </li>
-        </ul>
-        <div class="form-inline my-lg-0 profile-notification">
-          
-          <a class="header-btn  my-sm-0" href="./profile.html" style="display: flex; align-items: center;"> 
-
-            <img src="./assets/profile-picture.jpg"><div class="chevron"> <i class="bi chevron bi-chevron-down"></i> </div>
-          </a>
-        
-
-          <a class="header-btn  my-sm-0"  href="#"> <i class="bi bi-bell"></i> </a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Wishlist</a>
+            </li>
+          </ul>
+          <div class="form-inline my-lg-0 login-signup">
+            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    
+      </nav>
+      
+          </div>
         </div>
-      </div>
     </header> 
 
+
     <main class="container">
-
-      <div class="account-container">
-        <h3>ACCOUNT INFO</h3>
-      
-      
-        <form action="" class="account-form" method="post">
-
-          <div class="mb-3 form-group">
-            <label for="fullName" class="form-label">Full Name</label>
-            <input
-              type="text"
-              class="form-control"
-              name="fullName"
-              id="fullName"
-              placeholder="John Doe"
-              value=""
-              required
-            />
+      <div class="form">
+        <div class="acc">
+          <strong><h3>ACCOUNT INFO</h3></strong>
+        </div>
+        <form action="" class="frm" method="post">
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" placeholder="John" />
+          <label for="name">Last Name</label>
+          <input type="text" name="name" id="name" placeholder="Doe" />
+          <label for="email">Email</label>
+          <input type="email" name="" id="email" placeholder="eg. johndoe@gmail.com">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="ad">
+          <label for="state">State</label>
+          <select id="select">
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+          </select>
+          <label for="state">Country</label>
+          <select id="select">
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+            <option value="state"></option>
+          </select>
+          <label for="Phone No">Phone No</label>
+          <input type="number" name="" id="num">
+          <label for="password">Password</label>
+          <input type="password" name="" id="pass">
+          <div class="click">
+            <b>Click 'Save' to confirm your changes </b>
           </div>
-
-
-          <div class="mb-3 form-group">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="eg. johndoe@gmail.com"
-              aria-describedby="emailHelp"
-              class="form-control"
-              required
-            />
-
-          </div>
-
-        
-            <div class="mb-3 form-group">
-              <label for="address">Address</label>
-              <input type="text" class="form-control" name="address" id="ad" />
-            </div>
-          
-
-          <div class="mb-3 form-group">
-            <label for="state">State</label>
-            <select id="select" class="form-select">
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-            </select>
-          </div>
-
-          <div class="mb-3 form-group">
-            <label for="state">Country</label>
-            <select id="select" name="state" class="form-select">
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-              <option value="state"></option>
-            </select>
-          </div>
-
-          <div class="mb-3 form-group">
-            <label for="Phone No">Phone No</label>
-            <input type="number" class="form-control" name="phone"  />
-          </div>
-
-          <div class="mb-3 form-group">
-            <label for="password"class="form-label">Password</label>
-            <input type="password" name="password"  class="form-control" />
-          </div>
-          
-          <div class="click mb-3"> Click 'Save' to confirm your changes </div>
-
-          <div class="buttons">
-            <button type="submit" class="save">Save</button>
-            <button class="cancel">Cancel</button>
+          <div class="but">
+            <button class="bot1">Save</button>
+            <button class="bot2">Cancel</button>
           </div>
         </form>
       </div>
-      
     </main>
-
-    
-                                      <!--                FOOTER SECTION -->
 
     <footer class="footer">
       <div class="container">
-      <div class="footer-logo"><h1>Pricezilla</h1></div>
+        <div class="footer-logo"><h1>Pricezilla</h1></div>
 
+        <div class="grid-container">
+          <div class="footer-flexbox">
+            <div class="footer-list">
+              <h5>Information</h5>
+              <p>About PriceZilla</p>
+              <p>Reviews</p>
+              <p>Contact - PriceZilla</p>
+              <p>Register your shop</p>
+              <p>Help Center</p>
+            </div>
+            <div class="footer-list guidelines">
+              <h5>Guidelines</h5>
+              <p>Terms and Conditions</p>
+              <p>Disclaimer</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+              <p>Privacy Settings</p>
+            </div>
+            <div class="footer-list">
+              <h5>On PriceZilla</h5>
+              <p>Themes and Campaigns</p>
+              <p>Newsroom</p>
+              <p>Articles</p>
+              <p>Shop of the year</p>
+              <p>Categories</p>
+            </div>
 
-      <!--           DESKTOP VIEW FOOTER      -->
-
-  <div class="desktop-footer">
-      <div class="footer-flexbox">
-         
-         <div class="footer-list">
-             <h5>Information</h5>
-             <a href="">About PriceZilla</a>
-             <a href="">Reviews</a>
-             <a href="">Contact - PriceZilla</a>
-             <a href="">Register your shop</a>
-             <a href="">Help Center</a>
- 
-         </div>
-         <div class="footer-list guidelines">
-             <h5>Guidelines</h5>
-             <a href="">Terms and Conditions</a>
-             <a href="">Disclaimer</a>
-             <a href="">Privacy Policy</a>
-             <a href="">Cookie Policy</a>
-             <a href="">Privacy Settings</a>
-         </div>
-         <div class="footer-list on-pricezilla">
-             <h5>On PriceZilla</h5>
-             <a href="">Themes and Campaigns</a>
-             <a href="">Newsroom</a>
-             <a href="">Articles</a>
-             <a href="">Shop of the year</a>
-             <a href="">Categories</a>
-         </div>
-         
-     </div>
-  
-      
-  <div class="news-email-flexbox">
-      <div class="newsletter">
-          <h5>Subscribe to our newsletter</h5>
-          <form>
-              <input type="email" placeholder="enter email address" required>
-              <button type="submit">Subscribe</button>
-          </form>
-      </div>
-
-      <div class="email-support">
-          <div class="email-icon">
-              <i class="bi bi-envelope"></i>
+            <div class="email-support-mobile">
+              <div class="email-icon">
+                <i class="bi bi-envelope h1"></i>
+              </div>
+              <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                  <img src="{% static '/assets/facebook-icon.png'%}" alt="facebook-icon" />
+                  <img
+                    src="{% static '/assets/twitter-icon.png'%}"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="{% static '/assets/youtube-icon.png'%}"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="{% static '/assets/instagram-icon.png'%}"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="email">
+        </div>
+
+        <div class="news-email-flexbox">
+          <div class="newsletter">
+            <h5>Subscribe to our newsletter</h5>
+            <form>
+              <input type="email" placeholder="enter email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="email-support">
+            <div class="email-icon">
+              <i class="bi bi-envelope h1"></i>
+            </div>
+            <div class="email">
               <h5>Email Support</h5>
               <p>help@pricezilla.com</p>
               <div class="footer-icons">
-                  <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
+                <img src="{% static '/assets/facebook-icon.png'%}" alt="facebook-icon" />
+                <img src="{% static '/assets/twitter-icon.png'%}" alt="facebook-icon" />
+                <img src="{% static '/assets/youtube-icon.png'%}" alt="facebook-icon" />
+                <img src="{% static '/assets/instagram-icon.png'%}" alt="facebook-icon" />
               </div>
+            </div>
           </div>
+        </div>
       </div>
-
-  </div>
-</div>
-
-
-
-                     <!--                MOBILE VIEW FOOTER                    -->
-
-
-
-    <div class="mobile-footer">
-      <div class="footer-flexbox1">
-         
-         <div class="footer-list-mobile information-mobile">
-             <h5>Information</h5>
-             <a href="">About PriceZilla</a>
-             <a href="">Reviews</a>
-             <a href="">Contact - PriceZilla</a>
-             <a href="">Register your shop</a>
-             <a href="">Help Center</a>
- 
-         </div>
-         <div class="footer-list-mobile guidelines-mobile">
-             <h5>Guidelines</h5>
-             <a href="">Terms and Conditions</a>
-             <a href="">Disclaimer</a>
-             <a href="">Privacy Policy</a>
-             <a href="">Cookie Policy</a>
-             <a href="">Privacy Settings</a>
-         </div>
-      </div>
-
-      <div class="footer-flexbox2">
-         <div class="footer-list-mobile pricezilla-mobile">
-             <h5>On PriceZilla</h5>
-             <a href="">Themes and Campaigns</a>
-             <a href="">Newsroom</a>
-             <a href="">Articles</a>
-             <a href="">Shop of the year</a>
-             <a href="">Categories</a>
-         </div>
-
-         <div class="email-support">
-          <div class="email-icon">
-              <i class="bi bi-envelope"></i>
-          </div>
-          <div class="email">
-              <h5>Email Support</h5>
-              <p>help@pricezilla.com</p>
-              <div class="footer-icons">
-                  <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
-              </div>
-          </div>
-      </div>
-         
-     </div>
-  
-      
-  
-      <div class="newsletter">
-          <h5>Subscribe to our newsletter</h5>
-          <form>
-              <input type="email" placeholder="enter email address" required>
-              <button type="submit">Subscribe</button>
-          </form>
-      </div>
-
-  
-</div>
-</div>
-
-     </footer>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
