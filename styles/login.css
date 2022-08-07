@@ -36,7 +36,7 @@
     width: 50%;
     margin-top: 48px;
     margin: 0 25%;
-    box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 0 5%;
 }
@@ -183,6 +183,12 @@
 .login-second-6 a{
     color: #FF7C44;
 }
+.login-second-2-third{
+    display: none;
+}
+.login-first-mobile{
+    display: none;
+}
 /* tablet screen */
 @media only screen and (min-width: 768px) and (max-width: 1000px){
     .login{
@@ -216,8 +222,8 @@
         width: 70%;
         margin-top: 48px;
         margin: 0 15%;
-        background: #F4F4F4;
-        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.25);
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         padding: 0 5%;
     }
@@ -365,6 +371,12 @@
     .login-second-6 a{
         color: #FF7C44;
     }
+    .login-second-2-third{
+        display: none;
+    }
+    .login-first-mobile{
+        display: none;
+    }
 }
 /* tablet screen 2 */
 @media only screen and (min-width: 500px) and (max-width: 767px){
@@ -399,8 +411,8 @@
         width: 80%;
         margin-top: 18px;
         margin: 0 10%;
-        background: #F4F4F4;
-        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.25);
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         padding: 0 5%;
     }
@@ -548,14 +560,18 @@
     .login-second-6 a{
         color: #FF7C44;
     }
+    .login-second-2-third{
+        display: none;
+    }
+    .login-first-mobile{
+        display: none;
+    }
 }
 /* mobile screen */
 @media only screen and (min-width: 351px) and (max-width: 499px){
     .login{
         /* background-color: #DCDCDC; */
         margin-top: 35px;
-        
-       
     }
     .login a{
         text-decoration: none;
@@ -563,12 +579,38 @@
     }
     
     .login-first{
-        width: 80%;
+        /* width: 80%;
         margin-bottom: 10px;
         margin: 0 10%;
         align-items: center;
         justify-content: center;
-        padding-bottom: 25px;
+        padding-bottom: 25px; */
+        display: none;
+    }
+    .login-first-mobile{
+        display: block;
+    }
+    .login-first-mobile h1{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 4px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .login-first-mobile-1{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .login-first-mobile-1 a{
+        color: #FF7C44;
     }
     .login-first h6{
         font-family: Roboto;
@@ -580,16 +622,17 @@
     }
     .login-second{
         width: 100%;
-        margin-top: 18px;
+        margin-top: 0px;
         margin: 0;
         background: #FFFFFF;
+        border: none;
         box-shadow: none;
         border-radius: 0px;
         padding: 0 5%;
     }
     .login-second form{
-        padding-top: 29px;
-        padding-bottom: 0px;
+        padding-top: 9px;
+        padding-bottom: 80px;
     }
     .login-second-1{
         font-family: 'Roboto';
@@ -600,7 +643,7 @@
     }
     
     .login-second #email{
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -616,7 +659,7 @@
     }
     .login-second-1b{
         display: flex;
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 100%;
         /* height: 45px; */
         padding: 0 ;
@@ -627,7 +670,7 @@
         margin-top: 0.8rem;
     }
     .login-second #password{
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 90%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -653,7 +696,7 @@
     }
     .login-second-2-first{
         display: flex;
-        gap: 8px;
+        gap: 12px;
     }
     .login-second #checkbox{
         background-color: black;
@@ -663,7 +706,7 @@
         width: 100%;
         height: 54px;
         margin-top: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 4px;
         background-color: #FF7C44;
         color: #F4F4F4;
         border-radius: 8px;
@@ -675,16 +718,28 @@
         cursor: pointer;
         border: 0;
     }
+    .login-second-2-second{
+        display: none;
+    }
+    .login-second-2-third{
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .login-second-2-third a{
+        color: #FF7C44;
+    }
     .login-second-3{
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 32px;
+        color: #BBBBBB;
     }
     .login-second-3 span{
         height: 0.1px;
         width: 42%;
-        border: 1px solid #262322;
+        border: 1px solid #BBBBBB;
         margin-top: 0.75rem;
     
     }
@@ -695,7 +750,7 @@
         align-items: center;
         padding: 15px 20px;
         gap: 10px;
-        border: 1px solid #262322;
+        border: 1px solid #BBBBBB;
         border-radius: 8px;
     }
     .login-second-4 a, .login-second-5 a{   
@@ -704,6 +759,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+        color: #BBBBBB;
     }
     .login-second-5{
         display: flex;
@@ -712,7 +768,7 @@
         align-items: center;
         padding: 15px 20px;
         gap: 10px;
-        border: 1px solid #262322;
+        border: 1px solid #BBBBBB;
         border-radius: 8px;
         margin-top: 24px;
     }
@@ -720,7 +776,8 @@
         font-size: 14px;
     }
     .login-second-6{
-        display: flex;
+        display: none;
+        /* display: flex;
         margin-top: 5px;
         justify-content: center;
         gap: 12px;
@@ -728,7 +785,8 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 54px;
+        line-height: 54px; */
+
     
     }
     .login-second-6 a{
@@ -737,11 +795,9 @@
 }
 /* mobile screen 2 */
 @media only screen and (max-width: 350px){
-    .login{
+    . .login{
         /* background-color: #DCDCDC; */
         margin-top: 35px;
-        
-       
     }
     .login a{
         text-decoration: none;
@@ -749,12 +805,39 @@
     }
     
     .login-first{
-        width: 96%;
+        /* width: 80%;
         margin-bottom: 10px;
-        margin: 0 2%;
+        margin: 0 10%;
         align-items: center;
         justify-content: center;
-        padding-bottom: 5px;
+        padding-bottom: 25px; */
+        display: none;
+    }
+    .login-first-mobile{
+        display: block;
+
+    }
+    .login-first-mobile h1{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 4px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .login-first-mobile-1{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .login-first-mobile-1 a{
+        color: #FF7C44;
     }
     .login-first h6{
         font-family: Roboto;
@@ -766,43 +849,44 @@
     }
     .login-second{
         width: 100%;
-        margin-top: 18px;
+        margin-top: 0px;
         margin: 0;
         background: #FFFFFF;
+        border: none;
         box-shadow: none;
         border-radius: 0px;
         padding: 0 5%;
     }
     .login-second form{
-        padding-top: 29px;
-        padding-bottom: 0px;
+        padding-top: 9px;
+        padding-bottom: 20px;
     }
     .login-second-1{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 5px;
     }
     
     .login-second #email{
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         font-family: 'Roboto';
-        height: 36px;
+        height: 45px;
         padding: 10px 20px;
         margin-bottom: 30px;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         outline: 0;
         line-height: 24px;
     }
     .login-second-1b{
         display: flex;
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 100%;
         /* height: 45px; */
         padding: 0 ;
@@ -810,21 +894,20 @@
         border-radius: 8px;
     }
     .login-second-1b img{
-        height: auto;
+        margin-top: 0.8rem;
         width: 1.2rem;
-        margin-top: 0.3rem;
     }
     .login-second #password{
-        background: #FFFFFF;
+        background: #BBBBBB;
         width: 90%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         font-family: 'Roboto';
-        height: 33px;
+        height: 45px;
         padding: 10px 20px;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 24px;
         outline: 0;
         border: 0;
@@ -839,16 +922,9 @@
         padding: 0px;
         gap: 8px;
     }
-    .login-second-2 small{
-        font-size: 12px;
-    }
     .login-second-2-first{
         display: flex;
-        gap: 8px;
-        margin-top: 0.2rem;
-    }
-    .login-second-2-first small{
-        margin-top: 0.1rem;
+        gap: 12px;
     }
     .login-second #checkbox{
         background-color: black;
@@ -857,8 +933,8 @@
     .login #submit{
         width: 100%;
         height: 40px;
-        /* margin-top: 20px;
-        margin-bottom: 32px; */
+        margin-top: 32px;
+        margin-bottom: 4px;
         background-color: #FF7C44;
         color: #F4F4F4;
         border-radius: 8px;
@@ -870,16 +946,29 @@
         cursor: pointer;
         border: 0;
     }
+    .login-second-2-second{
+        display: none;
+    }
+    .login-second-2-third{
+        margin-bottom: 22px;
+       display: flex;
+       justify-content: flex-end;
+       font-size: 0.9rem;
+    }
+    .login-second-2-third a{
+        color: #FF7C44;
+    }
     .login-second-3{
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 32px;
+        color: #BBBBBB;
     }
     .login-second-3 span{
         height: 0.1px;
-        width: 40%;
-        border: 1px solid #262322;
+        width: 42%;
+        border: 1px solid #BBBBBB;
         margin-top: 0.75rem;
     
     }
@@ -888,9 +977,9 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 15px 20px;
+        padding: 12px 20px;
         gap: 10px;
-        border: 1px solid #262322;
+        border: 1px solid #BBBBBB;
         border-radius: 8px;
     }
     .login-second-4 a, .login-second-5 a{   
@@ -898,36 +987,39 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
+        color: #BBBBBB;
         line-height: 17px;
-    }
-    .login-second-4 img, .login-second-5 img{
-        height: auto;
-        width: 1.2rem;
     }
     .login-second-5{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 15px 20px;
+        padding: 12px 20px;
         gap: 10px;
-        border: 1px solid #262322;
+        border: 1px solid #BBBBBB;
         border-radius: 8px;
         margin-top: 24px;
     }
     .login-second-5 small, .login-second-4 small{
         font-size: 14px;
     }
+    .login-second-4 img, .login-second-5 img{
+        width: 1.3rem;
+        height: auto;
+    }
     .login-second-6{
-        display: flex;
+        display: none;
+        /* display: flex;
         margin-top: 5px;
         justify-content: center;
         gap: 12px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 54px;
+        font-size: 16px;
+        line-height: 54px; */
+
     
     }
     .login-second-6 a{
