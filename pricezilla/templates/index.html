@@ -1,273 +1,450 @@
-{%load static from static%}
+{% load static from static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap.min.css'%}"/>
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="{%static '/styles/index.css'%}"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap.min.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/index.css'%}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
     <title>PriceZilla</title>
-</head>
-<body>
-   <header class="header"> 
-        <div class="header-inner" id="navscroll">
-          <div class="container">
-            <nav class="navbar navbar-expand-md my-navbar">
-
-                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="#"><span>
-          <img src="{% static '/assets/Pricezilla logo.png'%}"  style="width: 8rem "></span>
-        </a>
-        <button class="navbar-toggler slime" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                 href="#" id="navbarDropdown" 
-                 role="button" 
-                 data-toggle="dropdown" 
-                 aria-haspopup="true" 
-                 aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Laptops</a>
-                <a class="dropdown-item" href="#">Phones</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Wishlist</a>
-            </li>
-          </ul>
-          <div class="form-inline my-lg-0 login-signup">
-            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
-          </div>
-        </div>
-      </nav>
-      
-          </div>
-        </div>
-      </header> 
-
-
-      <main class="container ">
-
-        <section class=" hero">
-            <div class="hero-search">
-                <h1>Search household items from different platforms around you</h1>
-                <form action="{% url 'search' %}" method="get" class="d-flex">
-                  <input class="form-control me-2" type="text" name="query" placeholder="Search" value="{{request.GET.name}}" aria-label="Search">
-                  
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner" id="navscroll">
+        <div class="container">
+          <nav class="navbar navbar-expand-md my-navbar">
+            <div class="account-icon">
+              <i class="bi bi-person-circle h1"></i>
             </div>
-        </section>
+            <a class="navbar-brand logo" href="#"
+              ><span> <img src=" {% static '/assets/Pricezilla logo.png'%}" /></span>
+            </a>
+            <button
+              class="navbar-toggler slime"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
 
-        <section class="second-container">
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-        </section>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="">Furniture</a>
+                    <a class="dropdown-item" href="#">Kitchen Equipment</a>
+                    <a class="dropdown-item" href="#">Laundry / Dry cleaning</a>
+                    <a class="dropdown-item" href="#">Home Entertainment</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'about'%}">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{%url 'wishlist'%}">Wishlist</a>
+                </li>
+              </ul>
+              <div class="form-inline my-lg-0 login-signup">
+                <a class="header-btn my-sm-0" href="{% url 'login'%}">Login</a>
+                <a class="header-btn my-sm-0" href="{% url 'signup'%}"> Sign Up</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-    
-      
-<section class="section">
-  <div class="text">
-    <h2>Best Selling</h2>
-    <h5>See more</h5>
-  </div>
-  <div class="img">
-    <img src="{% static '/assets/micro 1.jpg'%}" alt="assets">
-  
-    <img src="{% static '/assets/tv 1.jpg'%}" alt="assets">
-  
-    <img src="{% static '/assets/washing machine 1.jpg'%}" alt="assets">
-  </div>
-</section>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-search">
+          <h1>Search household items from different platforms around you</h1>
+          <form>
+            <div class="input-search-box">
+              <i class="bi bi-search"></i>
+              <input type="text" required />
+            </div>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
 
+      <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
+      <section class="categories-container">
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+      </section>
 
-<div class="section">
-  <div class="text">
-    <h2>Promo deals</h2>
-    <h5>See more</h5>
-  </div>
-  <div class="img">
-    <img src="{%static '/assets/Cozy-Couch-PNG-File 1.jpg'%}" alt="assets">
-  
-    <img src="{% static '/assets/chanderlier2 1.jpg'%}" alt="assets">
-  
-    <img src="{% static '/assets/speaker2 1.jpg'%}" alt="assets">
-  </div>
-  
+      <!-- MOBILE VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES >= 768PX) -->
+      <section
+        class="carousel categories-mobile"
+        data-flickity='{ "groupCells": true }'
+      >
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+      </section>
 
-</div>
-<script>
-var i =0;
-var images = [];
-var time = 5000;
+      <!--           BEST SELLING SECTION         -->
 
-//image list
+      <section class="section">
+        <div class="section-header">
+          <h2>Best Selling</h2>
+          <h5>See more</h5>
+        </div>
 
-images[0] = '{% static "/assets/pexels-marcelo-jaboo-696407 1.jpg "%}';
-images[1] = '{% static "/assets/pexels-tranmautritam-326503.jpg" %}';
+        <div class="best-selling-container">
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img src="{% static '/assets/microwave.png'%}" width="70%" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>HAMILTON MICROWAVE</h4>
+              <p>N27,800</p>
+            </div>
+          </div>
 
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img src="{% static '/assets/tv.png'%}" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>ENKOR PLASMA TV</h4>
+              <p>N47, 500</p>
+            </div>
+          </div>
 
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img
+                src="{% static '/assets/washing-machine.png'%}"
+                width="55%"
+                alt="assets"
+              />
+            </div>
+            <div class="price">
+              <h4>HAIER WASHING MACHINE</h4>
+              <p>N32,000</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-// change img
+      <!--     PROMO DEALS SECTION       -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Promo deals</h2>
+          <h5>See more</h5>
+        </div>
 
-function changeImg(){
-  document.slide.src=images[i];
+        <div class="promo-deals-container">
+          <div class="product-price-card">
+            <!-- <div class="discount-1">-15%</div> -->
+            <div class="product-image-container">
+              <img src="{% static '/assets/couch.png'%}" alt="assets" width="70%" />
+            </div>
+            <div class="price">
+              <h4>COZY YELLOW COUCH</h4>
+              <div class="old-price">
+                <span>N184,000</span>
+                <p>N156,400</p>
+              </div>
+            </div>
+          </div>
 
-  if(i < images.length -1){
-    i++;
-  }else{
-    i =0;
-  }
-  setTimeout('changeImg()', time)
-}
+          <div class="product-price-card">
+            <!-- <div class="discount-2">-27%</div> -->
+            <div class="product-image-container">
+            <img src="{% static '/assets/chandelier.png'%}" alt="assets" width="70%" />
+            </div>
+            <div class="price">
+              <h4>ELITE VIP CHANDELIER</h4>
+              <div class="old-price">
+                <span>N32,500</span>
+                <p>N23,725</p>
+              </div>
+            </div>
+          </div>
 
-window.onload = changeImg;
-</script>
+          <div class="product-price-card">
+            <!-- <div class="discount-3">-8%</div> -->
+            <div class="product-image-container">
+              <img src="{% static '/assets/speakers.png'%}" width="70%" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>LG BOOM STUDIO</h4>
+              <div class="old-price">
+                <span>N87,000</span>
+                <p>N80,040</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="img-slider">
+      <!--              IMAGE SLIDESHOW      -->
 
-<img class="image" name="slide"  alt="img" width="100%" height="500px">
-</section>
-</main>
-   
+      <section class="image-slideshow">
+        <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+
+          <div class="carousel-cell cell-1">
+             <img src="{% static '/assets/home-slide1.jpg'%}" alt="banner"/> 
+            </div>
+
+          <div class="carousel-cell cell-2"> 
+            <img src="{% static ' /assets/home-slide2.jpg'%}">
+           </div>
+
+          <div class="carousel-cell cell-3"> 
+            <img src=" {% static '/assets/home-slide2.jpg'%}"> 
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!--                FOOTER SECTION -->
 
     <footer class="footer">
-        <div class="container">
+      <div class="container">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
-        <div class="grid-container">
-        <div class="footer-flexbox">
-           
-           <div class="footer-list">
-               <h5>Information</h5>
-               <p>About PriceZilla</p>
-               <p>Reviews</p>
-               <p>Contact - PriceZilla</p>
-               <p>Register your shop</p>
-               <p>Help Center</p>
-   
-           </div>
-           <div class="footer-list guidelines">
-               <h5>Guidelines</h5>
-               <p>Terms and Conditions</p>
-               <p>Disclaimer</p>
-               <p>Privacy Policy</p>
-               <p>Cookie Policy</p>
-               <p>Privacy Settings</p>
-           </div>
-           <div class="footer-list">
-               <h5>On PriceZilla</h5>
-               <p>Themes and Campaigns</p>
-               <p>Newsroom</p>
-               <p>Articles</p>
-               <p>Shop of the year</p>
-               <p>Categories</p>
-           </div>
+        <!--           DESKTOP VIEW FOOTER      -->
 
-           <div class="email-support-mobile">
-            <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
+        <div class="desktop-footer">
+          <div class="footer-flexbox">
+            <div class="footer-list">
+              <h5>Information</h5>
+              <a href="">About PriceZilla</a>
+              <a href="{% url 'howreviews'%}" target="_blank">Reviews</a>
+              <a href="{url 'contactpricezilla'}" target="_blank">Contact - PriceZilla</a>
+              <a href="./footer-pages/register-shop.html" target="_blank">Register your shop</a>
+              <a href="">Help Center</a>
             </div>
-            <div class="email">
+            <div class="footer-list guidelines">
+              <h5>Guidelines</h5>
+              <a href="./footer-pages/rules-and-guidelines.html" target="_blank">Terms and Conditions</a>
+              <a href="">Disclaimer</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookie Policy</a>
+              <a href="">Privacy Settings</a>
+            </div>
+            <div class="footer-list on-pricezilla">
+              <h5>On PriceZilla</h5>
+              <a href="">Themes and Campaigns</a>
+              <a href="">Newsroom</a>
+              <a href="">Articles</a>
+              <a href="">Shop of the year</a>
+              <a href="">Categories</a>
+            </div>
+          </div>
+
+          <div class="news-email-flexbox">
+            <div class="newsletter">
+              <h5>Subscribe to our newsletter</h5>
+              <form>
+                <input
+                  type="email"
+                  placeholder="enter email address"
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="email-support">
+              <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="email">
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" class="spaced-icon" alt="facebook-icon"/>
-
+                  <img src="./assets/facebook-icon.png" alt="facebook-icon" />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/twitter-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/youtube-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/instagram-icon.png"
+                    alt="facebook-icon"
+                  />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-       </div>
-    </div>
-        
-    <div class="news-email-flexbox">
-        <div class="newsletter">
+
+        <!--                MOBILE VIEW FOOTER                    -->
+
+        <div class="mobile-footer">
+          <div class="footer-flexbox1">
+            <div class="footer-list-mobile information-mobile">
+              <h5>Information</h5>
+              <a href="">About PriceZilla</a>
+              <a href="">Reviews</a>
+              <a href="">Contact - PriceZilla</a>
+              <a href="">Register your shop</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="footer-list-mobile guidelines-mobile">
+              <h5>Guidelines</h5>
+              <a href="">Terms and Conditions</a>
+              <a href="">Disclaimer</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookie Policy</a>
+              <a href="">Privacy Settings</a>
+            </div>
+          </div>
+
+          <div class="footer-flexbox2">
+            <div class="footer-list-mobile pricezilla-mobile">
+              <h5>On PriceZilla</h5>
+              <a href="">Themes and Campaigns</a>
+              <a href="">Newsroom</a>
+              <a href="">Articles</a>
+              <a href="">Shop of the year</a>
+              <a href="">Categories</a>
+            </div>
+
+            <div class="email-support">
+              <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                  <img src="./assets/facebook-icon.png" alt="facebook-icon" />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/twitter-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/youtube-icon.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    class="spaced-icon"
+                    src="./assets/instagram-icon.png"
+                    alt="facebook-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="newsletter">
             <h5>Subscribe to our newsletter</h5>
             <form>
-                <input type="email" placeholder="enter email address" required>
-                <button type="submit">Subscribe</button>
+              <input type="email" placeholder="enter email address" required />
+              <button type="submit">Subscribe</button>
             </form>
+          </div>
         </div>
+      </div>
+    </footer>
 
-        <div class="email-support">
-            <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
-            </div>
-            <div class="email">
-                <h5>Email Support</h5>
-                <p>help@pricezilla.com</p>
-                <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
+    <!-- SCRIPTS -->
 
-                </div>
-            </div>
-        </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    </div>
-</div>
-       </footer>
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-  <script type="text/javascript" src="../PriceZilla-Front/scripts/index.js"></script>
-  <script type="text/javascript">
-    $(function(){
-      var navbar = $('.header-inner');
-      $(window).scroll(function(){
-        if($(window).scrollTop() <=5){
-          navbar.removeClass('navbar-scroll');
-        }else{
-          navbar.addClass('navbar-scroll');
-        }
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      type="text/javascript"
+      src="../PriceZilla-Front/index.js"
+    ></script>
+
+    <!-- NAVBAR SCRIPT -->
+    <script type="text/javascript">
+      $(function () {
+        var navbar = $(".header-inner");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 5) {
+            navbar.removeClass("navbar-scroll");
+          } else {
+            navbar.addClass("navbar-scroll");
+          }
+        });
       });
-    });
-
-    
-
-  </script>
-</body>
+    </script>
+  </body>
 </html>

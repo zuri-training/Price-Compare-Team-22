@@ -44,18 +44,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'product',
-
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
     # 'allauth.socialaccount',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.google',
-
-    # 'rest_framework',
-    # 'requests',
+    'rest_framework',
+    'requests',
     'django_extensions'
+
 ]
+
 
 # SITE_ID = 1
 
@@ -176,7 +176,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
 
 MEDIA_URL = 'images/'
+
 LOGIN_REDIRECT_URL =  "/home"
 LOGOUT_REDIRECT_URL = "accounts/login"
-
 django_heroku.settings(locals())
