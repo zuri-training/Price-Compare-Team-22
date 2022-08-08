@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-from django.urls import reverse
+
 
 from pathlib import Path
 import os
@@ -44,17 +44,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'product',
-
-
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
     # 'allauth.socialaccount',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.google',
-'rest_framework',
-'requests',
-'django_extensions'
+    'rest_framework',
+    'requests',
+    'django_extensions'
+
 ]
 
 
@@ -178,9 +177,6 @@ AUTH_USER_MODEL = 'user.User'
 
 MEDIA_URL = 'images/'
 
-
-
 LOGIN_REDIRECT_URL =  "/home"
 LOGOUT_REDIRECT_URL = "accounts/login"
 django_heroku.settings(locals())
-

@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body a{
+    text-decoration: none;
+}
+
+body{
+    text-align: center;
+}
+main{
+    margin-top: 4rem;
+   
+}
+h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FF7C44;
+    margin-bottom: 2rem;
+}
+.first p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(38, 35, 34, 0.7);
+    width: 64%;
+    margin: 0 18%;
+    margin-bottom: 5rem;
+}
+.sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sign-up{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    background-color: #FF7C44;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 25%;
+    margin: 0 37.5%;
+    margin-bottom: 1rem;
+    
+}
+.sign p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    color: #262322;
+}
+#sign-in{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    color: #262322;
+    border-radius: 8px;
+    border: 2px solid #BBBBBB;
+    width: 25%;
+    margin: 0 37.5%;
+    margin-bottom: 3rem;
+}
+
+/* tablet screen */
+@media screen and (min-width: 768px) and (max-width: 994px) {
+    body a{
+        text-decoration: none;
+    }
+    
+    body{
+        text-align: center;
+    }
+    main{
+        margin-top: 6rem;
+       
+    }
+    h6{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 48px;
+        color: #FF7C44;
+        margin-bottom: 3rem;
+    }
+    .first p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: rgba(38, 35, 34, 0.7);
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 5rem;
+    }
+    .sign{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sign-up{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 42px;
+        background-color: #FF7C44;
+        color: #FFFFFF;
+        border-radius: 8px;
+        width: 25%;
+        margin: 0 37.5%;
+        margin-bottom: 1rem;
+        
+    }
+    .sign p{
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: #262322;
+    }
+    #sign-in{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 42px;
+        color: #262322;
+        border-radius: 8px;
+        border: 1px solid #BBBBBB;
+        width: 25%;
+        margin: 0 37.5%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* tablet 2 screen */
+@media screen and (min-width: 527px) and (max-width: 767px) {
+    body a{
+        text-decoration: none;
+    }
+    
+    body{
+        text-align: center;
+    }
+    main{
+        margin-top: 6rem;
+       
+    }
+    h6{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 48px;
+        color: #FF7C44;
+        margin-bottom: 3rem;
+    }
+    .first p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        color: rgba(38, 35, 34, 0.7);
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 5rem;
+    }
+    .sign{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sign-up{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 42px;
+        background-color: #FF7C44;
+        color: #FFFFFF;
+        border-radius: 8px;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 0rem;
+        
+    }
+    .sign p{
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        color: #262322;
+    }
+    #sign-in{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 42px;
+        color: #262322;
+        border-radius: 8px;
+        border: 1px solid #BBBBBB;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 2rem;
+        margin-top: -1rem;
+    }
+}
+
+/* mobile screen */
+@media screen and (min-width: 355px) and (max-width: 526px) {
+    body a{
+        text-decoration: none;
+    }
+    
+    body{
+        text-align: center;
+    }
+    main{
+        margin-top: 5rem;
+       
+    }
+    h6{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FF7C44;
+        margin-bottom: 3rem;
+    }
+    .first p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(38, 35, 34, 0.7);
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 5rem;
+    }
+    .sign{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sign-up{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        background-color: #FF7C44;
+        color: #FFFFFF;
+        border-radius: 8px;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 1rem;
+        
+    }
+    .sign p{
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: #262322;
+    }
+    #sign-in{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        color: #262322;
+        border-radius: 8px;
+        border: 1px solid #BBBBBB;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+}
+
+/* mobile 2 screen */
+@media screen and (max-width: 354px) {
+    body a{
+        text-decoration: none;
+    }
+    
+    body{
+        text-align: center;
+    }
+    main{
+        margin-top: 3rem;
+       
+    }
+    h6{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 3%;
+        color: #FF7C44;
+        margin-bottom: 1.5rem;
+    }
+    .first p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(38, 35, 34, 0.7);
+        width: 94%;
+        margin: 0 3%;
+        margin-bottom: 3rem;
+    }
+    .sign{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sign-up{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        background-color: #FF7C44;
+        color: #FFFFFF;
+        border-radius: 8px;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 0rem;
+        
+    }
+    .sign p{
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #262322;
+    }
+    #sign-in{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        color: #262322;
+        border-radius: 8px;
+        border: 1px solid #BBBBBB;
+        width: 40%;
+        margin: 0 30%;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+}

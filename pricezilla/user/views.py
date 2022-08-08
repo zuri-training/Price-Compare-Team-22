@@ -9,7 +9,11 @@ def signup(request):
     if request.method == "POST":
         form = RegisterUserForm(request.POST)
         if form.is_valid():
-            user= form.save()
+            user= form.save(commit=False)
+            user.username = form.cleaned_data["email"]
+            user.set_password(form.cleaned_data["password"])
+            user.save()
+            print(user)
             login(request,user)
             return redirect(reverse("index"))
     else:
