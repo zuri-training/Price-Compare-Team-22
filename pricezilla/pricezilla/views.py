@@ -31,11 +31,12 @@ def profile(request):
 def searchbar(request):
     if request.method == 'GET':
         query = request.GET.get('query')
-        if query:
+        if not query:
+            return HTTPResponse("Search bar is empty")
+        if Product.objects.filter(name__icontains=query).exists():
             products = Product.objects.filter(name__icontains=query) 
-            print("Available Products")
             return render(request, 'search.html', {'products':products})
         else:
             print("No product found")
             return render(request, 'search.html', {})
-    return render(request, 'search.html', {})   
+      
