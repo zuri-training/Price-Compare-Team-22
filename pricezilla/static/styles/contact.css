@@ -4,10 +4,10 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-body {
+main {
   color: #000;
 }
-.container {
+/* .container {
   max-width: 1250px;
   margin: 0 auto;
   padding: 14px 16px;
@@ -53,7 +53,7 @@ nav h1 {
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
-}
+} */
 .banner {
   max-width: 1250px;
   margin: 0 auto;
@@ -77,7 +77,7 @@ nav h1 {
 .contact-content p {
   text-align: left;
 }
-footer {
+.last-section {
   max-width: 700px;
   margin: 0 auto;
 }

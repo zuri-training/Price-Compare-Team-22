@@ -47,7 +47,7 @@ class Product(models.Model):
 class Comment(models.Model):
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    content = models.TextField(max_length = 200)
+    content = models.TextField(max_length = 200, default = True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     product =models.ForeignKey(Product, on_delete=models.CASCADE)
 

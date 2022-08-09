@@ -1,86 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css"/>
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
+{% extends 'baselayout.html' %}
 
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" 
-rel="stylesheet"
-     />
+{% load static%}
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-          <link rel="stylesheet" type="text/css" href="./styles/about.css">
-    <title>About Page</title>
-</head>
-
-<body>
-
-
-<header class="header">
-    <div class="header-inner">
-      <div class="container">
-        <nav class="navbar navbar-expand-md my-navbar">
-
-            <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-    <a class="navbar-brand logo" href="./index.html"><span>
-      <img src="./assets/Pricezilla logo.png" ></span>
-    </a>
-    <button class="navbar-toggler slime" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" 
-             href="#" id="navbarDropdown" 
-             role="button" 
-             data-toggle="dropdown" 
-             aria-haspopup="true" 
-             aria-expanded="false">
-            Categories
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Furniture</a>
-              <a class="dropdown-item" href="#">Kitchen Equipment</a>
-              <a class="dropdown-item" href="#">Laundry / Dry cleaning</a>
-              <a class="dropdown-item" href="#">Home Entertainment</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./about.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Wishlist</a>
-        </li>
-      </ul>
-      <div class="form-inline my-lg-0 login-signup">
-        <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-        <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
-      </div>
-    </div>
-  </nav>
-  
-      </div>
-    </div>
-  </header>
-
+{% block content %}
+<link rel="stylesheet" href="{% static '/styles/about.css'%}">
 
     <main class="main-container">
 
@@ -93,10 +17,10 @@ rel="stylesheet"
                     <h3><span>Ab</span>out us</h3>
                     <div class="shapes">
                         <div class="shape one">
-                            <img src="./assets/about us 2 1.png" alt="about">
+                            <img src="{% static '/assets/about us 2 1.png'%}" alt="about">
                         </div>
                         <div class="shape two">
-                            <img src="./assets/about us 1 1.jpg" alt="about">
+                            <img src="{% static '/assets/about us 1 1.jpg'%}" alt="about">
                         </div>
                     </div>
                 </div>
@@ -142,7 +66,7 @@ rel="stylesheet"
                 <div class="frame-50">
 
 
-                    <img src="./assets/kitchen 1.png" alt="about">
+                    <img src="{% static '/assets/kitchen 1.png'%}" alt="about">
 
 
 
@@ -164,7 +88,7 @@ rel="stylesheet"
                     <div class="flex one">
                         <div class="match">
 
-                            <img src="./assets/happy 1.png">
+                            <img src="{% static '/assets/happy 1.png'%}">
 
 
                         </div>
@@ -178,7 +102,7 @@ rel="stylesheet"
                     <div class="flex one">
                         <div class="match">
 
-                            <img src="./assets/home aagain 1.png">
+                            <img src="{% static '/assets/home aagain 1.png' %}">
 
 
                         </div>
@@ -192,7 +116,7 @@ rel="stylesheet"
                     <div class="flex one">
                         <div class="match">
 
-                            <img src="./assets/home aagain 2.png">
+                            <img src="{% static '/assets/home aagain 1.png'%}">
 
 
 
@@ -240,7 +164,7 @@ rel="stylesheet"
 
                             <div class="frame-79">
                                 <div class="frame-4">
-                                    <img src="./assets/Frame 4.png">
+                                    <img src="{% static '/assets/Frame 4.png'%}">
                                 </div>
                                 <div class="frame-78">
                                     <h4>Freya shin ye</h4>
@@ -271,7 +195,7 @@ rel="stylesheet"
 
                             <div class="frame-79">
                                 <div class="frame-4">
-                                    <img src="./assets/Frame 41.png">
+                                    <img src="{% static '/assets/Frame 41.png '%}">
                                 </div>
                                 <div class="frame-78">
                                     <h4>Flyod Milea</h4>
@@ -301,7 +225,7 @@ rel="stylesheet"
 
                             <div class="frame-79">
                                 <div class="frame-4">
-                                    <img src="./assets/Frame 43.png ">
+                                    <img src="{% static '/assets/Frame 43.png'%} ">
                                 </div>
                                 <div class="frame-78">
                                     <h4>Darrell Steward</h4>
@@ -323,7 +247,7 @@ rel="stylesheet"
                     We got you</h3>
                 <div class="buttons">
                     <button class="faq">FAQS</button>
-                    <a href="./contact.html"> <button class="contact">Contact us</button></a>
+                    <a href="{%url 'contact'%}"> <button class="contact">Contact us</button></a>
                 </div>
             </section>
 
@@ -332,7 +256,7 @@ rel="stylesheet"
 
             <!-- Go to shop -->
             <section class="shop">
-                <img src="./assets/tele 1.png" alt="ggg">
+                <img src="{% static '/assets/tele 1.png'%}" alt="ggg">
                 <button class="primary">Go to shop</button>
 
             </section>
@@ -344,172 +268,4 @@ rel="stylesheet"
         </div>
     </main>
 
-
-                                     <!--                FOOTER SECTION -->
-
-    <footer class="footer">
-      <div class="container">
-      <div class="footer-logo"><h1>Pricezilla</h1></div>
-
-
-      <!--           DESKTOP VIEW FOOTER      -->
-
-  <div class="desktop-footer">
-      <div class="footer-flexbox">
-         
-         <div class="footer-list">
-             <h5>Information</h5>
-             <a href="">About PriceZilla</a>
-             <a href="">Reviews</a>
-             <a href="">Contact - PriceZilla</a>
-             <a href="">Register your shop</a>
-             <a href="">Help Center</a>
- 
-         </div>
-         <div class="footer-list guidelines">
-             <h5>Guidelines</h5>
-             <a href="">Terms and Conditions</a>
-             <a href="">Disclaimer</a>
-             <a href="">Privacy Policy</a>
-             <a href="">Cookie Policy</a>
-             <a href="">Privacy Settings</a>
-         </div>
-         <div class="footer-list on-pricezilla">
-             <h5>On PriceZilla</h5>
-             <a href="">Themes and Campaigns</a>
-             <a href="">Newsroom</a>
-             <a href="">Articles</a>
-             <a href="">Shop of the year</a>
-             <a href="">Categories</a>
-         </div>
-         
-     </div>
-  
-      
-  <div class="news-email-flexbox">
-      <div class="newsletter">
-          <h5>Subscribe to our newsletter</h5>
-          <form>
-              <input type="email" placeholder="enter email address" required>
-              <button type="submit">Subscribe</button>
-          </form>
-      </div>
-
-      <div class="email-support">
-          <div class="email-icon">
-              <i class="bi bi-envelope"></i>
-          </div>
-          <div class="email">
-              <h5>Email Support</h5>
-              <p>help@pricezilla.com</p>
-              <div class="footer-icons">
-                  <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
-              </div>
-          </div>
-      </div>
-
-  </div>
-</div>
-
-
-
-                     <!--                MOBILE VIEW FOOTER                    -->
-
-
-
-    <div class="mobile-footer">
-      <div class="footer-flexbox1">
-         
-         <div class="footer-list-mobile information-mobile">
-             <h5>Information</h5>
-             <a href="">About PriceZilla</a>
-             <a href="">Reviews</a>
-             <a href="">Contact - PriceZilla</a>
-             <a href="">Register your shop</a>
-             <a href="">Help Center</a>
- 
-         </div>
-         <div class="footer-list-mobile guidelines-mobile">
-             <h5>Guidelines</h5>
-             <a href="">Terms and Conditions</a>
-             <a href="">Disclaimer</a>
-             <a href="">Privacy Policy</a>
-             <a href="">Cookie Policy</a>
-             <a href="">Privacy Settings</a>
-         </div>
-      </div>
-
-      <div class="footer-flexbox2">
-         <div class="footer-list-mobile pricezilla-mobile">
-             <h5>On PriceZilla</h5>
-             <a href="">Themes and Campaigns</a>
-             <a href="">Newsroom</a>
-             <a href="">Articles</a>
-             <a href="">Shop of the year</a>
-             <a href="">Categories</a>
-         </div>
-
-         <div class="email-support">
-          <div class="email-icon">
-              <i class="bi bi-envelope"></i>
-          </div>
-          <div class="email">
-              <h5>Email Support</h5>
-              <p>help@pricezilla.com</p>
-              <div class="footer-icons">
-                  <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                  <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
-              </div>
-          </div>
-      </div>
-         
-     </div>
-  
-      
-  
-      <div class="newsletter">
-          <h5>Subscribe to our newsletter</h5>
-          <form>
-              <input type="email" placeholder="enter email address" required>
-              <button type="submit">Subscribe</button>
-          </form>
-      </div>
-
-  
-</div>
-</div>
-
-     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            var navbar = $('.header-inner');
-            $(window).scroll(function () {
-                if ($(window).scrollTop() <= 5) {
-                    navbar.removeClass('navbar-scroll');
-                } else {
-                    navbar.addClass('navbar-scroll');
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>
+{% endblock %}
