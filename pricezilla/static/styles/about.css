@@ -1,10 +1,11 @@
-/*Font Awesome Free Icons*/
+
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* color: rgba(255, 255, 255, 1); */
     position: relative;
    
@@ -16,6 +17,9 @@ body {
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
 }
 
 ::before,
@@ -37,47 +41,85 @@ body {
 /* About Us .category */
 .point {
     
-    display: flex;
+
     background: url('Background 4.png') ;
- /* opacity: 0.2; */
-    margin: 20px 4px;
-    padding-top: 30px;
-    /* background-color: red; */
+
     padding-top: 30px;
     padding-bottom: 90px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  
 }
 
-.point .category {
-    position: relative;
+.point .category{
+    /* position: absolute; */
+
+    display: flex;
     margin-left: 128px;
     width: 70.56%;
     height: 80.86%;
-
+    flex:0 0 100%;
+    flex-direction: row;
+    position: relative;
 }
-
 .category h3 {
     font-family: 'Roboto';
     position: absolute;
     font-weight: 700;
     font-size: 64px;
-    /* width: 256px; */
-    margin-left: 30.22%;
+left: 32%;
     color: rgba(255, 124, 68, 1);
     top: 2.17%;
-    /* background-color: red; */
+   
     line-height: 96px;
     z-index: 10;
 }
 
 .category h3 span {
     color: #00303C;;
-    /* left: 300px; */
+  
+}
+
+.category .lefty{
+    flex: 0 0 50%;
+    /* position: relative; */
+
+}
+.category .texts{
+    flex: 0 0 50%;
+    /* height: 5500px; */
+    position: relative;
+
+}
+.texts .one{
+    position: absolute;
+    right: 0;
+    max-width: 470px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+align-items: flex-start;
+padding: 0px;
+}
+.one .textx{
+    font-weight: 400;
+font-size: 18px;
+line-height: 36px;
+/* position: absolute; */
+/* or 150% */
+
+
+/* text colour 1 */
+
+color: #262322;
 }
 
 .category .shapes {
     margin-bottom: 45px;
     position: relative;
-    width: 39.9%;
+    width: 80%;
     height: 462px;
     /* background-color: rebeccapurple; */
 }
@@ -131,26 +173,6 @@ body {
     z-index: 2;
 }
 
-.texts {
-    /* background-color: green; */
-    display: flex;
-    flex-direction: column;
-    /* width: 459px; */
-    position: absolute;
-    padding: 0;
-    gap: 28px;
-    right: 0;
-    bottom: 0;
-}
-
-.texts p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #262322;;
-    line-height: 36px;
-}
 
 /* About us .category ends */
 
@@ -197,7 +219,7 @@ body {
 
 .frame-76 p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 36px;
     color: #262322;
 
@@ -256,6 +278,7 @@ body {
     position: relative;
     align-items: flex-start;
     padding: 0px;
+    flex-wrap: nowrap;
 
 }
 
@@ -270,15 +293,8 @@ body {
 
 }
 
-/* .flex.one{
-    background-color: firebrick;
-}
-.flex.two{
-    background-color: sandybrown;
-}
-.flex.three{
-    background-color: lawngreen;
-} */
+
+
 .flex .match {
     box-sizing: border-box;
 
@@ -360,29 +376,20 @@ color: #262322;
 }
 
 .testimonials{
-    /* background-color: red; */
-
-
 display: flex;
 width: 100%;
 align-items: center;
 padding: 0px;
-justify-content: space-evenly;
-
-
+gap: 72px;
+overflow-x: auto;
 }
 .testimonials .testimonial{
-    position: absolute;
-/* width: 348px; */
-width: 28.95%;
 height: auto;
-/* padding: 700px; */
+
 background: #00303C;
 color: #F4F4F4;
-
 position: relative;
-/* left: 0px;
-top: 0px; */
+
 border: 1px solid #F4F4F4;
 border-radius: 0px 32px;
 padding: 0 8px;
@@ -398,7 +405,7 @@ position: relative;
 width: 100%;
 padding-left: 8px;
 margin-top: 41px;
-margin-bottom: 10px;
+margin-bottom: 40px;
 color: #BBBBBB;
 }
 .frame-80 .frame-77{
@@ -415,7 +422,7 @@ gap: 16px;
   
 }
 .frame-77 .icons .fa{
-font-size: 24px;
+font-size: 20px;
 
 color: #BBBBBB;
 /* position: absolute; */
@@ -428,7 +435,7 @@ color: #BBBBBB;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;  
 }
 .frame-79{
@@ -459,7 +466,7 @@ gap: 4px;
 }
 .frame-78 h4{
     font-weight: 400;
-font-size: 20px;
+font-size: 17px;
 line-height: 30px;
 }
 .frame-78 p{
@@ -571,4 +578,230 @@ color: #F4F4F4;
 
 /* Go to shop */
 
+
+
+/* Responsiveness */
+
+@media only screen and (max-width:768px){
+    .intro{
+        padding: 12px;
+    }
+    .frame-55{
+        /* display: flex; */
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+    .frame-76{
+        margin-bottom: 24px;
+    }
+.frame-76 h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #262322;
+}
+.frame-76 h6{
+    font-family: 'Roboto';
+    font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+color: #262322;
+}
+.frame-76 p{
+    font-family: 'Roboto';
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #262322;
+text-align: center;
+}
+
+
+
+.frame-95 h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #262322;
+margin-bottom: 16px;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+}
+.flex-container .flex{
+    width: 100%;
+    gap: 20px;
+    /* text-align: center; */
+    /* justify-items: center; */
+}
+.flex .text{
+   align-items: center;
+   gap: 12px;
+}
+.second{
+    margin-bottom: 20px;
+}
+
+.testimonial-row{
+    margin-bottom: 25px;
+}
+
+.testimonial-row .frame-81 h5{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+color: #262322;
+}
+.testimonials{
+    gap: 8px;
+    
+}
+
+
+.testimonial .frame-80{
+    margin-top: 6px;
+    width: 180px;
+    height: 263px;
+    gap: 12px;
+    color: #F4F4F4;;
+}
+.testimonial .frame-77{
+    gap: 4px;
+    color: #F4F4F4;;
+}
+.frame-77 .icons .fa{
+    color: #F4F4F4;;
+}
+.testimonial .frame-77 p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+}
+.frame-79{
+    gap: 4px;
+}
+.frame-79 .frame-4{
+    width: 32px;
+height: 32px;
+}
+.frame-79 .frame-4 img{
+    width: 32px;
+    height: 32px;
+}
+.question{
+    margin-bottom: 24px;
+}
+.question h3{
+    font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #262322;
+}
+
+.point {
+    padding-top: 0px;
+    padding-bottom: 28px;
+   
+}
+.one .textx{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+.texts .one{
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+align-items: flex-start;
+padding: 0px;
+}
+
+.shapes .shape.one {
+    /* background-color: red; */
+    right: 20px;
+    top: 0;
+    border-radius: 0 0 140px 140px;
+    z-index: 1;
+}
+
+.shapes .shape.two {
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 100px 0%;
+    z-index: 2;
+}
+
+
+}
+
+@media only screen and (max-width:500px){
+    .category h3{
+        font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    }
+}
+@media only screen and (min-width:640px){
+    .testimonials{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+        gap: 72px;
+        overflow-x: auto;
+        }
+      
+}
+@media only screen and (max-width:1050px){
+    .point{
+        background: none;
+    }
+    .point .category{
+        /* position: absolute; */
+    
+        display: flex;
+        margin-left: 0px;
+        padding: 0 18px;
+        width: 100%;
+        height: 80.86%;
+        flex:0 0 100%;
+        gap: 240px;
+        flex-direction: column;
+        position: relative;
+    }
+    .category .shapes {
+        margin-bottom: 45px;
+        position: relative;
+        width: 70%;
+        height: 302px;
+        /* background-color: red; */
+        /* background-color: rebeccapurple; */
+    }
+    .category h3{
+        left: 46%;
+    }
+    
+   
+
+}
 

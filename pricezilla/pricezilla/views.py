@@ -6,11 +6,19 @@ def index(request):
 
 def about(request):
     return render(request,"about.html")
+ 
 def wishlist(request):
     return render(request, 'wishlist.html')
 
 def howreviews(request):
     return render(request, 'how-we-show-reviews.html')
+
+def registershop(request):
+    return render(request, 'register-shop.html')
+
+def rulesandguide(request):
+    return render(request, 'rules-and-guidelines.html')
+
 def contactpricezilla(request):
     return render(request, 'contact-pricezilla.html')
     
