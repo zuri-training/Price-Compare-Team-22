@@ -1188,6 +1188,7 @@ footer a{
     text-decoration: none;
     color: white;
     font-weight: 00;
+    width: fit-content;
 }
 .footer a:hover{
     color: rgba(255, 124, 68, 1);
@@ -1197,7 +1198,7 @@ footer a{
     display: flex;
     gap:40px;
 }
-.email-icon{
+.email-support .email-icon{
     font-size: 34px;
     transform: translateY(-10px);
 }
