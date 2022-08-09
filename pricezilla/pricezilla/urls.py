@@ -20,7 +20,6 @@ urlpatterns = [
     path('search/', views.searchbar, name='search'),
     path('accounts/', include('user.urls')),
     path("accounts/",include("django.contrib.auth.urls")),
-    # path('accounts/', include('allauth.urls')),
     path('product/', include('product.urls')),
 
 ]
