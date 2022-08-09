@@ -6,7 +6,7 @@
 }
 .login{
     /* background-color: #DCDCDC; */
-    margin-top: 35px;
+    margin-top: 55px;
     max-width: 1440px;
     
    
@@ -643,7 +643,7 @@
     }
     
     .login-second #email{
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -659,7 +659,7 @@
     }
     .login-second-1b{
         display: flex;
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 100%;
         /* height: 45px; */
         padding: 0 ;
@@ -670,7 +670,7 @@
         margin-top: 0.8rem;
     }
     .login-second #password{
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 90%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -870,7 +870,7 @@
     }
     
     .login-second #email{
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -886,7 +886,7 @@
     }
     .login-second-1b{
         display: flex;
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 100%;
         /* height: 45px; */
         padding: 0 ;
@@ -898,7 +898,7 @@
         width: 1.2rem;
     }
     .login-second #password{
-        background: #BBBBBB;
+        background: #FFFFFF;
         width: 90%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
