@@ -7,16 +7,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .navbar-scroll{
-    background-color: white;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    transition-duration: 0.8s; 
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
-    /* padding-top: 15px; */
+
 }
 
 
@@ -28,47 +20,30 @@ body{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-}header{
+}
+header{
     margin-bottom: 100px;
     width: 100%;
     
 }
-.headerr{
+.header-inner{
     width: 100%;
-    padding-top: 15px;
     top: 0;
-    right: 0;
     left: 0;
-    position: fixed;
+    width:100%;
     z-index: 99;
     background-color: white;
-    
+    position: fixed;
 }
 svg{
   color: rgba(38, 35, 34, 0.7);
 }
     
-@media only screen and (min-width: 768px){
-    .mylogo img{
-        padding-left: 10px;
-    }
-
-
-}
 @media only screen and (min-width:1200px){
     footer{
         font-size: 20px;
     }
 }
-
-@media screen and (max-width: 426px) {
-    .logoo img{
-        width: 6rem;
-        margin-left: 50px; 
-    }
-    
-}
-
 /* NAVBAR STYLES */
 .headerr{
     width: 100%;
@@ -76,12 +51,12 @@ svg{
     justify-content: space-between ;
     align-items: center;
     transition: 0.3s;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     background-color: white;
     
   }
   .mylogo img{
-      width: 50%;
+      width: 40%;
   }
   .mylogo{
       display: flex;
@@ -258,7 +233,7 @@ svg{
           justify-content: end;
       }
       .navigation{
-          margin-left: 12%;
+          margin-left: 2%;
       
       }
       .mylogo img{
@@ -268,7 +243,7 @@ svg{
   }
   @media screen and (min-width: 769px) and (max-width: 1100px) {
       .navigation{
-          margin-left: 9%;
+          margin-left: 2%;
       }
       .navigation .menu li .spaced-link {
           margin-left: 30px;
@@ -288,39 +263,37 @@ svg{
           margin-left: 0px;
           justify-content: end;
       }
-      .navigation{
-          margin-left: 12%;
-      
-      }
       .mylogo img{
           width: 70%;
       }
       
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
       .mylogo img{
-          padding-left: 20px;
-          width: 80%;
+          
+          width: 60%;
       }
       .nav2{
-          margin-right: 20px;
+          margin-right: 0px;
       }
-      .navigation{
-          margin-left: 5%;
+      .menu li a, .nav2 .nav-buttons li a{
+        font-size: 16px;
       }
       
   }
   @media screen and (max-width: 841px) {
-      .navigation{
-          margin-left: 3%;
-      }
+      
       .menu li a, .nav-buttons li a, .profile-notification li a{
           font-size: 16px;
   
       }
       .nav-buttons li a, .profile-notification li a{
-          padding: 8px 14px;
+          padding: 8px 10px;
       }
+      .mylogo img{
+          
+        width: 70%;
+    }
       
   }
   @media screen and (max-width: 768px) {
@@ -333,9 +306,6 @@ svg{
       }
       #home{
           margin-top: 20px;
-      }
-      .headerr{
-          padding: 10px 10px;
       }
       .menu{
           justify-content: start;
@@ -361,13 +331,13 @@ svg{
           display: block;
       }
       .mylogo img{
-          width: 50%;
+          width: 40%;
       }
       .account-icon{
           display: block;
       }  
       .mylogo{
-          margin-left: 11rem;
+          margin-left: 12rem;
       }
       .menu li {
           width: 100%;
@@ -386,22 +356,50 @@ svg{
       }
       
   }
+  @media screen and (max-width: 612px) {
+    .hamburger{
+        margin-right: -12px;
+    }
+    
+  }
   @media screen and (max-width: 563px) {
       .mylogo img{
           width: 50%;
           margin-top: 5px;
       }
-      .mylogo{
-          margin-left: 10rem;
+  }
+  @media screen and (min-width: 480px) and (max-width: 536px) {
+    .mylogo img{
+       
+        transform: translateX(-40px);
+        width: 60%;
+    }
+    .hamburger{
+        transform: scale(0.8);
       }
-      
+}
+  @media screen and (max-width: 479px) {
+    .mylogo img{
+        width: 60% ;
+        transform: translateX(-50px);
+        margin-top: 15px;
+    }
+    .hamburger{
+        transform: scale(0.7);
+      }
+
+    
   }
   @media screen and (max-width: 430px) {
-      .mylogo{
-          margin-left: 6rem;
+      .mylogo img{
+          width: 70%;
+          margin-left: -20px;
       }
       .mylogo img{
-          margin-top: 15px;
+         
+      }
+      .hamburger{
+        transform: scale(0.7);
       }
       .hamburger{
           margin-right: -10px;
@@ -409,32 +407,25 @@ svg{
       }
       
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 380px) {
       .mylogo img{
-          width: 60%;
-      }
-      .mylogo{
-          margin-left: 5rem;
+          width: 90%;
+          margin-left: -31px;
       }
       .menu{
           width: 200px;
           right: -200px;
-      }
-      .menu{
-          width: 200px;
-          right: -200px;
-      }
-      
-      
+      } 
   }
   @media screen and (max-width: 320px) {
       .mylogo img {
+          margin-left: -5.2rem;
+          transform: scale(2.2);
           
-          width: 70%;
       }
-      .mylogo{
-          margin-left: 3rem;
-      }
+      .hamburger{
+        margin-right: -15px;
+    }
       
   }
                        /* IMPORTANT STYLING FOR AUTHENTICATED USER NAVBAR */
@@ -461,7 +452,6 @@ svg{
   width: 35px;
   height: 35px;
   border-radius: 50%;
-
 }
   
 .profile-notification li:hover{
@@ -504,38 +494,46 @@ svg{
         height: 40px;
         border-radius: 50%;
     }
+    .auth-logo{
+        margin-top: 7px;
+    }
     
 }
 @media screen and (max-width: 614px) {
-    .mylogo img{
-        width: 55%;
-        margin-top: 10px;
-        margin-right: 10px;
-
+    .auth-logo img{
+        margin-left: -20px;
+        
+    }
+}
+@media screen and (max-width: 479px) {
+    .auth-logo img{
+        margin-top: 0px;
     }
     
 }
-@media screen and (max-width: 560px) {
-    .mylogo img{
-       
-        transform: translateX(-22px);
-
+@media screen and (max-width: 460px) {
+    .auth-logo img{
+        width: 80%;
     }
+    
 }
-@media screen and (min-width: 431px) and (max-width: 515px) {
-    .mylogo img{
-       
-        transform: translateX(-72px);
-        width: 90%
-
+@media screen and (max-width: 430px) {
+    .auth-logo img{
+        width: 7rem;
+        margin-left: -6rem;
     }
+    
 }
-@media screen  and (max-width: 375px){
-    .mylogo img{
-       
-        
-        width: 70%
-
+@media screen and (max-width: 380px) {
+    .auth-logo img{
+        width: 6.2rem;
+    }
+    
+}
+@media screen  and (max-width: 320px){
+    .auth-logo img{
+        width: 3rem;
+        margin-left: -8rem;
     }
     
 }
@@ -1198,7 +1196,7 @@ footer a{
     display: flex;
     gap:40px;
 }
-.email-support .email-icon{
+.email-icon{
     font-size: 34px;
     transform: translateY(-10px);
 }
@@ -1412,3 +1410,5 @@ footer a{
         font-size: 16px;
     }
 }
+
+

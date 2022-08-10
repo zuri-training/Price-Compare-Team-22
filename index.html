@@ -30,9 +30,10 @@
     <title>PriceZilla</title>
   </head>
   <body>
-    <header>
-
-      <div class="headerr container-lg">
+    <header class="header">
+      <div class="header-inner">
+    <div class="container-lg">
+      <div class="headerr">
         <div class="account-icon">
           <i class="bi bi-person-circle h1"></i>
         </div>
@@ -86,6 +87,8 @@
       </div>
   
     </div>
+  </div>
+</div>
     </header>
 
     <main class="">
@@ -523,10 +526,11 @@
   }
 });
     </script>
+    
     <!-- NAVBAR SCRIPT -->
     <script type="text/javascript">
       $(function () {
-        var navbar = $(".nav");
+        var navbar = $(".header-inner");
         $(window).scroll(function () {
           if ($(window).scrollTop() <= 55) {
             navbar.removeClass("navbar-scroll");
