@@ -516,15 +516,7 @@
   }
 });
 
-   const categoriesMenu = document.querySelector("#categories-menu");
-
-   window.addEventListener("load", () => {
-  if (window.innerWidth <= 768) {
-    categoriesMenu.classList.add("dropright");
-  }else{
-    categoriesMenu.classList.add("dropdown");
-  }
-});
+   
     </script>
     
     <!-- NAVBAR SCRIPT -->
@@ -539,6 +531,16 @@
           }
         });
       });
+
+      const categoriesMenu = document.querySelector("#categories-menu");
+
+   window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    categoriesMenu.classList.add("dropright");
+  }else{
+    categoriesMenu.classList.add("dropdown");
+  }
+});
     </script>
   </body>
 </html>
