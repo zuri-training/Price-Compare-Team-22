@@ -1,0 +1,283 @@
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* color: rgba(255, 255, 255, 1); */
+    position: relative;
+   min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+main{
+   margin-bottom: 250px; 
+ margin-top: 100px;
+
+}
+
+.pad{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.frame-162{
+    display: flex;
+flex-direction: row;
+align-items: center;
+/* padding: 0px; */
+gap: 25px;
+margin-top: 28px;
+margin-bottom: 24px;
+
+}
+.frame-162 p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #262322;
+margin: 0;
+/* background-color: firebrick; */
+
+}
+.frame-162 .fa{
+font-size: 24px;
+margin-bottom: 5px;
+/* background-color: firebrick; */
+/* position: absolute; */
+}
+
+.mobile{
+    display: none;
+}
+.first{
+    background-color: #78C4E3;
+    display: flex;
+    /* position: relative; */
+}
+.texts{
+    flex-basis: 55%;
+    max-width: 55%;
+}
+.first .image{
+    flex-basis:45% ; 
+     max-width: 45%;
+     height: 430px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.first .texts{
+   position: relative;
+}
+.first .image{
+   padding: 2px 0;
+}
+
+.texts .text{
+    position: absolute;
+    top: 35%;
+left: 15%;
+}
+.texts h5{
+    /* margin: auto; */
+
+    text-transform: uppercase;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+
+line-height: 84px;
+/* text-align: center; */
+color: #FFFFFF;
+}
+.text p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+
+
+.second{
+    padding-top: 86px;
+ 
+}
+.second .flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    row-gap: 54px;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+
+.flex-container .flex{
+    padding: 24px;
+
+display: flex;
+flex-direction: column;
+gap: 18px;
+flex-wrap: wrap;
+    flex-basis: calc(25% - 28px);
+    max-width: calc(25% - 28px);
+
+    height:424px ;
+    position: relative;
+    /* background-color: red; */
+ 
+border-radius: 8px;
+
+
+}
+p, h6{
+    margin-bottom: 0;
+}
+.flex .fa{
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex.one .image.one{
+    position: absolute;
+    width: calc(100% - 50px);
+top: 90px;
+    text-align: center;
+
+}
+.image.one img{
+    width: 60%;
+    
+}
+.flex.one .image.two{
+    position: absolute;
+    width: calc(100% - 50px);
+top: 110px;
+    text-align: center;
+
+}
+.image.image.two img{
+    width: 100%;
+    
+}
+.para{
+    display: flex;
+    /* background-color: gainsboro; */
+    position: absolute;
+    flex-direction: column;
+gap: 8px;
+margin-left: 10px;
+    justify-content: center;
+    bottom: 24px;
+    text-transform: uppercase;
+
+    width: calc(100% - 50px);
+}
+.para h6{
+    /* font-family: 'Poppins'; */
+
+    /* padding: 0 15px; */
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 24px;
+display: flex;
+
+
+color: #131313;
+}
+.para p{
+    font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+}
+
+
+
+.search-mobile{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+    .pad{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    .search-mobile{
+        display: block;
+        padding: 5px 25px;
+        margin-bottom: 24px;
+        background-color: red;
+    }
+    .search-mobile .inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inner .buttons{
+        display: flex;
+        gap: 8px;
+
+    }
+    .buttons button{
+        font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+border: 0;
+background: #FFFFFF;
+border-radius: 8px;
+padding:10px 12px;
+    }
+    .mainLoginInput{
+        height: 40px;
+        width: 100%;
+        padding: 0px;
+        font-size: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+      
+      .mainLoginInput::-webkit-input-placeholder { 
+      font-family: FontAwesome;
+      font-weight: normal;
+      overflow: visible;
+      vertical-align: top;
+      display: inline-block ;
+      padding-left: 10px;
+      padding-top: 2px;
+      color: 2px solid #BBBBBB;
+        
+      
+      }
+}
