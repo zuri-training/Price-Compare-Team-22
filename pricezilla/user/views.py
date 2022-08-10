@@ -33,5 +33,5 @@ def loginview(request):
         form = LoginForm()  
     return render(request,"registration/login.html",{"form":form})
 
-def logout(request):
+def logoutview(request):
     logout(request)
