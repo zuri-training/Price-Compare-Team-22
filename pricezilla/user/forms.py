@@ -14,4 +14,20 @@ class RegisterUserForm(forms.ModelForm):
         model = User
         fields = ["fullname","email","password"]
         required = ["fullname","email","password"]
+        
+        
+        
+class LoginForm(forms.ModelForm):
+    
+    """Login form"""
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        for field in self.Meta.required:
+            self.fields[field].required = True
+            
+    class Meta:
+        model = User
+        fields = ("email","password")
+        required = ("email","password")
     

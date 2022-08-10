@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'product',
+    'widget_tweaks',
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
