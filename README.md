@@ -1,6 +1,7 @@
 # Team 22_Price Compare Project
 # PriceZilla - A Price Comparison Platform
 
+<img src="https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/Pricezilla%20logo.png" width="100">
 
 PriceZilla is a price comparison web app that allows users compare the prices of products across different retailers, stores, and brands. It takes the hassle of visiting various eCommerce store to find best deals. Consumers can benefit from this by comparing the prices of their favourite HOME EQUIPMENTS from different categories.
 
@@ -46,7 +47,7 @@ By having these products all in one location (PriceZilla), our target audience m
 
 
 ## Live Site
-
+<img src= "https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/PriceZilla%20.png" width="300" >
 Coming Soon....
 
 
