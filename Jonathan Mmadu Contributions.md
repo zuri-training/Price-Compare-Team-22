@@ -8,4 +8,4 @@
 
 [Documentation-First-Page](https://github.com/zuri-training/Price-Compare-Team-22/issues/61)
 
-[Get-Started](https://github.com/zuri-training/Price-Compare-Team-22/issues/62)
+[Get-Started Page](https://github.com/zuri-training/Price-Compare-Team-22/issues/62)
