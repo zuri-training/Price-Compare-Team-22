@@ -57,10 +57,10 @@ margin: 0;
 
 }
 .frame-162 .fa{
+    /* font-weight: 00; */
 font-size: 24px;
 margin-bottom: 5px;
-/* background-color: firebrick; */
-/* position: absolute; */
+
 }
 
 .mobile{
@@ -86,6 +86,11 @@ margin-bottom: 5px;
 }
 .first .texts{
    position: relative;
+   display: flex;
+   place-content: center;
+  
+   place-items: center;
+
 }
 .first .image{
    padding: 2px 0;
@@ -93,12 +98,12 @@ margin-bottom: 5px;
 
 .texts .text{
     position: absolute;
-    top: 35%;
-left: 15%;
+    /* top: 35%; */
+/* left: 15%; */
 }
 .texts h5{
     /* margin: auto; */
-
+    /* text-align: center; */
     text-transform: uppercase;
     font-family: 'Roboto';
 font-style: normal;
@@ -268,6 +273,7 @@ p.mobile{
     font-style: normal;
     font-weight: 700;
 font-size: 20px;
+text-align:left;
 
     line-height: 28px;
     /* text-align: center; */
@@ -401,7 +407,7 @@ padding:3px 12px;
     }
     .pags p{
         font-weight: 500;
-font-size: 18px;
+font-size: 15px;
 line-height: 15px;
 /* identical to box height */
 margin-bottom: none;
@@ -419,7 +425,7 @@ padding-top: 6px;
     }
     .pags .next{
         font-weight: 900;
-font-size: 18px;
+font-size: 15px;
 line-height: 15px;
 /* identical to box height */
 
@@ -636,4 +642,62 @@ line-height: 18px;
         line-height: 12px;
     }
     
+}
+@media screen and (min-width: 1600px){
+    
+
+
+    .flex-container .flex{
+        padding: 24px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+        flex-basis: calc(25% - 28px);
+        max-width: calc(25% - 28px);
+    
+        height:424px ;
+        position: relative;
+        /* background-color: red; */
+        transition: all 0.3s ease;
+    border-radius: 8px;
+    
+    
+    }
+    p, h6{
+        margin-bottom: 0;
+    }
+    .flex:hover{
+        border: 1px solid #BBBBBB;
+        transition: all 0.3s ease;
+    }
+    .flex .fa{
+        font-size: 32px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .flex.one .image.one{
+        position: absolute;
+        width: calc(100% - 50px);
+    top: 50px;
+        text-align: center;
+    
+    }
+    .image.one img{
+        width: 50%;
+        
+    }
+    .flex.one .image.two{
+        position: absolute;
+        width: calc(100% - 50px);
+    top: 80px;
+        text-align: center;
+    
+    }
+    .image.image.two img{
+        width: 80%;
+        
+    }
+
 }
