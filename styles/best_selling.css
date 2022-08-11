@@ -381,7 +381,7 @@ line-height: 26px;
         gap: 8px;
 
     }
-    form{
+    .search-mobile form{
         width: 30%;
     }
     .buttons button{
