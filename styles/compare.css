@@ -6,7 +6,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     color: #262322;
 }
 
@@ -41,27 +40,12 @@ body {
     align-items: center;
     width: 80%;
     margin: auto;
-
-
-
-    /* margin-right: 30px; 
-margin-left: 100px;  */
-}
-
-.electric-iron {
-    /* margin-right: 150px;  */
-    /* padding-left: 50px; */
-    /* margin-right: 3px; */
-    /* margin-left: 75px; */
 }
 
 .electric-iron img {
     border-radius: 20px;
     /* height: 100%; */
     width: 100%;
-    /* margin-right: 60px; */
-
-    /* height: 92%; */
 }
 
 .store-buttons {
@@ -75,25 +59,10 @@ margin-left: 100px;  */
     width: 40%;
     margin-top: 5px;
 
-
-    /* margin-bottom: 100px; */
-
-
-    /* height: 48px; */
-    /* left: 33px; */
 }
 
 .hoover-iron {
-    /* position: relative; */
     bottom: 1.5em;
-
-
-
-
-    /* padding-bottom: 9em; */
-
-
-    /* margin-bottom: 100px; */
 
 }
 
@@ -104,12 +73,7 @@ margin-left: 100px;  */
     margin-top: 2.3rem;
     margin-bottom: 2.5rem;
     /* padding-top: 1rem; */
-
-
     line-height: 30px;
-    /* width: 427px;
-    height: 72px; */
-    */
 }
 
 
