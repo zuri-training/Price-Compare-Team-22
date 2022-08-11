@@ -18,9 +18,10 @@ rel="stylesheet"
     <title>PriceZilla</title>
 </head>
 <body>
-  <header>
-
-    <div class="headerr container-lg">
+  <header class="header">
+    <div class="header-inner">
+  <div class="container-lg">
+    <div class="headerr">
       <div class="account-icon">
         <i class="bi bi-person-circle h1"></i>
       </div>
@@ -74,6 +75,8 @@ rel="stylesheet"
     </div>
 
   </div>
+</div>
+</div>
   </header>
 
       <main class="container-lg">
@@ -370,9 +373,9 @@ rel="stylesheet"
 </footer>
 
 <!-- SCRIPTS -->
-
+  
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+  
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -396,19 +399,17 @@ rel="stylesheet"
   src="../PriceZilla-Front/scripts/index.js"
 ></script>
 
-
-
-<!-- SCRIPT TO RESIZE HERO BACKGROUND IMAGE BASED ON SCREEN SIZE -->
-<script>
-const  hero = document.querySelector(".hero");
-
-
-  window.addEventListener("load", () => {
-if (window.innerWidth < 1024) {
-hero.classList.remove("container");
-}else{
-hero.classList.add("container");
-}
+<!-- NAVBAR SCRIPT -->
+<script type="text/javascript">
+$(function () {
+  var navbar = $(".header-inner");
+  $(window).scroll(function () {
+    if ($(window).scrollTop() <= 55) {
+      navbar.removeClass("navbar-scroll");
+    } else {
+      navbar.addClass("navbar-scroll");
+    }
+  });
 });
 
 const categoriesMenu = document.querySelector("#categories-menu");
@@ -421,17 +422,5 @@ categoriesMenu.classList.add("dropdown");
 }
 });
 </script>
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-  <script type="text/javascript">
-    
-
-    $(document).ready(function(){
-      $('.next').click(function(){
-        $('.next-item').find('.next-item.active').next().addClass('active');
-        $('.next-item').find('.next-item.active').next().removeClass('active');
-      })
-    })
-  </script>
 </body>
 </html>

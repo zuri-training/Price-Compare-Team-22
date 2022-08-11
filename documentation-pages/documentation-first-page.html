@@ -32,68 +32,64 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-inner" id="navscroll">
-        <div class="container">
-          <nav class="navbar navbar-expand-md my-navbar">
-            <div class="account-icon">
-              <i class="bi bi-person-circle h1"></i>
-            </div>
-            <a class="navbar-brand logo" href="#"
-              ><span> <img src="../assets/Pricezilla logo.png" /></span>
-            </a>
-            <button
-              class="navbar-toggler slime"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"
-                ><i class="fas fa-bars"></i
-              ></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Categories
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="">Furniture</a>
-                    <a class="dropdown-item" href="#">Kitchen Equipment</a>
-                    <a class="dropdown-item" href="#">Laundry / Dry cleaning</a>
-                    <a class="dropdown-item" href="#">Home Entertainment</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../about.html">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../wishlist.html">Wishlist</a>
-                </li>
-              </ul>
-              <div class="form-inline my-lg-0 login-signup">
-                <a class="header-btn my-sm-0" href="../login.html">Login</a>
-                <a class="header-btn my-sm-0" href="../sign-up.html"> Sign Up</a>
-              </div>
-            </div>
-          </nav>
+      <div class="header-inner">
+    <div class="container-lg">
+      <div class="headerr">
+        <div class="account-icon">
+          <i class="bi bi-person-circle h1"></i>
         </div>
+  
+      <div class="mylogo">
+        <a href="./index.html">
+          <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
+        </a>
       </div>
+  
+  
+      <div class="navigation">
+  
+        <input type="checkbox" class="toggle-menu"/>
+        <div class="hamburger"></div>
+         
+        <ul class="menu">
+          <li id="home"><a href="./index.html">Home</a></li>
+          <li class=" " id="categories-menu">
+            <a
+              class="dropdown-toggle spaced-link drop"
+              href="#"
+              id="navbarDropright"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <div class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="">Furniture</a>
+              <a class="dropdown-item" href="./unauthenticated-to-signup.html">Kitchen Equipment</a>
+              <a class="dropdown-item" href="./unauthenticated-to-signup.html">Laundry / Dry cleaning</a>
+              <a class="dropdown-item " href="./unauthenticated-to-signup.html">Home Entertainment</a>
+            </div>
+          </li>
+          <li class="spaced-link"><a class="spaced-link" href="./about.html">About us</a></li>
+          <li class="spaced-link"><a class="spaced-link" href="./wishlist.html">Wishlist</a></li>
+          <li><a class="nav-btn-mobile" href="./login.html">Login</a></li>
+          <li><a class="nav-btn-mobile" href="./sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+  
+  
+      <div class="nav2">
+        <ul class="nav-buttons">
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+</div>
     </header>
     <main class="container">
         <section class="first-section">
@@ -324,18 +320,28 @@
       ></script>
   
       <!-- NAVBAR SCRIPT -->
-      <script type="text/javascript">
-        $(function () {
-          var navbar = $(".header-inner");
-          $(window).scroll(function () {
-            if ($(window).scrollTop() <= 5) {
-              navbar.removeClass("navbar-scroll");
-            } else {
-              navbar.addClass("navbar-scroll");
-            }
-          });
+    <script type="text/javascript">
+      $(function () {
+        var navbar = $(".header-inner");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 55) {
+            navbar.removeClass("navbar-scroll");
+          } else {
+            navbar.addClass("navbar-scroll");
+          }
         });
-      </script>
+      });
+
+      const categoriesMenu = document.querySelector("#categories-menu");
+
+   window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    categoriesMenu.classList.add("dropright");
+  }else{
+    categoriesMenu.classList.add("dropdown");
+  }
+});
+    </script>
     </body>
   </html>
   

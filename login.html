@@ -17,9 +17,10 @@ rel="stylesheet"
     <title>PriceZilla</title>
 </head>
 <body>
-  <header>
-
-    <div class="headerr container-lg">
+  <<header class="header">
+    <div class="header-inner">
+  <div class="container-lg">
+    <div class="headerr">
       <div class="account-icon">
         <i class="bi bi-person-circle h1"></i>
       </div>
@@ -73,8 +74,9 @@ rel="stylesheet"
     </div>
 
   </div>
+</div>
+</div>
   </header>
-
 
     <main class="container-lg login">
 
@@ -291,47 +293,55 @@ rel="stylesheet"
     </div>
   </footer>
 
-  <!-- SCRIPTS -->
+ <!-- SCRIPTS -->
+  
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+ <script
+   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+   crossorigin="anonymous"
+ ></script>
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+ <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+   crossorigin="anonymous"
+ ></script>
 
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
+ <script
+   src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+   crossorigin="anonymous"
+ ></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script
+   type="text/javascript"
+   src="../PriceZilla-Front/scripts/index.js"
+ ></script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script
-    type="text/javascript"
-    src="../PriceZilla-Front/scripts/index.js"
-  ></script>
-
-
-
-  <!-- SCRIPT TO RESIZE HERO BACKGROUND IMAGE BASED ON SCREEN SIZE -->
-  <script>
+ <!-- NAVBAR SCRIPT -->
+<script type="text/javascript">
+ $(function () {
+   var navbar = $(".header-inner");
+   $(window).scroll(function () {
+     if ($(window).scrollTop() <= 55) {
+       navbar.removeClass("navbar-scroll");
+     } else {
+       navbar.addClass("navbar-scroll");
+     }
+   });
+ });
 
  const categoriesMenu = document.querySelector("#categories-menu");
 
- window.addEventListener("load", () => {
+window.addEventListener("load", () => {
 if (window.innerWidth <= 768) {
-  categoriesMenu.classList.add("dropright");
+categoriesMenu.classList.add("dropright");
 }else{
-  categoriesMenu.classList.add("dropdown");
+categoriesMenu.classList.add("dropdown");
 }
 });
-  </script>
+</script>
 </body>
 </html>
