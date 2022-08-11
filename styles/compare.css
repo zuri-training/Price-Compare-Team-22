@@ -131,8 +131,8 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 
@@ -150,7 +150,7 @@ hr {
     text-align: justify;
     color: #262322;
 
-    
+
 }
 
 
@@ -158,7 +158,7 @@ hr {
 
     border-radius: 4px;
     width: 80%;
-    
+
 }
 
 .iron-desc {
@@ -180,19 +180,15 @@ hr {
 
     .arrow-icons {
         display: none;
-    
+
     }
-    
+
     .price-compare {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%; 
-        margin: auto;
+        width: 90%;
     }
-    
+
     .electric-iron img {
-        /* height: 60%; */
+        height: 60%; 
         width: 90%;
     }
 
@@ -202,87 +198,90 @@ hr {
 
     .hoover-iron {
         width: 90%;
-        display: flex;
-        flex-direction: column;
     }
 
 
     .store-buttons {
-    
-        text-align: center;
         font-size: 0.6em;
         line-height: 20px;
-        width: 30%;
-        margin-top: 5px;
-       
-    
+        width: 40%;
+        margin-top: 3rem;
+
+
     }
-    
+
     .hoover-iron h4 {
-    font-size: 1em;
-    line-height: 17px;
-    align-items: center;
-    margin: 0 0 0 0;
-    
+        font-size: 0.9em;
+        line-height: 17px;
+        align-items: center;
+        margin: 0 0 0 0;
+
     }
 
 
     .fa-star {
-        padding: 0.2em;
+        padding: 0em;
         font-size: 0.7em;
-    
+
     }
-    
-    
+
+
     .brand-names {
-        font-size: 1.2em;
+        font-size: 1em;
         padding-top: 0.2em;
         padding-bottom: 0.2em;
-        line-height: 28px;
-    
+        line-height: 20px;
+
     }
-    
-    .hoover-iron + h3 {
-        font-size: 2em;
-    
+
+    .hoover-iron h3 {
+        font-size: 1.5em;
+
     }
 
 
     .buy-button button {
         /* display: none; */
         border-radius: 8px;
-        font-size: 0.7em;
-        line-height: 3em;
-        width: 70%;
+        font-size: 0.8em;
+        line-height: 3.5em;
+        width: 85%;
     }
 
-    
+
+    hr {
+        width: 90%;
+    }
+
     .suggested-products {
         margin-top: 5em;
+        width: 100%;
     }
-    
-    
+
+
+    .products-1 img {
+        width: 80%;
+
+    }
+
     .title {
         width: 90%;
         margin: 0 auto;
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 30px;
 
-    
-        
-    }
-    
-    .iron-desc {
-        font-size: 0.6em;
-        margin-top: 7%;
-        line-height: 20px;
-    
-    
     }
 
-.iron-desc + span {
-font-size: 0.6em;
-}
+    .iron-desc {
+        font-size: 0.55em;
+        margin-top: 7%;
+        line-height: 20px;
+    }
+
+    .iron-desc+span {
+        font-size: 0.5em;
+  
+    }
 }
 
 
@@ -292,13 +291,13 @@ font-size: 0.6em;
 
     .arrow-icons {
         display: none;
-    
+
     }
-    
+
     .price-compare {
-        width: 85%; 
+        width: 85%;
     }
-    
+
     .electric-iron img {
         /* height: 60%; */
         width: 80%;
@@ -315,22 +314,22 @@ font-size: 0.6em;
         line-height: 30px;
         width: 40%;
         /* margin-top: 5px; */
-       
-    
+
+
     }
-    
+
     .hoover-iron h4 {
-    font-size: 1.5em;
-    line-height: 17px;
-    align-items: center;
-    margin: 20px 0 8px 0;
-    
+        font-size: 1.2em;
+        line-height: 20px;
+        align-items: center;
+        margin: 20px 0 8px 0;
+
     }
 
     .fa-star {
         padding: 0.2em;
         font-size: 0.8em;
-    
+
     }
 
     .brand-names {
@@ -338,12 +337,12 @@ font-size: 0.6em;
         padding-top: 0.2em;
         padding-bottom: 0.2em;
         line-height: 28px;
-    
+
     }
-    
+
     .hoover-iron h3 {
         font-size: 2em;
-    
+
     }
 
 
@@ -359,32 +358,235 @@ font-size: 0.6em;
         width: 85%;
         margin-top: 3em;
         margin-bottom: 3em;
-    
+
     }
 
-    
+
     .suggested-products {
         margin-top: 5em;
-        width: 85%;
+        width: 90%;
     }
-    
-    
+
+
     .title {
         width: 90%;
         margin: 0 auto;
         font-size: 1em;
         line-height: 30px;
-
-    
-        
     }
-    
 
     .products-1 img {
-        border-radius: 4px;
-        width: 90%;
-        
+        border-radius: 9px;
+        width: 80%;
+
     }
+
+    .iron-desc {
+        font-size: 0.8em;
+
+
+    }
+
+    .iron-desc + span {
+        font-size: 0.7em;
+
+    }
+
 
 }
 
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+    
+
+    .arrow-icons {
+        display: none;
+
+    }
+
+    .price-compare {
+        width: 80%;
+        
+    }
+
+    .electric-iron img {
+        /* height: 60%; */
+        width: 80%;
+        height: 18rem;
+    }
+
+    .hoover-iron {
+        width: 70%; 
+
+    }
+
+    .store-buttons {
+        font-size: 1.4em;
+        line-height: 30px;
+        width: 35%;
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 1.7em;
+        line-height: 27px;
+        margin: 18px 0 8px 0; 
+
+    }
+
+    .fa-star {
+        padding: 0.2em;
+        font-size: 1.3em;
+
+    }
+
+    .brand-names {
+        font-size: 1.9em;
+        padding-top: 0.9em;
+        padding-bottom: 0.6em;
+        line-height: 28px;
+
+    }
+
+    .hoover-iron h3 {
+        font-size: 2.5em;
+
+    }
+
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 1.3em;
+        line-height: 2.5em;
+        width: 80%;
+    }
+
+    hr {
+        width: 80%;
+        margin-top: 5em;
+        margin-bottom: 9em;
+
+    }
+
+
+    .suggested-products {
+        margin-top: -2em;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .title {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .products-1 img {
+        border-radius: 9px;
+        width: 100%;
+
+    }
+
+    .iron-desc {
+        font-size: 1em;
+
+    }
+
+    .iron-desc + span {
+        font-size: 0.7em;
+
+    }
+
+        
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+
+
+    .arrow-icons {
+        width: 90%;
+    
+    }
+
+    .electric-iron img {
+        width: 80%;
+    }
+
+.hoover-iron {
+    width: 50%;
+}
+
+    .store-buttons {
+        font-size: 1.4em;
+        line-height: 30px;
+        width: 35%;
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 2em;
+        line-height: 27px;
+        margin: 18px 0 8px 0; 
+
+    }
+
+    .fa-star {
+        padding: 0.2em;
+        font-size: 1.3em;
+
+    }
+
+    .brand-names {
+        font-size: 2em;
+        padding-top: 0.9em;
+        padding-bottom: 0.6em;
+        line-height: 28px;
+
+    }
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 1.6em;
+        line-height: 3em;
+        width: 80%;
+    }
+
+    hr {
+        width: 90%;
+        margin-top: 6em;
+        margin-bottom: 9em;
+
+    }
+
+
+    .suggested-products {
+        margin-top: -2em;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .title {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.8em;
+        line-height: 30px;
+    }
+
+    .products-1 img {
+        border-radius: 9px;
+        width: 90%;
+
+    }
+
+
+
+}
