@@ -52,7 +52,7 @@
     line-height: 5px;
 }
 
-.login-second #email{
+.login-second #username{
     background: #FFFFFF;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -239,7 +239,7 @@
         line-height: 5px;
     }
     
-    .login-second #email{
+    .login-second #username{
         background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -428,7 +428,7 @@
         line-height: 5px;
     }
     
-    .login-second #email{
+    .login-second #username{
         background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -642,7 +642,7 @@
         line-height: 5px;
     }
     
-    .login-second #email{
+    .login-second #username{
         background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -869,7 +869,7 @@
         line-height: 5px;
     }
     
-    .login-second #email{
+    .login-second #username{
         background: #FFFFFF;
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
