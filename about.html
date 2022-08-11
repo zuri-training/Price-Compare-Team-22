@@ -23,63 +23,66 @@ rel="stylesheet"
 <body>
 
 
-    <header>
-
-        <div class="headerr container-lg">
-          <div class="account-icon">
-            <i class="bi bi-person-circle h1"></i>
-          </div>
-  
-        <div class="mylogo">
-          <a>
-            <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
-          </a>
-        </div>
-  
-  
-        <div class="navigation">
-  
-          <input type="checkbox" class="toggle-menu"/>
-          <div class="hamburger"></div>
-           
-          <ul class="menu">
-            <li id="home"><a href="./index.html">Home</a></li>
-            <li class=" " id="categories-menu">
-              <a
-                class="dropdown-toggle spaced-link drop"
-                href="#"
-                id="navbarDropright"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Categories
-              </a>
-              <div class="dropdown-menu drop" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item " href="">Furniture</a>
-                <a class="dropdown-item" href="./unauthenticated-to-signup.html">Kitchen Equipment</a>
-                <a class="dropdown-item" href="./unauthenticated-to-signup.html">Laundry / Dry cleaning</a>
-                <a class="dropdown-item " href="./unauthenticated-to-signup.html">Home Entertainment</a>
-              </div>
-            </li>
-            <li class="spaced-link"><a class="spaced-link" href="./about.html">About us</a></li>
-            <li class="spaced-link"><a class="spaced-link" href="./wishlist.html">Wishlist</a></li>
-            <li><a class="nav-btn-mobile" href="./login.html">Login</a></li>
-            <li><a class="nav-btn-mobile" href="./sign-up.html">Sign up</a></li>
-          </ul>
-        </div>
-  
-  
-        <div class="nav2">
-          <ul class="nav-buttons">
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./sign-up.html">Sign up</a></li>
-          </ul>
-        </div>
-  
+  <header class="header">
+    <div class="header-inner">
+  <div class="container-lg">
+    <div class="headerr">
+      <div class="account-icon">
+        <i class="bi bi-person-circle h1"></i>
       </div>
-      </header>
+
+    <div class="mylogo">
+      <a href="./index.html">
+        <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
+      </a>
+    </div>
+
+
+    <div class="navigation">
+
+      <input type="checkbox" class="toggle-menu"/>
+      <div class="hamburger"></div>
+       
+      <ul class="menu">
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li class=" " id="categories-menu">
+          <a
+            class="dropdown-toggle spaced-link drop"
+            href="#"
+            id="navbarDropright"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <div class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="">Furniture</a>
+            <a class="dropdown-item" href="./unauthenticated-to-signup.html">Kitchen Equipment</a>
+            <a class="dropdown-item" href="./unauthenticated-to-signup.html">Laundry / Dry cleaning</a>
+            <a class="dropdown-item " href="./unauthenticated-to-signup.html">Home Entertainment</a>
+          </div>
+        </li>
+        <li class="spaced-link"><a class="spaced-link" href="./about.html">About us</a></li>
+        <li class="spaced-link"><a class="spaced-link" href="./wishlist.html">Wishlist</a></li>
+        <li><a class="nav-btn-mobile" href="./login.html">Login</a></li>
+        <li><a class="nav-btn-mobile" href="./sign-up.html">Sign up</a></li>
+      </ul>
+    </div>
+
+
+    <div class="nav2">
+      <ul class="nav-buttons">
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./sign-up.html">Sign up</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+  </header>
 
 
     <main class="main-container">
@@ -536,6 +539,29 @@ if (window.innerWidth < 1024) {
 });
 
  const categoriesMenu = document.querySelector("#categories-menu");
+
+ window.addEventListener("load", () => {
+if (window.innerWidth <= 768) {
+  categoriesMenu.classList.add("dropright");
+}else{
+  categoriesMenu.classList.add("dropdown");
+}
+});
+  </script>
+   <!-- NAVBAR SCRIPT -->
+   <script type="text/javascript">
+    $(function () {
+      var navbar = $(".header-inner");
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 55) {
+          navbar.removeClass("navbar-scroll");
+        } else {
+          navbar.addClass("navbar-scroll");
+        }
+      });
+    });
+
+  
 
  window.addEventListener("load", () => {
 if (window.innerWidth <= 768) {

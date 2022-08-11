@@ -16,15 +16,16 @@ rel="stylesheet"
     <title>PriceZilla</title>
 </head>
 <body>
-  <header>
-
-    <div class="headerr container-lg">
+  <header class="header">
+    <div class="header-inner">
+  <div class="container-lg">
+    <div class="headerr">
       <div class="account-icon">
         <i class="bi bi-person-circle h1"></i>
       </div>
 
     <div class="mylogo">
-      <a>
+      <a href="./index.html">
         <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
       </a>
     </div>
@@ -36,7 +37,7 @@ rel="stylesheet"
       <div class="hamburger"></div>
        
       <ul class="menu">
-        <li id="home"><a href="#">Home</a></li>
+        <li id="home"><a href="./index.html">Home</a></li>
         <li class=" " id="categories-menu">
           <a
             class="dropdown-toggle spaced-link drop"
@@ -67,11 +68,13 @@ rel="stylesheet"
     <div class="nav2">
       <ul class="nav-buttons">
         <li><a href="./login.html">Login</a></li>
-        <li><a href="#">Sign up</a></li>
+        <li><a href="./sign-up.html">Sign up</a></li>
       </ul>
     </div>
 
   </div>
+</div>
+</div>
   </header>
 
 
@@ -82,14 +85,9 @@ rel="stylesheet"
 <div class="frame-162  pad">
     <p class="">Home</p>
     <i class="fa fa-angle-right" aria-hidden="true"></i>
-    <p>Best selling</p>  
+    <p class="desktop">Best selling</p>  <p class="mobile">Furnitures</p>
 </div>
-<div class="frame-162  mobile pad">
-  <p class="">Home</p>
-    <i class="fa fa-angle-right " aria-hidden="true" ></i>
-  <p >Furniture</p>  
- 
-</div>
+
 
 <section class="first">
     <div class="texts">
@@ -104,21 +102,21 @@ rel="stylesheet"
 </section>
 
 
-
-<section class=" second pad">
-  <div class="search-mobile">
-    <div class="inner">
-      <div class="buttons">
-        <button>Brand <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-        <button>Store <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-      </div>
-      <form>
-        <input class="mainLoginInput" type="text" placeholder="&#61442;"/> 
-      </form>
-
-      
+<div class="search-mobile">
+  <div class="inner">
+    <div class="buttons">
+      <button>Brand <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+      <button>Store <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
     </div>
+    <form>
+      <input class="mainLoginInput" type="text" placeholder="&#61442;"/> 
+    </form>
+
+    
   </div>
+</div>
+<section class=" second pad">
+ 
   <div class="flex-container">
     
 
@@ -296,6 +294,27 @@ rel="stylesheet"
     
   </div>
 </section>
+<div class="all">
+  
+
+<div class="pepsi-section">
+  <p>Refresh your</p>
+   <div class="pepsis">
+     <div class="pepsi one">
+       <img src="./assets/pepsi can 8.png">
+<img src="./assets/pepsi can 10.png">
+     </div>
+     <div class="pepsi two" >
+       <img src="./assets/pepsi can 11.png">
+     </div>
+     <div class="pepsi one">
+       <img src="./assets/pepsi can 7.png">
+       <img src="./assets/pepsi can 10.png">
+     </div>
+   </div>
+   <h6>World</h6>
+ </div>
+</div>
 
 
 
@@ -303,10 +322,24 @@ rel="stylesheet"
 
 
 
+<div class="search-mobile">
+  <div class="inner">
+    <div class="buttons">
+      <button>Brand <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+      <button>Store <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+    </div>
+   <div class="pags">
+    <p class="active"><a href="#">1</a></p>
+    <p class="pag two"><a href="#">2</a></p>
+    <p><a href="#">3</a></p>
+    <p><a href="#">4</a></p>
+    <p class="next"><a href="#">Next</a></p>
 
+   </div>
 
-
-
+    
+  </div>
+</div>
 
 
 
@@ -511,7 +544,7 @@ function SwitchPage (page_id) {
 
     
   <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-  <script type="text/javascript" src="../PriceZilla-Front/scripts/index.js"></script>
+  <!-- <script type="text/javascript" src="../PriceZilla-Front/scripts/index.js"></script> -->
   <script type="text/javascript">
     $(function(){
       var navbar = $('.header-inner');
@@ -526,6 +559,29 @@ function SwitchPage (page_id) {
 
     
 
+  </script>
+   <!-- NAVBAR SCRIPT -->
+   <script type="text/javascript">
+    $(function () {
+      var navbar = $(".header-inner");
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 55) {
+          navbar.removeClass("navbar-scroll");
+        } else {
+          navbar.addClass("navbar-scroll");
+        }
+      });
+    });
+
+    const categoriesMenu = document.querySelector("#categories-menu");
+
+ window.addEventListener("load", () => {
+if (window.innerWidth <= 768) {
+  categoriesMenu.classList.add("dropright");
+}else{
+  categoriesMenu.classList.add("dropdown");
+}
+});
   </script>
 </body>
 </html>
