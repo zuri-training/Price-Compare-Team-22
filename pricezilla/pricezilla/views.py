@@ -32,7 +32,6 @@ def contact(request):
 def account(request):
     return render(request, "account-info.html")
 
-
 def profile(request):
     return render(request, "profile.html")
 
