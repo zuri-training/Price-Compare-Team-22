@@ -1,3 +1,6 @@
+.main-container{
+    margin-top: 110px;
+}
 .form-container{
     width: 100%;
     margin: auto;
@@ -126,6 +129,9 @@ footer{
     .form-container .form-header-text{
         width: 65%;
     }
+    .toggle-password i{
+        transform: translateX(50vw);
+    }
     
 }
 @media screen and (max-width: 768px) {
@@ -146,7 +152,7 @@ footer{
     }
     
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 539px) {
     .sign-up-form{
         width: 90%;
         padding: 20px;
@@ -233,7 +239,7 @@ footer{
 }
 @media screen and (width: 768px) {
     .toggle-password i{
-        transform: translateX(435px);
+        transform: translateX(475px);
     }
 }
 @media screen and (width: 390px) {

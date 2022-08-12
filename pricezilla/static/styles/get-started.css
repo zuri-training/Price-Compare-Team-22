@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "nav header header header"
+      "nav body body body"
+      "nav footer footer footer";
+  }
+  header {
+    display: grid;
+    grid-template-columns: 40% 10% 10%;
+    gap: 30px;
+  }
+  div.has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  input.form-control {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.8rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  a {
+    color: rgba(244, 244, 244, 1);
+    text-decoration: none;
+  }
+  
+  .btn {
+    background-color: rgba(255, 124, 68, 1);
+    padding: 4px !important;
+  }
+  .btn-primary > a {
+    color: #262322;
+  }
+  .btn-primary > a:hover {
+    color: #262322;
+  }
+  .btn-primary {
+    background-color: rgba(244, 244, 244, 1);
+  
+    border-color: #262322;
+  }
+  .btn:hover {
+    background-color: rgba(255, 124, 68, 1);
+  }
+  .btn > a:hover {
+    color: rgba(244, 244, 244, 1);
+  }
+  nav {
+    grid-area: nav;
+    background-color: #00303c;
+    display: flex;
+    gap: 42px;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 50px 40px;
+  }
+  #logo-img {
+    height: 30px;
+    margin-bottom: 46px;
+  }
+  /* nav a {
+    color: rgba(244, 244, 244, 1);
+    text-decoration: none;
+  } */
+  nav a:hover {
+    color: rgba(255, 124, 68, 1);
+  }
+  #charm {
+    color: rgba(255, 124, 68, 1);
+  }
+  #charm > img {
+    height: 20px;
+  }
+  
+  header {
+    grid-area: header;
+    padding: 40px 40px;
+  }
+  main {
+    grid-area: body;
+    padding: 0 40px;
+  }
+  main a {
+    color: rgba(255, 124, 68, 1);
+  }
+  footer {
+    grid-area: footer;
+    padding: 40px 40px;
+  }
+  footer button.btn {
+    padding: 4px 10px !important;
+    color: rgba(244, 244, 244, 1);
+  }
+  
+  .btn > img {
+    height: 20px;
+  }
+  
+  #rate {
+    margin-bottom: 50px;
+  }
+  
+  .quicklinks {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .quicklinks a {
+    color: rgba(255, 124, 68, 1);
+  }
+  .quicklinks div {
+    flex: 1;
+    max-width: 300px;
+  }
+  .quicklinks img {
+    height: 20px;
+    margin-right: 5px;
+  }
+  #comment {
+    display: flex;
+    gap: 20px;
+  }
+  #comment > img {
+    height: 54px;
+  }
+  
