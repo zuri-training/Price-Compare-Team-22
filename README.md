@@ -278,7 +278,7 @@ You have successfully made an contribution to our repository!!!
 - [Jonathan](https://github.com/Jozz77) 
 - [Samson](https://github.com/adetoyese607)  
 - [Gideon](https://github.com/KINGDEON123) 
-- [Athar](https://github.com/Iamathar) 
+- [Athar](https://github.com/Iamathar)
 - [Temidayo](https://github.com/Temyd)  
 - [Comfort](https://github.com/Comfort69) 
 - [Chi](https://github.com/Hurumnanya) 
