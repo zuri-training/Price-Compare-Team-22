@@ -63,9 +63,31 @@ margin-bottom: 5px;
     display: none;
 }
 .first{
-    background-color: #78C4E3;
+    background: rgba(203, 79, 83, 1);
     display: flex;
     /* position: relative; */
+}
+@media screen and (max-width: 768px) {
+    .texts .text h5{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .texts .text h5{
+        font-size: 28px;
+    }
+    .texts .text p{
+        font-size: 16px;
+    }
+    .flex.one .image.three{
+        position: absolute;
+        width: 40%;
+        transform: translateY(70px);
+        text-align: center;
+    
+    }
+    
+    
 }
 .texts{
     flex-basis: 55%;
@@ -74,7 +96,7 @@ margin-bottom: 5px;
 .first .image{
     flex-basis:45% ; 
      max-width: 45%;
-     height: 430px;
+     
 }
 .image img{
     width: 100%;
@@ -161,6 +183,7 @@ p, h6{
 .flex:hover{
     border: 1px solid #BBBBBB;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .flex .fa{
     font-size: 32px;
@@ -170,7 +193,7 @@ p, h6{
 .flex.one .image.one{
     position: absolute;
     width: calc(100% - 50px);
-top: 90px;
+    top: 90px;
     text-align: center;
 
 }
@@ -182,6 +205,14 @@ top: 90px;
     position: absolute;
     width: calc(100% - 50px);
 top: 110px;
+    text-align: center;
+
+}
+.flex.one .image.three{
+    position: absolute;
+    bottom: 10rem;
+    
+    left: 5rem;
     text-align: center;
 
 }
