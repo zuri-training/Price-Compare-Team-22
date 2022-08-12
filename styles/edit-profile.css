@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.container{
+.edit-profile-container{
     display: flex;
     width: 100%;
     /* justify-content: space-between; */
@@ -234,7 +234,7 @@ form .zip-country{
 
 /* mobile version */
 @media screen and (min-width: 400px) and (max-width: 768px) {
-    .container{
+    .edit-profile-container{
         display: block;
         margin-top: 29px;
     }
@@ -341,7 +341,7 @@ form .zip-country{
 
 /* mobile 2 version */
 @media screen and (max-width: 399px) {
-    .container{
+    .edit-profile-container{
         display: block;
         margin-top: 29px;
     }
