@@ -9,21 +9,21 @@ PriceZilla is a price comparison web app that allows users compare the prices of
 
 ## Table of Content
 
-- General Information
+- [General Information](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#general-information)
 
-- Live Site
+- [Live Site](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#live-site)
 
-- Technologies Used
+- [Technologies Used](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#technologies-used)
 
-- Architecture
+- [Architecture](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#architecture)
 
-- Prerequisites
+- [Prerequisites](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#prerequisites)
 
-- Features
+- [Features](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#features)
 
-- How to Use PriceZilla
+- [How to Use PriceZilla]( https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#how-to-use-pricezilla)
 
-- Contributing
+-[Contributing]( https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#how-to-use-pricezilla)
 
 - Contributors
 
