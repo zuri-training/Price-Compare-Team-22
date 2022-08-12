@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #262322;
+}
+
+.arrow-icons {
+    display: flex;
+    margin-top: -3%;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.arrow-icons p {
+    padding-right: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+
+
+}
+
+.fa-angle-right {
+    padding-left: 10px;
+}
+
+.price-compare {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.electric-iron img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.store-buttons {
+    background-color: #FF7C44;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    line-height: 36px;
+    width: 40%;
+    margin-top: 5px;
+
+}
+
+.hoover-iron {
+    bottom: 1.5em;
+
+}
+
+.hoover-iron h4 {
+    color: #131313;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 2.3rem;
+    margin-bottom: 2.5rem;
+    line-height: 30px;
+}
+
+
+.fa-star {
+    padding: 0.3em;
+    font-size: 1.3em;
+
+}
+
+.fa-star.color {
+    color: #FF7C44;
+}
+
+.brand-names {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    line-height: 48px;
+
+}
+
+.hoover-iron h3 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #262322;
+
+}
+
+.buy-button button {
+    background-color: #FF7C44;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+    width: 60%;
+    margin-top: 1em;
+
+}
+
+.buy-button {
+    padding: 12px, 20px, 12px, 20px
+}
+
+
+hr {
+    border: 2px solid rgba(187, 187, 187, 0.2);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+}
+
+
+.products-pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.suggested-products {
+    margin-top: 7em;
+}
+
+
+.title {
+    width: 65%;
+    margin: 10px auto;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    color: #262322;
+
+
+}
+
+
+.products-1 img {
+
+    border-radius: 4px;
+    width: 80%;
+
+}
+
+.iron-desc {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #131313;
+    margin-top: 7%;
+    line-height: 30px;
+
+
+}
+
+
+
+/* RESPONSIVE STYLING */
+
+
+@media screen and (min-width: 310px) and (max-width: 410px) {
+
+    .arrow-icons {
+        display: none;
+
+    }
+
+    .price-compare {
+        width: 90%;
+    }
+
+    .electric-iron img {
+        height: 60%; 
+        width: 90%;
+    }
+
+    /* .Frame-246 {
+        width: 70%;
+    } */
+
+    .hoover-iron {
+        width: 90%;
+    }
+
+
+    .store-buttons {
+        font-size: 0.6em;
+        line-height: 20px;
+        width: 40%;
+        margin-top: 3rem;
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 0.9em;
+        line-height: 17px;
+        align-items: center;
+        margin: 0 0 0 0;
+
+    }
+
+
+    .fa-star {
+        padding: 0em;
+        font-size: 0.7em;
+
+    }
+
+
+    .brand-names {
+        font-size: 1em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        line-height: 20px;
+
+    }
+
+    .hoover-iron h3 {
+        font-size: 1.5em;
+
+    }
+
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 0.8em;
+        line-height: 3.5em;
+        width: 85%;
+    }
+
+
+    hr {
+        width: 90%;
+    }
+
+    .suggested-products {
+        margin-top: 5em;
+        width: 100%;
+    }
+
+
+    .products-1 img {
+        width: 80%;
+
+    }
+
+    .title {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+        line-height: 30px;
+
+    }
+
+    .iron-desc {
+        font-size: 0.55em;
+        margin-top: 7%;
+        line-height: 20px;
+    }
+
+    .iron-desc+span {
+        font-size: 0.5em;
+  
+    }
+}
+
+
+
+@media screen and (min-width: 411px) and (max-width: 600px) {
+
+
+    .arrow-icons {
+        display: none;
+
+    }
+
+    .price-compare {
+        width: 85%;
+    }
+
+    .electric-iron img {
+        /* height: 60%; */
+        width: 80%;
+        height: 15rem;
+    }
+
+    .hoover-iron {
+        width: 70%;
+
+    }
+
+    .store-buttons {
+        font-size: 1em;
+        line-height: 30px;
+        width: 40%;
+        /* margin-top: 5px; */
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 1.2em;
+        line-height: 20px;
+        align-items: center;
+        margin: 20px 0 8px 0;
+
+    }
+
+    .fa-star {
+        padding: 0.2em;
+        font-size: 0.8em;
+
+    }
+
+    .brand-names {
+        font-size: 1.2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        line-height: 28px;
+
+    }
+
+    .hoover-iron h3 {
+        font-size: 2em;
+
+    }
+
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 0.9em;
+        line-height: 3em;
+        width: 70%;
+    }
+
+    hr {
+        width: 85%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+
+    }
+
+
+    .suggested-products {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+
+    .title {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .products-1 img {
+        border-radius: 9px;
+        width: 80%;
+
+    }
+
+    .iron-desc {
+        font-size: 0.8em;
+
+
+    }
+
+    .iron-desc + span {
+        font-size: 0.7em;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+    
+
+    .arrow-icons {
+        display: none;
+
+    }
+
+    .price-compare {
+        width: 80%;
+        
+    }
+
+    .electric-iron img {
+        /* height: 60%; */
+        width: 80%;
+        height: 18rem;
+    }
+
+    .hoover-iron {
+        width: 70%; 
+
+    }
+
+    .store-buttons {
+        font-size: 1.4em;
+        line-height: 30px;
+        width: 35%;
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 1.7em;
+        line-height: 27px;
+        margin: 18px 0 8px 0; 
+
+    }
+
+    .fa-star {
+        padding: 0.2em;
+        font-size: 1.3em;
+
+    }
+
+    .brand-names {
+        font-size: 1.9em;
+        padding-top: 0.9em;
+        padding-bottom: 0.6em;
+        line-height: 28px;
+
+    }
+
+    .hoover-iron h3 {
+        font-size: 2.5em;
+
+    }
+
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 1.3em;
+        line-height: 2.5em;
+        width: 80%;
+    }
+
+    hr {
+        width: 80%;
+        margin-top: 5em;
+        margin-bottom: 9em;
+
+    }
+
+
+    .suggested-products {
+        margin-top: -2em;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .title {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .products-1 img {
+        border-radius: 9px;
+        width: 100%;
+
+    }
+
+    .iron-desc {
+        font-size: 1em;
+
+    }
+
+    .iron-desc + span {
+        font-size: 0.7em;
+
+    }
+
+        
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+
+
+    .arrow-icons {
+        width: 90%;
+    
+    }
+
+    .electric-iron img {
+        width: 80%;
+    }
+
+.hoover-iron {
+    width: 50%;
+}
+
+    .store-buttons {
+        font-size: 1.4em;
+        line-height: 30px;
+        width: 35%;
+
+
+    }
+
+    .hoover-iron h4 {
+        font-size: 2em;
+        line-height: 27px;
+        margin: 18px 0 8px 0; 
+
+    }
+
+    .fa-star {
+        padding: 0.2em;
+        font-size: 1.3em;
+
+    }
+
+    .brand-names {
+        font-size: 2em;
+        padding-top: 0.9em;
+        padding-bottom: 0.6em;
+        line-height: 28px;
+
+    }
+
+    .buy-button button {
+        /* display: none; */
+        border-radius: 8px;
+        font-size: 1.6em;
+        line-height: 3em;
+        width: 80%;
+    }
+
+    hr {
+        width: 90%;
+        margin-top: 6em;
+        margin-bottom: 9em;
+
+    }
+
+
+    .suggested-products {
+        margin-top: -2em;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .title {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.8em;
+        line-height: 30px;
+    }
+
+    .products-1 img {
+        border-radius: 9px;
+        width: 90%;
+
+    }
+
+
+
+}

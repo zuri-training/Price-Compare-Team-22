@@ -1,0 +1,22 @@
+{%extends 'baselayout.html'%}
+{% load static %}
+{% block content %}
+
+
+    <main class="container-lg ">
+       <link rel="stylesheet" type="text/css" href="{%static '/styles/unauthenticated-to-signup.css'%}">
+       <div class="first">
+        <h6>Compare prices of products Partners & Advertisers</h6>
+        <p>Login or create a Pricezilla account to compare prices of many products that we have 
+            as we give you the ability to simiplify without losing any quality. </p>
+       </div>
+            <div class="sign">
+                <a href="{% url 'signup'%}" id="sign-up">Sign up</a>
+                <p>OR</p>
+                <a href="login.html" id="sign-in">Sign in</a>
+            </div>
+</main>
+    
+
+
+{% endblock %}

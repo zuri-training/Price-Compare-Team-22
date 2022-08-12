@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{%static '/styles/bootstrap.min.css'%}" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" type="text/css" href="../styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/index.css'%}" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/footerlinks.css">
+    <link rel="stylesheet" href="{% static '/styles/footerlinks.css'%}">
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -34,7 +35,7 @@
     <header>
       <div class="container">
       <nav class="navbar">
-        <a class="navbar-brand"><img src="../assets/Pricezilla logo.png" alt="PriceZilla logo"></a>
+        <a class="navbar-brand"><img src="{% static '/assets/Pricezilla logo.png'%}" alt="PriceZilla logo"></a>
         <div class="newsletter">
           <h5>Subscribe to our newsletter</h5>
           <div class="input-group mb-3">
@@ -52,7 +53,7 @@
       <div class="container">
         <section class="section">
           <span
-            ><a href="../index.html">Home</a> <i class="fa-solid fa-greater-than"></i> Register and feature your
+            ><a href="{% url 'index' %}">Home</a> <i class="fa-solid fa-greater-than"></i> Register and feature your
             shop</span
           >
           <h1>Register and feature your shop</h1>
@@ -351,14 +352,14 @@
             <div class="footer-list">
               <h5>Information</h5>
               <a href="">About PriceZilla</a>
-              <a href="./how-we-show-reviews.html">Reviews</a>
-              <a href="./contact-pricezilla.html">Contact - PriceZilla</a>
+              <a href="{% url 'howreviews'%}">Reviews</a>
+              <a href="{% url 'contactpricezilla'%}">Contact - PriceZilla</a>
               <a href="#">Register your shop</a>
               <a href="">Help Center</a>
             </div>
             <div class="footer-list guidelines">
               <h5>Guidelines</h5>
-              <a href="./rules-and-guidelines.html">Terms and Conditions</a>
+              <a href="{% url 'rulesandguide'%}">Terms and Conditions</a>
               <a href="">Disclaimer</a>
               <a href="">Privacy Policy</a>
               <a href="">Cookie Policy</a>
@@ -395,20 +396,20 @@
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
-                  <img src="../assets/facebook-icon.png" alt="facebook-icon" />
+                  <img src="{% static '/assets/facebook-icon.png'%}" alt="facebook-icon" />
                   <img
                     class="spaced-icon"
-                    src="../assets/twitter-icon.png"
+                    src="{% static '/assets/twitter-icon.png'%}"
                     alt="facebook-icon"
                   />
                   <img
                     class="spaced-icon"
-                    src="../assets/youtube-icon.png"
+                    src="{% static '/assets/youtube-icon.png'%}"
                     alt="facebook-icon"
                   />
                   <img
                     class="spaced-icon"
-                    src="../assets/instagram-icon.png"
+                    src="{% static '/assets/instagram-icon.png'%}"
                     alt="facebook-icon"
                   />
                 </div>
@@ -424,14 +425,14 @@
             <div class="footer-list-mobile information-mobile">
               <h5>Information</h5>
               <a href="">About PriceZilla</a>
-              <a href="./how-we-show-reviews.html">Reviews</a>
-              <a href="./contact-pricezilla.html">Contact - PriceZilla</a>
+              <a href="{% url 'howreviews'%}">Reviews</a>
+              <a href="{% url 'contactpricezilla'%}">Contact - PriceZilla</a>
               <a href="#">Register your shop</a>
               <a href="">Help Center</a>
             </div>
             <div class="footer-list-mobile guidelines-mobile">
               <h5>Guidelines</h5>
-              <a href="./rules-and-guidelines.html">Terms and Conditions</a>
+              <a href="{% url 'rulesandguide'%}">Terms and Conditions</a>
               <a href="">Disclaimer</a>
               <a href="">Privacy Policy</a>
               <a href="">Cookie Policy</a>
@@ -457,20 +458,20 @@
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
-                  <img src="../assets/facebook-icon.png" alt="facebook-icon" />
+                  <img src="{% static '/assets/facebook-icon.png'%}" alt="facebook-icon" />
                   <img
                     class="spaced-icon"
-                    src="../assets/twitter-icon.png"
+                    src="{% static '/assets/twitter-icon.png'%}"
                     alt="facebook-icon"
                   />
                   <img
                     class="spaced-icon"
-                    src="../assets/youtube-icon.png"
+                    src="{% static '/assets/youtube-icon.png'%}"
                     alt="facebook-icon"
                   />
                   <img
                     class="spaced-icon"
-                    src="../assets/instagram-icon.png"
+                    src="{% static '/assets/instagram-icon.png'%}"
                     alt="facebook-icon"
                   />
                 </div>
