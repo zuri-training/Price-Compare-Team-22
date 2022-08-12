@@ -285,7 +285,7 @@ You have successfully made an contribution to our repository!!!
 - [Michael](https://github.com/waleboluwatife) 
 - [Esther](https://github.com/Switestelle) 
 - [Toyosi](https://github.com/Omotoyosi1) 
-- [Chinyere](https://github.com/Pepmanda1) 
+- [Chinyere](https://github.com/Pepmanda) 
 - [Adetimilehin](https://github.com/Yossee07)
  
 
