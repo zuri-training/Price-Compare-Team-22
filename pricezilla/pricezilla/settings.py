@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'user',
     'product',
     'widget_tweaks',
-    # 'django.contrib.sites',
+    'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
     # 'allauth.socialaccount',
@@ -58,18 +58,17 @@ INSTALLED_APPS = [
 ]
 
 
-# SITE_ID = 1
+# SITE_ID = 2
 
 # # Provider specific settings
 # SOCIALACCOUNT_PROVIDERS = {
-#     'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': '123',
-#             'secret': '456',
-#             'key': ''
+#      'google': {
+#         'SCOPE': [
+#             'profile',
+#             'email',
+#         ],
+#         'AUTH_PARAMS': {
+#             'access_type': 'online',
 #         }
 #     }
 # }
@@ -106,15 +105,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'pricezilla.wsgi.application'
 
 
-# AUTHENTICATION_BACKENDS = [
+AUTHENTICATION_BACKENDS = [
     
-#     # Needed to login by username in Django admin, regardless of `allauth`
-#     'django.contrib.auth.backends.ModelBackend',
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
 
-#     # `allauth` specific authentication methods, such as login by e-mail
-#     'allauth.account.auth_backends.AuthenticationBackend',
+    # `allauth` specific authentication methods, such as login by e-mail
+    # 'allauth.account.auth_backends.AuthenticationBackend',
     
-# ]
+]
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -178,6 +177,6 @@ AUTH_USER_MODEL = 'user.User'
 
 MEDIA_URL = 'images/'
 
-LOGIN_REDIRECT_URL =  "/home"
-LOGOUT_REDIRECT_URL = "accounts/login"
+LOGIN_REDIRECT_URL =  "/"
+LOGOUT_REDIRECT_URL = "/"
 django_heroku.settings(locals())

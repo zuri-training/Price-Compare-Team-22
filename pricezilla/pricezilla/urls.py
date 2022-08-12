@@ -25,9 +25,9 @@ urlpatterns = [
     path('startcompare/', views.startcomparing, name='startcompare'),
     path('account/', views.account, name='account'),
     path('search/', views.searchbar, name='search'),
+    path('accounts/', include('allauth.urls')),
     path('accounts/', include('user.urls')),
     path('product/', include('product.urls')),
-    path("accounts/",include("django.contrib.auth.urls"))
 
 ]
 
