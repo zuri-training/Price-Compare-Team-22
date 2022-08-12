@@ -287,6 +287,16 @@ You have successfully made an contribution to our repository!!!
 - [Toyosi](https://github.com/Omotoyosi1) 
 - [Chinyere](https://github.com/Pepmanda) 
 - [Adetimilehin](https://github.com/Yossee07)
+
+
+
+## Project Links 
+- [Project Brief](#)
+- [Research Document](https://docs.google.com/document/d/1OPg5HSWbbmlPMnnfAD5XmaSgVHcy6vDnlAYaKgjDd6s/edit?usp=drivesdk)
+- [Figma Board](https://www.figma.com/file/U0Xnstw50gez563mofUHpm/TEAM-22_PRICE-COMPARE?node-id=4%3A3)
+- [FigJam](https://www.figma.com/file/wod7TOixiDgWd7lsEnRtfe/Pricezilla-User-Research?node-id=38%3A318)
+- [Database Schema](https://www.figma.com/file/4VALwAu6BfnKiHQDRDuvS5/Untitled?node-id=0%3A1)
+
  
 
 
