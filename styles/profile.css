@@ -59,6 +59,9 @@
     color: rgba(255, 124, 68, 1);
 }
 
+.profile-right .profile-form .edit-icon-mobile{
+    display: none;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
