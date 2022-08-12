@@ -97,9 +97,11 @@
     .profile-right .edit-icon{
         display: none;
     }
+    
     .profile-right .profile-form .edit-icon-mobile{
         color: black;
         font-size: 18px;
+        display: block;
     }
     .password-link{
         display: flex;
