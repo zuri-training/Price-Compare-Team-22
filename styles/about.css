@@ -1,7 +1,4 @@
 
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
     margin: 0;
@@ -178,7 +175,7 @@ color: #262322;
 
 .intro {
 
-    padding: 128px 0;
+    padding: 128px;
 }
 
 

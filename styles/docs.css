@@ -17,7 +17,7 @@
     "nav footer footer footer";
 }
 
-header {
+.doc-header {
   display: grid;
   grid-template-columns: 50% 15% 15%;
   gap: 30px;
@@ -163,7 +163,7 @@ ul {
  
 }
 
-ul li::before {
+main > ul li::before {
   color: rgba(255, 124, 68, 1);
   content: "\2022";
   font-weight: bold;
@@ -221,7 +221,7 @@ ul li::before {
       "nav footer footer footer";
   }
   
-  header {
+  .doc-header {
     width: 100%;
     display: grid;
     grid-template-columns: 60% 18% 18%;
@@ -371,7 +371,7 @@ ul li::before {
    
   }
   
-  ul li::before {
+ main ul li::before {
     color: rgba(255, 124, 68, 1);
     content: "\2022";
     font-weight: bold;
@@ -439,7 +439,7 @@ ul li::before {
       "nav footer footer footer";
   }
   
-  header {
+  .doc-header {
     width: 100%;
     display: grid;
     grid-template-columns: 60% 18% 18%;
@@ -593,7 +593,7 @@ ul li::before {
    
   }
   
-  ul li::before {
+  main ul li::before {
     color: rgba(255, 124, 68, 1);
     content: "\2022";
     font-weight: bold;
@@ -659,7 +659,7 @@ ul li::before {
     width: 100%;
   }
   
-  header {
+  .doc-header {
     width: 100%;
     display: none;
     grid-template-columns: 60% 18% 18%;
@@ -826,12 +826,12 @@ ul li::before {
   }
 
 
-  ul {
+ main ul {
     list-style: none;
     padding-left: 1rem;
     margin-top: 20px;
   }
-  li{
+  main ul li{
     
     font-family: 'Roboto';
     font-style: normal;
@@ -840,7 +840,7 @@ ul li::before {
     line-height: 24px;
     color: #262322;
   }
-  ul li::before {
+ main ul li::before {
     color: rgba(255, 124, 68, 1);
     content: "\2022";
     font-weight: bold;
@@ -910,7 +910,7 @@ ul li::before {
     width: 100%;
   }
   
-  header {
+  .doc-header {
     width: 100%;
     display: none;
     grid-template-columns: 60% 18% 18%;
@@ -1080,12 +1080,12 @@ ul li::before {
   }
 
 
-  ul {
+main  ul {
     list-style: none;
     padding-left: 1rem;
     margin-top: 20px;
   }
-  li{
+ main ul li{
     
     font-family: 'Roboto';
     font-style: normal;
@@ -1094,7 +1094,7 @@ ul li::before {
     line-height: 24px;
     color: #262322;
   }
-  ul li::before {
+main  ul li::before {
     color: rgba(255, 124, 68, 1);
     content: "\2022";
     font-weight: bold;

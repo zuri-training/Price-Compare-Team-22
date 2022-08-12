@@ -14,7 +14,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +35,81 @@
     <title>Get-Started</title>
   </head>
   <body>
+    <header class="header" id="header-mobile">
+      <div class="header-inner">
+    <div class="container-lg">
+      <div class="headerr">
+        <div class="account-icon">
+         <a href="./documentation-first-page.html"> <i class="bi bi-chevron-left mychevron"></i></a> 
+        </div>
+  
+      <div class="mylogo">
+        <a href="./index.html">
+          <img src="../assets/Pricezilla logo.png" alt="Pricezilla-logo">
+        </a>
+      </div>
+  
+  
+      <div class="navigation">
+  
+        <input type="checkbox" class="toggle-menu"/>
+        <div class="hamburger"></div>
+
+        <!--                              MOBILE -->
+        <ul class="menu menu-mobile"> 
+          <li id="home">
+                        <a href="./documentation-first-page.html" 
+                            style="display: flex; align-items:center; gap:10px;"> 
+                            <i class="bi bi-house-fill"></i> 
+                            Home
+                          </a>
+                  </li>
+          <li class="spaced-link">
+            <a class="spaced-link" 
+               href="./gets-started.html" 
+               id="current-page"
+               style="display: flex; align-items:center; gap:10px;">
+               <i class="bi bi-play-circle-fill"></i> 
+               Get Started
+              </a>
+            </li>
+
+          <li class="spaced-link">
+            <a class="spaced-link" 
+               href="./starts-comparing.html" 
+               style="display: flex; align-items:center; gap:10px;">
+               <i class="bi bi-arrow-repeat" ></i>
+                Start Comparing
+              </a>
+            </li>
+
+          <li class="spaced-link">
+            <a class="spaced-link" 
+               href="./get-help.html" 
+               style="display: flex; align-items:center; gap:10px;">
+               <i class="bi bi-info-circle" style="font-size: 14px; margin-bottom: 3px;"></i>
+                Get help
+              </a>
+            </li>
+          <li><a class="nav-btn-mobile" href="../login.html">Login</a></li>
+          <li><a class="nav-btn-mobile" href="../sign-up.html">Sign up</a></li>
+        </ul> 
+      </div>
+  
+  
+      <div class="nav2">
+        <ul class="nav-buttons">
+          <li><a href="../login.html">Login</a></li>
+          <li><a href="../sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+</div>
+    </header>
+
+
     <div class="contain">
       <div class="grid-container">
         <nav id="nav">
@@ -52,7 +127,7 @@
             Start comparing prices</a>
           <a href="./get-help.html"><i class="bi bi-question-circle-fill"></i> Get help</a>
         </nav>
-        <header>
+        <header class="doc-header">
           <div class="has-search">
             <span class="fa fa-search form-control-feedback"></span>
             <input type="text" class="form-control" placeholder="Search documentation" />
@@ -75,14 +150,14 @@
                 For  more information  visit <a href="../about.html">About Us</a>.
             </li>
             <li>
-                Visit  <a href="">Rules  and guidelines</a> to know our guidelines. 
+                Visit  <a href="../footer-pages/rules-and-guidelines.html">Rules  and guidelines</a> to know our guidelines. 
               </li>
             <li>
                 Go to <a href="../index.html">Homepage</a> to view available products to compare prices of. 
             </li>
             <li>
-                Go  to <a href="">Privacy Policy</a> to view privacy policy 
-                and <a href=""> Cookies Policy</a> for cookie Policy. 
+                Go  to <a href="../footer-pages/private-policy.html">Privacy Policy</a> to view privacy policy 
+                and <a href="../footer-pages/cookie-policy.html"> Cookies Policy</a> for cookie Policy. 
             </li>
             <li>
                 For inquiries and complaints you can reach us on our <a href="../contact.html">Contact Us Page</a>. 
@@ -116,7 +191,7 @@
             <div >
               <h5>Have any questions?</h5>
               <p>
-                If you have any questions, visit our <a href="" target="_blank" rel="noopener noreferrer">FAQ</a>
+                If you have any questions, visit our <a href="../faqs.html" target="_blank" rel="noopener noreferrer">FAQ</a>
                 page or get in touch
               </p>
             </div>
@@ -155,5 +230,30 @@
         </footer>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- NAVBAR SCRIPT -->
+    <script type="text/javascript">
+      $(function () {
+        var navbar = $(".header-inner");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 55) {
+            navbar.removeClass("navbar-scroll");
+          } else {
+            navbar.addClass("navbar-scroll");
+          }
+        });
+      });
+
+      const categoriesMenu = document.querySelector("#categories-menu");
+
+   window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    categoriesMenu.classList.add("dropright");
+  }else{
+    categoriesMenu.classList.add("dropdown");
+  }
+});
+    </script>
   </body>
 </html>
