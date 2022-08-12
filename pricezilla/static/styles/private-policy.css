@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300&family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+header {
+    background-color: #e7b2ae;
+    padding: 1em 0;
+  }
+  h5 {
+    color: white;
+  }
+  .btn,
+  .form-control {
+    padding: 0.8em 1.5em;
+  }
+  .btn {
+    background-color: rgba(255, 124, 68, 1);
+    color: rgba(0, 0, 0, 0.4);
+  }
+  span {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  span > a {
+    font-size: 1.5em;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .section {
+    margin: 1em 0;
+  }
+  pre {
+    font-family: inherit;
+    margin: -1em 0 0 -2em;
+  }
+  h2{
+    font-weight: 700;
+  }
+  p{
+    font-weight: 400;
+  }
