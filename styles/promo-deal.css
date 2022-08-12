@@ -1,4 +1,8 @@
 
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -63,22 +67,28 @@ margin-bottom: 5px;
     display: none;
 }
 .first{
-    background-color: #78C4E3;
+    background: #CB4F53;
     display: flex;
     /* position: relative; */
 }
 .texts{
-    flex-basis: 55%;
-    max-width: 55%;
+    flex-basis: 50%;
+    max-width: 50%;
 }
 .first .image{
-    flex-basis:45% ; 
-     max-width: 45%;
+    flex-basis:50% ; 
+     max-width: 50%;
      height: 430px;
+     display: flex;
+     justify-content: start;
+     /* place-content: center;
+     place-items: center; */
 }
-.image img{
-    width: 100%;
+.first .image img{
+    width: 90%;
     height: 100%;
+    
+    justify-content: end;
 }
 .first .texts{
    position: relative;
@@ -88,7 +98,6 @@ margin-bottom: 5px;
    place-items: center;
 
 }
-
 .first .image{
    padding: 2px 0;
 }
@@ -290,14 +299,19 @@ line-height: 26px;
     .first .image{
         flex-basis:50% ; 
          max-width: 50%;
+         position: relative;
          height: 170px;
+         /* background-color: red; */ 
     }
-
+    .first .image img{
+        width: 100%;
+      
+  
+    }
     .texts .text{
+       place-content: center;
+       place-items: center;
        
-        place-items: center;
-        place-content: center;
-        
     }
     main{
         margin-bottom: 50px; 
@@ -367,7 +381,6 @@ line-height: 26px;
    
 }
 @media screen and (max-width: 425px){
-    
 
     .search-mobile{
         display: block;

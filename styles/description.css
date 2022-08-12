@@ -153,6 +153,7 @@ color: #262322;
 }
 
 
+
 .price .stars{
     display: flex;
 flex-direction: row;
@@ -357,7 +358,10 @@ border: none;
 color: #FFFFFF;
 
 }
-
+.frame-198 button:hover{
+    transform:scale(1.02);
+    transition: all 0.3s ease;
+}
 
 /* .dropdown .fa{
     font-size: 15px;
