@@ -1,7 +1,7 @@
 # Team 22_Price Compare Project
 # PriceZilla - A Price Comparison Platform
 
-<img src="https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/Pricezilla%20logo.png" width="100">
+<img src="https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/Pricezilla%20logo.png" width="150">
 
 PriceZilla is a price comparison web app that allows users compare the prices of products across different retailers, stores, and brands. It takes the hassle of visiting various eCommerce store to find best deals. Consumers can benefit from this by comparing the prices of their favourite HOME EQUIPMENTS from different categories.
 
@@ -261,7 +261,33 @@ Congratulations
 You have successfully made an contribution to our repository!!!
 
 
+## Contributors
 
+- [Muibat](https://github.com/GbadamosiMuibat)
+- [Debbie](https://github.com/debbiejackson14) 
+- [Emmanuel](https://github.com/ProfUI) 
+- [Toluwase](https://github.com/Omojiba) 
+- [Kenechi](https://github.com/casey216) 
+- [Yinka](https://github.com/Yinkayoga)  
+- [Nurudeen](https://github.com/nurudeen2432)  
+- [Johanan](https://github.com/JohananOppongAmoateng) 
+- [Adewunmi](https://github.com/Adelakin-Adewumi) 
+- [Fuad](https://github.com/Pixel123-web) 
+- [Sunday](https://github.com/Capablecode) 
+- [Femi](https://github.com/BrightFemi)  
+- [Jonathan](https://github.com/Jozz77) 
+- [Samson](https://github.com/adetoyese607)  
+- [Gideon](https://github.com/KINGDEON123) 
+- [Athar](https://github.com/Iamathar) 
+- [Temidayo](https://github.com/Temyd)  
+- [Comfort](https://github.com/Comfort69) 
+- [Chi](https://github.com/Hurumnanya) 
+- [Michael](https://github.com/waleboluwatife) 
+- [Esther](https://github.com/Switestelle) 
+- [Toyosi](https://github.com/Omotoyosi1) 
+- [Chinyere](https://github.com/Pepmanda1) 
+- [Adetimilehin](https://github.com/Yossee07)
+ 
 
 
 ## Acknowledgements
