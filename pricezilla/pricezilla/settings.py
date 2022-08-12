@@ -46,11 +46,11 @@ INSTALLED_APPS = [
     'product',
     'widget_tweaks',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
     'rest_framework',
     'requests',
     'django_extensions'
@@ -58,20 +58,20 @@ INSTALLED_APPS = [
 ]
 
 
-SITE_ID = 2
+# SITE_ID = 2
 
-# Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-     'google': {
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
-    }
-}
+# # Provider specific settings
+# SOCIALACCOUNT_PROVIDERS = {
+#      'google': {
+#         'SCOPE': [
+#             'profile',
+#             'email',
+#         ],
+#         'AUTH_PARAMS': {
+#             'access_type': 'online',
+#         }
+#     }
+# }
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -177,6 +177,6 @@ AUTH_USER_MODEL = 'user.User'
 
 MEDIA_URL = 'images/'
 
-LOGIN_REDIRECT_URL =  "/home"
-LOGOUT_REDIRECT_URL = "accounts/login"
+LOGIN_REDIRECT_URL =  "/"
+LOGOUT_REDIRECT_URL = "/"
 django_heroku.settings(locals())

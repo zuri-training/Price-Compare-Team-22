@@ -1,5 +1,5 @@
 {% load static from static %}
-{% load socialaccount %}
+{% comment %} {% load socialaccount %} {% endcomment %}
 {% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
@@ -141,7 +141,7 @@
 
             <div class="login-second-4">
               <img src="{% static '/assets/icons/flat-color-icons_google.svg'%}" alt="">
-              <a href={% provider_login_url 'google' %}><small>Continue with Google</small></a>
+              <a href=""><small>Continue with Google</small></a>
               </div>
 
               <div class="login-second-5">
