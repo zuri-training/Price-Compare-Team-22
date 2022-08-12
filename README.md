@@ -23,13 +23,13 @@ PriceZilla is a price comparison web app that allows users compare the prices of
 
 - [How to Use PriceZilla]( https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#how-to-use-pricezilla)
 
--[Contributing]( https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#how-to-use-pricezilla)
+- [Contributing](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#contributing)
 
-- Contributors
+- [Contributors](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#contributors)
 
-- Acknowledgements
+- [Acknowledgements](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#acknowledgements)
 
-- Author
+- [Author](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#author)
 
 
 
