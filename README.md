@@ -102,14 +102,14 @@ PriceZilla uses the concept of Web scraping to obtain a large amount of data fro
 
 ## Installation Guide
 - Clone the repo
-- Open command prompt and type git clone https://github.com/zuri-training/Price-Compare-Team-22.git
+- Open command prompt and type `git clone https://github.com/zuri-training/Price-Compare-Team-22.git`
 
 - Open the folder you just cloned using your IDE and open the terminal window.
-- To set up your virtual environment type, python -m venv env
+- To set up your virtual environment type, `python -m venv env`
 
-- To activate virtual environment: env\Scripts\activate
-- Install dependencies : pip install -r requirements.txt
-- Navigate to the main project directory and run python manage.py runserver
+- To activate virtual environment: `env\Scripts\activate`
+- Install dependencies : `pip install -r requirements.txt`
+- Navigate to the main project directory and run `python manage.py runserver`
 
  You're all set!
 
