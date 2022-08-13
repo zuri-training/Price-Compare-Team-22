@@ -6,3 +6,6 @@
 
 [Developed Best Selling Page]
 (https://github.com/zuri-training/Price-Compare-Team-22/issues/65)
+
+[Developed Promo Deal Page ]
+(https://github.com/zuri-training/Price-Compare-Team-22/issues/70)
