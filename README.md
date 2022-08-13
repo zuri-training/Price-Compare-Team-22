@@ -96,7 +96,7 @@ PriceZilla uses the concept of Web scraping to obtain a large amount of data fro
 
 - An IDE
 
-- Python app
+- Python
 
 - GIT
 
@@ -109,6 +109,7 @@ PriceZilla uses the concept of Web scraping to obtain a large amount of data fro
 
 - To activate virtual environment: env\Scripts\activate
 - Install dependencies : pip install -r requirements.txt
+- Navigate to the main project directory and run python manage.py runserver
 
  You're all set!
 
