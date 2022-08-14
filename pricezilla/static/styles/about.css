@@ -1,7 +1,6 @@
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
     margin: 0;
@@ -66,7 +65,7 @@ p, h1, h2, h3, h4, h5, h6{
 .category h3 {
     font-family: 'Roboto';
     position: absolute;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 64px;
 left: 32%;
     color: rgba(255, 124, 68, 1);
@@ -203,7 +202,7 @@ color: #262322;
 }
 
 .frame-76 h3 {
-    font-weight: 700;
+    font-weight: 600;
     color: rgba(255, 124, 68, 1);
     font-size: 48px;
     line-height: 72px;
@@ -211,7 +210,7 @@ color: #262322;
 }
 
 .frame-76 h6 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     color: #262322;
@@ -263,7 +262,7 @@ color: #262322;
 
 .frame-95 h3 {
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 48px;
     line-height: 72px;
     color: rgba(255, 124, 68, 1);
@@ -613,7 +612,7 @@ color: #262322;
 }
 .frame-76 p{
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 300;
 font-size: 16px;
 line-height: 24px;
 color: #262322;
@@ -660,7 +659,7 @@ margin-bottom: 16px;
 .testimonial-row .frame-81 h5{
     font-family: 'Roboto';
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 font-size: 24px;
 line-height: 36px;
 color: #262322;
@@ -686,7 +685,7 @@ color: #262322;
     color: #F4F4F4;;
 }
 .testimonial .frame-77 p{
-    font-weight: 400;
+    font-weight: 300;
 font-size: 16px;
 line-height: 24px;
 
@@ -718,7 +717,7 @@ color: #262322;
    
 }
 .one .textx{
-    font-weight: 400;
+    font-weight: 300;
 font-size: 16px;
 line-height: 24px;
 }

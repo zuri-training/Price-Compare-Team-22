@@ -1,0 +1,721 @@
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* color: rgba(255, 255, 255, 1); */
+    position: relative;
+   min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+main{
+   margin-bottom: 250px; 
+ margin-top: 100px;
+
+}
+main a{
+    text-decoration: none;
+    color: #131313;
+}
+main a:hover{
+    color: #FF7C44;
+}
+
+.pad{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.frame-162{
+    display: flex;
+flex-direction: row;
+align-items: center;
+/* padding: 0px; */
+gap: 25px;
+margin-top: 28px;
+margin-bottom: 24px;
+
+}
+.frame-162 p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #262322;
+margin: 0;
+/* background-color: firebrick; */
+
+}
+.frame-162 .fa{
+    /* font-weight: 00; */
+font-size: 24px;
+margin-bottom: 5px;
+
+}
+
+.mobile{
+    display: none;
+}
+.first{
+    background: #CB4F53;
+    display: flex;
+    /* position: relative; */
+}
+.texts{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.first .image{
+    flex-basis:50% ; 
+     max-width: 50%;
+     height: 430px;
+     display: flex;
+     justify-content: start;
+     /* place-content: center;
+     place-items: center; */
+}
+.first .image img{
+    width: 90%;
+    height: 100%;
+    
+    justify-content: end;
+}
+.first .texts{
+   position: relative;
+   display: flex;
+   place-content: center;
+  
+   place-items: center;
+
+}
+.first .image{
+   padding: 2px 0;
+}
+
+.texts .text{
+    position: absolute;
+    /* top: 35%; */
+/* left: 15%; */
+}
+.texts h5{
+    /* margin: auto; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+
+line-height: 84px;
+/* text-align: center; */
+color: #FFFFFF;
+}
+.text p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+
+
+.second{
+    padding-top: 86px;
+ 
+}
+.second .flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    row-gap: 54px;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+
+.flex-container .flex{
+    padding: 24px;
+
+display: flex;
+flex-direction: column;
+gap: 18px;
+flex-wrap: wrap;
+    flex-basis: calc(25% - 28px);
+    max-width: calc(25% - 28px);
+
+    height:424px ;
+    position: relative;
+    /* background-color: red; */
+    transition: all 0.3s ease;
+border-radius: 8px;
+
+
+}
+p, h6{
+    margin-bottom: 0;
+}
+.flex:hover{
+    border: 1px solid #BBBBBB;
+    transition: all 0.3s ease;
+}
+.flex .fa{
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex.one .image.one{
+    position: absolute;
+    width: calc(100% - 50px);
+top: 90px;
+    text-align: center;
+
+}
+.image.one img{
+    width: 60%;
+    
+}
+.flex.one .image.two{
+    position: absolute;
+    width: calc(100% - 50px);
+top: 110px;
+    text-align: center;
+
+}
+.image.image.two img{
+    width: 100%;
+    
+}
+.para{
+    display: flex;
+    /* background-color: gainsboro; */
+    position: absolute;
+    flex-direction: column;
+gap: 8px;
+margin-left: 10px;
+    justify-content: center;
+    bottom: 24px;
+    text-transform: uppercase;
+
+    width: calc(100% - 50px);
+}
+.para h6{
+    /* font-family: 'Poppins'; */
+
+    /* padding: 0 15px; */
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 24px;
+display: flex;
+
+
+color: #131313;
+}
+.para p{
+    font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+}
+
+.search-mobile{
+    display: none;
+}
+
+
+p.mobile{
+    display: none;
+}
+.all{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .pad{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+
+}
+@media screen and (max-width: 768px){
+
+
+
+   .second{
+        padding-top: 24px;
+     
+    }
+  p.desktop{
+    display: none;
+  }
+  p.mobile{
+    display: block;
+  }
+  
+      .texts h5{
+     
+    
+        text-transform:none;
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+font-size: 20px;
+text-align:left;
+
+    line-height: 28px;
+    /* text-align: center; */
+    color: #FFFFFF;
+    }
+    .text p{
+        font-weight: 400;
+font-size: 12px;
+line-height: 26px;
+    color: #FFFFFF;
+    }
+    .texts{
+        flex-basis: 50%;
+        max-width: 50%;
+        margin-left: 7%;
+    }
+    .first .image{
+        flex-basis:50% ; 
+         max-width: 50%;
+         position: relative;
+         height: 170px;
+         /* background-color: red; */ 
+    }
+    .first .image img{
+        width: 100%;
+      
+  
+    }
+    .texts .text{
+       place-content: center;
+       place-items: center;
+       
+    }
+    main{
+        margin-bottom: 50px; 
+      margin-top: 100px;
+     
+     }
+     
+    .flex-container .flex{
+        padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px );
+    
+        /* height:241px ; */
+        position: relative;
+        /* background-color: red; */
+        transition: all 0.3s ease;
+    border-radius: 8px;
+    
+    
+    }
+    .flex.one .image.one{
+        position: absolute;
+        width: calc(100% - 20px);
+    top: 40px;
+        text-align: center;
+    
+    } */
+    .image.one img{
+        width: 60%;
+        
+    }
+    .flex.one .image.two{
+        position: absolute;
+        width: calc(100% - 20px);
+    top: 60px;
+        text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    }
+   
+   
+}
+@media screen and (max-width: 425px){
+
+    .search-mobile{
+        display: block;
+        padding: 5px 25px;
+        /* margin-bottom: 24px; */
+        margin-top: 35px;
+        background: #F4F4F4;
+    }
+    .search-mobile .inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inner .buttons{
+        display: flex;
+        gap: 8px;
+
+    }
+    .search-mobile form{
+        width: 30%;
+    }
+    .buttons button{
+        font-weight: 500;
+font-size: 8px;
+line-height: 20px;
+border: 0;
+background: #FFFFFF;
+border-radius: 8px;
+padding:3px 12px;
+    }
+    .pags{
+        display: flex;
+        gap: 8px;
+        
+        /* background-color: red; */
+    }
+    .pags p{
+        font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height */
+margin-bottom: none;
+text-align: center;
+place-content: center;
+color: rgba(19, 19, 19, 0.5);
+position: relative;
+padding-top: 6px;
+    }
+    .pags .active a{
+        color: #FF7C44;
+    }
+    .pags .pag.two a{
+        text-decoration: underline;
+    }
+    .pags .next{
+        font-weight: 900;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+color: rgba(19, 19, 19, 0.5);
+    }
+    .pags a{
+        color: rgba(19, 19, 19, 0.5);
+        text-decoration: none;
+        
+    }
+    .mainLoginInput{
+        height: 24px;
+        width: 100%;
+        padding: 0px;
+        font-size: 15px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+      
+      .mainLoginInput::-webkit-input-placeholder { 
+      font-family: FontAwesome;
+      font-weight: normal;
+      overflow: visible;
+      vertical-align: top;
+      display: inline-block ;
+      padding-left: 8px;
+
+      /* width: 22px; */
+     
+
+      color: 2px solid #BBBBBB;
+        
+      
+      }
+
+
+    .all{
+        display: block;
+        margin-top: 27px;
+        width: 100%;
+        text-align: center;
+        background: radial-gradient(50% 50% at 50% 50%, #2B8FDE 0%, #1472B7 100%);
+    /* height: 135px; */
+    text-transform: uppercase;
+    padding: 30px 0;
+    }
+    .all p,h6{
+        /* background-color: red; */
+        place-items: center;
+    }
+    .all p{
+        color: white;
+        font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    font-family: 'Roboto';
+    /* margin-top: 10%; */
+    }
+    .all h6{
+        color: #FFFFFF;
+        font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    /* margin-top: 10%; */
+    text-align: center;
+    }
+    
+    .pepsi-section{
+        display: flex;
+        flex-direction: row;
+        /* background-color: red; */
+        justify-items: center;
+       position: relative;
+       /* margin-top: 2%; */
+    
+    }
+    
+    .pepsis,.pepsi-section p, h6{
+        display: flex;
+        flex-basis: 33.33%;
+        justify-content: center;
+        gap: 0;
+    }
+    .pepsis{
+    
+        text-align: center;
+        /* place-items: center; */
+    
+    }
+    .pepsi.one{
+       /* background-color: red; */
+       display: flex;
+       height: 40px;
+       flex-direction: column;
+       margin-top: 10%;
+       /* position: absolute; */
+    }
+    .pepsi.one img{
+        width: 30px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    .second .flex-container{
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        row-gap: 19px;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    
+    
+    .flex-container .flex{
+        padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+        flex-basis: calc(50% - 18px);
+        max-width: calc(50% );
+    
+        height:241px ;
+        position: relative;
+        /* background-color: red; */
+        transition: all 0.3s ease;
+    border-radius: 8px;
+    
+    
+    }
+    .flex .fa{
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .flex.one .image.one{
+        position: absolute;
+        width: calc(100% - 20px);
+    top: 50px;
+        text-align: center;
+    
+    } 
+    .image.one img{
+        width: 60%;
+        
+    }
+    .flex.one .image.two{
+        position: absolute;
+        width: calc(100% - 20px);
+    top: 60px;
+        text-align: center;
+    
+    }
+    .image.image.two img{
+        width: 100%;
+        
+    }
+    .para{
+        display: flex;
+        /* background-color: gainsboro; */
+        position: absolute;
+        flex-direction: column;
+    gap: 2px;
+    margin-left: 0;
+        justify-content: center;
+        bottom: 8px;
+        text-transform: uppercase;
+    
+        width: calc(100% - 10px);
+      
+    }
+    .para h6{
+        /* text-align: center; */
+    font-style: normal;
+    font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+    display: flex;
+    
+    
+    color: #131313;
+    }
+    .para p{
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    
+}
+@media screen and (min-width: 1600px){
+    
+
+
+    .flex-container .flex{
+        padding: 24px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+        flex-basis: calc(25% - 28px);
+        max-width: calc(25% - 28px);
+    
+        height:424px ;
+        position: relative;
+        /* background-color: red; */
+        transition: all 0.3s ease;
+    border-radius: 8px;
+    
+    
+    }
+    p, h6{
+        margin-bottom: 0;
+    }
+    .flex:hover{
+        border: 1px solid #BBBBBB;
+        transition: all 0.3s ease;
+    }
+    .flex .fa{
+        font-size: 32px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .flex.one .image.one{
+        position: absolute;
+        width: calc(100% - 50px);
+    top: 50px;
+        text-align: center;
+    
+    }
+    .image.one img{
+        width: 50%;
+        
+    }
+    .flex.one .image.two{
+        position: absolute;
+        width: calc(100% - 50px);
+    top: 80px;
+        text-align: center;
+    
+    }
+    .image.image.two img{
+        width: 80%;
+        
+    }
+
+}

@@ -2,6 +2,7 @@ from .models import User
 from django import forms
 
 class RegisterUserForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput())
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -22,6 +23,7 @@ class RegisterUserForm(forms.ModelForm):
 #     password = forms.CharField(max_length=255,required=True)
 
 class SignInForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput())
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

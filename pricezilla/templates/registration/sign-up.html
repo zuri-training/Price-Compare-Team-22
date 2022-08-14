@@ -1,7 +1,7 @@
 
 {% extends 'baselayout.html'%}
 {% load widget_tweaks %}
-{% comment %} {% load socialaccount %} {% endcomment %}
+{% load socialaccount %}
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{%static '/styles/sign-up.css' %}">
@@ -59,14 +59,14 @@
             <span></span>
           </div>
 
-          <button>
+          <a href="{% provider_login_url 'google' %}"><button type="button">
             <img src="{% static 'assets/icons/flat-color-icons_google.svg'%}" alt="">
             Continue with Google
-          </button>
-          <button>
+          </button></a>
+          <a href="{% provider_login_url 'facebook' %}"><button type="button">
             <img src="{% static 'assets/icons/logos_facebook.svg'%}" alt="">
             Continue with Facebook
-          </button>
+          </button></a>
 
         <div class="last-line">  <p>Already a member? <a href="{% url 'login'%}">Sign in here</a></p></div>
 

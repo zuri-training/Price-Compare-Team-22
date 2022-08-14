@@ -64,7 +64,7 @@ svg{
     color: black;
   }
   .mylogo img{
-      width: 40%;
+      width: 50%;
   }
   .mylogo{
       display: flex;
@@ -95,7 +95,7 @@ svg{
       color: black;
       text-decoration: none;
       display: block;
-      font-size: 18px;
+      font-size: 20px;
   }
    .nav2{
       display: flex;
@@ -113,7 +113,7 @@ svg{
       padding: 12px 18px;
       margin-left: 5px;
       border-radius: 8px;
-      font-size: 18px;
+      font-size: 20px;
       text-decoration: none;
       color: black;
   }
@@ -427,9 +427,6 @@ svg{
       .mylogo img{
           width: 70%;
           margin-left: -20px;
-      }
-      .mylogo img{
-         
       }
       .hamburger{
         transform: scale(0.7);

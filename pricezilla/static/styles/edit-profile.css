@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.edit-profile-container{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-top: 129px;
+}
+h2{
+    display: none;
+}
+.first-section{
+    width: 40%;
+}
+.first-section h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    color: #262322;
+}
+.first-section p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #262322;
+}
+.first-section img{
+    width: 90%;
+}
+.form-section{
+    width: 60%;
+    padding-left: 3rem;
+    margin-top: 52px;
+}
+form{
+    width: 100%;
+}
+form p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #262322;
+}
+#username, #full-name, #email, #number, #address, #password{
+    width: 76%;
+    height: 46px;
+    margin-bottom: 32px;
+    border: 2px solid #262322;
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding: 0.2rem 1rem;
+    color: #262322;
+}
+#email:focus, #number:focus, #username:focus, #full-name:focus, #address:focus, #password:focus{
+    border: 2px solid #FF7C44;
+    outline: 0;
+}
+form .city-state{
+    display: flex;
+    gap: 8%;
+    width: 100%;
+}
+.city-state-1{
+    width: 34%;
+}
+.city-state-2{
+    width: 34%;
+}
+#city, #state, #zip-code, #country{
+    width: 100%;
+    height: 46px;
+    border: 2px solid #262322;
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding: 0.1rem 0.5rem;
+    color: #262322;
+    margin-bottom: 32px;
+}
+#city:focus, #state:focus, #zip-code:focus, #country:focus{
+    border: 2px solid #FF7C44;
+    outline: 0;
+}
+form .zip-country{
+    display: flex;
+    gap: 8%;
+}
+.zip-country-1{
+    width: 34%;
+}
+.zip-country-2{
+    width: 34%;
+}
+#save{
+    display: list-item;
+    background: #FF7C44;
+    border-radius: 8px;
+    border: 0;
+    height: 48px;
+    padding: 0 1.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+#save:hover{
+    background-color: #00303c;
+    color: rgba(244, 244, 244, 1);
+}
+
+/* tablet version */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .first-section{
+        width: 40%;
+    }
+    h2{
+        display: none;
+    }
+    .first-section h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 84px;
+        color: #262322;
+    }
+    .first-section p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 36px;
+        color: #262322;
+    }
+    .first-section img{
+        width: 90%;
+    }
+    .form-section{
+        width: 60%;
+        padding-left: 3rem;
+        margin-top: 52px;
+    }
+    form{
+        width: 100%;
+    }
+    form p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 36px;
+        color: #262322;
+    }
+    #username, #full-name, #email, #number, #address, #password{
+        width: 76%;
+        height: 40px;
+        margin-bottom: 26px;
+        border: 2px solid #262322;
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.2rem 1rem;
+        color: #262322;
+    }
+    #email:focus, #number:focus, #username:focus, #full-name:focus, #address:focus, #password:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .city-state{
+        display: flex;
+        gap: 8%;
+        width: 100%;
+    }
+    .city-state-1{
+        width: 34%;
+    }
+    .city-state-2{
+        width: 34%;
+    }
+    #city, #state, #zip-code, #country{
+        width: 100%;
+        height: 40px;
+        border: 2px solid #262322;
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.1rem 0.5rem;
+        color: #262322;
+        margin-bottom: 26px;
+    }
+    #city:focus, #state:focus, #zip-code:focus, #country:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .zip-country{
+        display: flex;
+        gap: 8%;
+    }
+    .zip-country-1{
+        width: 34%;
+    }
+    .zip-country-2{
+        width: 34%;
+    }
+    #save{
+        display: list-item;
+        background: #FF7C44;
+        border-radius: 8px;
+        border: 0;
+        height: 42px;
+        padding: 0 1.2rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    
+    }
+    #save:hover{
+        background-color: #00303c;
+        color: rgba(244, 244, 244, 1);
+    }
+}
+
+/* mobile version */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .edit-profile-container{
+        display: block;
+        margin-top: 29px;
+    }
+    .first-section{
+        width: 40%;
+        display: none;
+    }
+    h2{
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #262322;
+    }
+    .form-section{
+        margin-left: 0rem;
+        width: 100%;
+        padding-left: 0rem;
+        margin-top: 25px;
+    }
+    form{
+        width: 100%;
+    }
+    form p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #262322;
+    }
+    #username, #full-name, #email, #number, #address, #password{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 1    6px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.2rem 1rem;
+        color: #262322;
+    }
+    #email:focus, #number:focus, #username:focus, #full-name:focus, #address:focus, #password:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .city-state{
+        display: flex;
+        gap: 10%;
+        width: 100%;
+    }
+    .city-state-1{
+        width: 45%;
+    }
+    .city-state-2{
+        width: 45%;
+    }
+    #city, #state, #zip-code, #country{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.1rem 0.5rem;
+        color: #262322;
+        margin-bottom: 16px;
+    }
+    #city:focus, #state:focus, #zip-code:focus, #country:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .zip-country{
+        display: flex;
+        gap: 10%;
+    }
+    .zip-country-1{
+        width: 45%;
+    }
+    .zip-country-2{
+        width: 45%;
+    }
+    #save{
+        display: list-item;
+        background: #FF7C44;
+        border-radius: 8px;
+        border: 0;
+        height: 48px;
+        padding: 0 1.5rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    
+    }
+    #save:hover{
+        background-color: #00303c;
+        color: rgba(244, 244, 244, 1);
+    }
+}
+
+/* mobile 2 version */
+@media screen and (max-width: 399px) {
+    .edit-profile-container{
+        display: block;
+        margin-top: 29px;
+    }
+    .first-section{
+        width: 40%;
+        display: none;
+    }
+    h2{
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #262322;
+    }
+    .form-section{
+        margin-left: 0rem;
+        width: 100%;
+        padding-left: 0rem;
+        margin-top: 25px;
+    }
+    form{
+        width: 100%;
+    }
+    form p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 10px;
+        color: #262322;
+    }
+    #username, #full-name, #email, #number, #address, #password{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.2rem 1rem;
+        color: #262322;
+    }
+    #email:focus, #number:focus, #username:focus, #full-name:focus, #address:focus, #password:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .city-state{
+        display: flex;
+        gap: 10%;
+        width: 100%;
+    }
+    .city-state-1{
+        width: 45%;
+    }
+    .city-state-2{
+        width: 45%;
+    }
+    #city, #state, #zip-code, #country{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        padding: 0.1rem 0.5rem;
+        color: #262322;
+        margin-bottom: 16px;
+    }
+    #city:focus, #state:focus, #zip-code:focus, #country:focus{
+        border: 2px solid #FF7C44;
+        outline: 0;
+    }
+    form .zip-country{
+        display: flex;
+        gap: 10%;
+    }
+    .zip-country-1{
+        width: 45%;
+    }
+    .zip-country-2{
+        width: 45%;
+    }
+    #save{
+        display: list-item;
+        background: #FF7C44;
+        border-radius: 8px;
+        border: 0;
+        height: 36px;
+        padding: 0 1.5rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+    
+    }
+    #save:hover{
+        background-color: #00303c;
+        color: rgba(244, 244, 244, 1);
+    }
+}

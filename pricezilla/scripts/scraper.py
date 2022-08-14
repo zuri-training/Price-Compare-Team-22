@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup as bs
 import requests
 from product.models import Product, Category, Store
+import codecs
 
 def run():
 
@@ -12,31 +13,42 @@ def run():
                     'Accept-Encoding': 'none',
                     'Accept-Language': 'en-US,en;q=0.8',
                     'Connection': 'keep-alive'}
-            html_text = requests.get(f'{url}{page}', head).text
+            res = requests.get(f'{url}{page}', head)
+            html_text = res.text
+            res.close()
             soup = bs(html_text, 'lxml')
 
             product_cards = soup.find_all('article', class_="prd _fb col c-prd")
             for card in product_cards:
                 name = card.find('h3', class_='name').text
+                print(name)
                 category = Category.objects.filter(name=cat)
                 store = Store.objects.filter(name='Jumia')
                 price = card.find('div', class_='prc').text
                 image = card.find('img', class_='img')['data-src']
-                url = 'https://www.jumia.com.ng' + card.a['href']
+                product_url = 'https://www.jumia.com.ng' + card.a['href']
+                res = requests.get(product_url, head)
+                html_text = res.text
+                res.close()
+                soup = bs(html_text, 'lxml')
+                description = soup.find('meta', property="og:description")
+                description = codecs.escape_decode(bytes(description['content'], "utf-8"))[0].decode("utf-8")
                 if Product.objects.filter(name=name,store=store[0],category=category[0]).exists():
                     
                     product = Product.objects.get(name=name,store=store[0],category=category[0])
                     # Checks the price
                     if product.price != price:
                         product.price = price
+                    if product.description != description:
+                        product.description = description
                         
                         product.save()
                 else:
-                    product = Product(name=name, category=category[0], store=store[0], price=price, image=image, url=url)
+                    product = Product(name=name, category=category[0], store=store[0], price=price, image=image, url=product_url)
                     product.save()
 
-    scrape('https://www.jumia.com.ng/home-kitchen-furniture/?shipped_from=country_local&page=', 50, 'Furnitures')
-    scrape('https://www.jumia.com.ng/ironing-laundry/?shipped_from=country_local&page=', 30, 'Laundry')
-    scrape('https://www.jumia.com.ng/home-kitchen-dining/?shipped_from=country_local&page=', 50, 'Kitchen')
+    #scrape('https://www.jumia.com.ng/home-kitchen-furniture/?shipped_from=country_local&page=', 50, 'Furnitures')
+    #scrape('https://www.jumia.com.ng/ironing-laundry/?shipped_from=country_local&page=', 30, 'Laundry')
+    #scrape('https://www.jumia.com.ng/home-kitchen-dining/?shipped_from=country_local&page=', 50, 'Kitchen')
     scrape('https://www.jumia.com.ng/home-audio-electronics/?shipped_from=country_local&page=', 50, 'Home Entertainment')
-    scrape('https://www.jumia.com.ng/electronic-television-video/?shipped_from=country_local&page=', 50, 'Home Entertainment')
+    #scrape('https://www.jumia.com.ng/electronic-television-video/?shipped_from=country_local&page=', 50, 'Home Entertainment')
