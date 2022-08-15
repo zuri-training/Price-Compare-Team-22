@@ -1,0 +1,147 @@
+{% extends 'baselayout.html'%}
+{%load static%}
+  {% block content %}
+  <link rel="stylesheet" href="{% static '/styles/furniture.css'%}">
+    <div class="container-lg">
+      <div class="breadcrumbs">
+        <a class="first" href="./index.html">Home</a>
+        <img src="{% static '/assets/Vector-1.png'%}" />
+        <a href="/">Furniture</a>
+  
+      </div>
+    </div>
+    <div class="banner">
+      <h1>FURNITURE</h1>
+      <p>Now Furniture pricing becomes easy</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <main class="main">
+            <div class="left d-none d-lg-block">
+              <div class="img">
+                <h3>REFRESH YOUR</h3>
+                <h2>WORLD</h2>
+              </div>
+              <div class="slider-box">
+                <div>
+                  <div class="slider-header">
+                    <p>Price</p>
+                    <button class="p-1">Apply</button>
+                  </div>
+                  <div class="min-max-slider" data-legendnum="2">
+                    <!--     slider -->
+                    <label for="min">Minimum price</label>
+                    <input
+                      id="min"
+                      class="min"
+                      name="min"
+                      type="range"
+                      step="1"
+                      min="0"
+                      max="9999"
+                    />
+                    <label for="max">Maximum price</label>
+                    <input
+                      id="max"
+                      class="max"
+                      name="max"
+                      type="range"
+                      step="1"
+                      min="0"
+                      max="9999"
+                    />
+                  </div>
+                  <div class="slider-display-container">
+                    <button>₦<span class="display-min">0</span></button>
+                    <button>₦<span class="display-max">9999</span></button>
+                    <button>SEARCH</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div
+                class="right-nav py-2 d-md-flex justify-content-between align-items-center px-4"
+              >
+                <ul
+                  class="d-flex justify-content-center justify-content-md-start mr-auto align-items-center mt-3 list-unstyled"
+                >
+                  <span> Sort list by: </span>
+
+                  <select class="mx-4" name="brand" id="">
+                    <option value="">Brand</option>
+                  </select>
+
+                  <select name="store" id="">
+                    <option value="">Store</option>
+                  </select>
+                </ul>
+
+                <div
+                  class="d-flex justify-content-center pb-2 pb-md-0 justify-content-md-end"
+                >
+                  <form class="input-wrap">
+                    <img
+                      src="{% static '/assets/search-icon.png'%}"
+                      class="icon-search"
+                    />
+                    <input class="ps-4" type="text" name="text1" />
+                  </form>
+                </div>
+              </div>
+              <div class="img-cards mt-4">
+
+                <div class="card">
+                  <img src="{% static '/assets/Vector-love.png'%}" class="love-icon" />
+                  <img
+                    src="{% static '/assets/table 1.png'%}"
+                    class="card-second-image"
+                  />
+                  <p>HISENSE SMART TV</p>
+                  <p>BRAND:HISENSE</p>
+                  <p>LED Stotes</p>
+                  <p>PRICE</p>
+                </div>
+
+                
+                
+
+                
+                
+              
+
+                
+                
+              
+              </div>
+
+              <div class="banner-2 d-lg-none">
+                
+              </div>
+
+              <div
+                class="py-2 d-lg-flex justify-content-between align-items-center px-4"
+              >
+                <ul
+                  class="d-flex align-items-center mt-3 list-unstyled justify-content-center"
+                >
+                  <span> Sort list by: </span>
+
+                  <select class="mx-4" name="brand" id="">
+                    <option value="">Brand</option>
+                  </select>
+
+                  <select name="store" id="">
+                    <option value="">Store</option>
+                  </select>
+                </ul>
+                
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+{%endblock%}

@@ -47,8 +47,14 @@ def getstarted(request):
 def profile(request):
     return render(request, "profile.html")
 
+def promodeal(request):
+    return render(request, 'promo-deal.html')
+
 def documentation(request):
     return render(request, 'documentation-first-page.html')
+
+def faq(request):
+    return render(request, 'faqs.html')
 
 def searchbar(request):
     if request.method == 'GET':

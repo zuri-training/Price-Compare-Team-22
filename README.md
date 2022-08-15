@@ -71,7 +71,7 @@ Framework: BootStrap version 5. This CSS framework was used to create a responsi
 
 Language: Python
 
-Framework: Django
+Framework: Django Rest
 
 Concept: Web Scraping
 
@@ -85,7 +85,7 @@ Library: Beautiful Soup
 
 The entire project is built on Django, a high-level python web framework for rapid development and clean design. 
 
-PriceZilla uses the concept of Web scraping to obtain a large amount of data from various eCommerce stores. The data obtained data will be converted into structured data with the help of a python library, Beautiful Soup, and this relevant information will be extracted. To connect the frontend and backend, Django REST framework, a python tool will be used to build a web API. This API will listen for requests from the Front-end, run the logic in the backend, query the database where necessary, and return a response
+PriceZilla uses the concept of Web scraping to obtain a large amount of data from various eCommerce stores. The data obtained data will be converted into structured data with the help of a python library, Beautiful Soup, and this relevant information will be extracted. To connect the frontend and backend, Django REST framework, a python tool will be used to build a web API. This API will get a path from the frontend that points to the base directory. This base directory will help Django to fetch every template and static files in the frontend. This will connect the frontend and backend.
 
 
 ## Prerequisites
@@ -109,6 +109,7 @@ PriceZilla uses the concept of Web scraping to obtain a large amount of data fro
 
 - To activate virtual environment: `env\Scripts\activate`
 - Install dependencies : `pip install -r requirements.txt`
+- To get the information from the websites, run the script `python manage.py runscript`
 - Navigate to the main project directory and run `python manage.py runserver`
 
  You're all set!
@@ -272,7 +273,7 @@ You have successfully made an contribution to our repository!!!
 - [Yinka](https://github.com/Yinkayoga)  
 - [Nurudeen](https://github.com/nurudeen2432)  
 - [Johanan](https://github.com/JohananOppongAmoateng) 
-- [Adewunmi](https://github.com/Adelakin-Adewumi) 
+- [Adewumi](https://github.com/Adelakin-Adewumi) 
 - [Fuad](https://github.com/Pixel123-web) 
 - [Sunday](https://github.com/Capablecode) 
 - [Femi](https://github.com/BrightFemi)  
