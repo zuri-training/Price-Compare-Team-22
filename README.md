@@ -1,7 +1,7 @@
 # Team 22_Price Compare Project
 # PriceZilla - A Price Comparison Platform
 
-<img src="https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/Pricezilla%20logo.png" width="100">
+<img src="https://github.com/zuri-training/Price-Compare-Team-22/blob/Pricezilla-Front-Main/assets/Pricezilla%20logo.png" width="150">
 
 PriceZilla is a price comparison web app that allows users compare the prices of products across different retailers, stores, and brands. It takes the hassle of visiting various eCommerce store to find best deals. Consumers can benefit from this by comparing the prices of their favourite HOME EQUIPMENTS from different categories.
 
@@ -9,27 +9,27 @@ PriceZilla is a price comparison web app that allows users compare the prices of
 
 ## Table of Content
 
-- General Information
+- [General Information](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#general-information)
 
-- Live Site
+- [Live Site](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#live-site)
 
-- Technologies Used
+- [Technologies Used](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#technologies-used)
 
-- Architecture
+- [Architecture](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#architecture)
 
-- Prerequisites
+- [Prerequisites](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#prerequisites)
 
-- Features
+- [Features](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#features)
 
-- How to Use PriceZilla
+- [How to Use PriceZilla]( https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#how-to-use-pricezilla)
 
-- Contributing
+- [Contributing](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#contributing)
 
-- Contributors
+- [Contributors](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#contributors)
 
-- Acknowledgements
+- [Acknowledgements](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#acknowledgements)
 
-- Author
+- [Author](https://github.com/zuri-training/Price-Compare-Team-22/blob/main/README.md#author)
 
 
 
@@ -71,7 +71,7 @@ Framework: BootStrap version 5. This CSS framework was used to create a responsi
 
 Language: Python
 
-Framework: Django
+Framework: Django Rest
 
 Concept: Web Scraping
 
@@ -85,7 +85,7 @@ Library: Beautiful Soup
 
 The entire project is built on Django, a high-level python web framework for rapid development and clean design. 
 
-PriceZilla uses the concept of Web scraping to obtain a large amount of data from various eCommerce stores. The data obtained data will be converted into structured data with the help of a python library, Beautiful Soup, and this relevant information will be extracted. To connect the frontend and backend, Django REST framework, a python tool will be used to build a web API. This API will listen for requests from the Front-end, run the logic in the backend, query the database where necessary, and return a response
+PriceZilla uses the concept of Web scraping to obtain a large amount of data from various eCommerce stores. The data obtained data will be converted into structured data with the help of a python library, Beautiful Soup, and this relevant information will be extracted. To connect the frontend and backend, Django REST framework, a python tool will be used to build a web API. This API will get a path from the frontend that points to the base directory. This base directory will help Django to fetch every template and static files in the frontend. This will connect the frontend and backend.
 
 
 ## Prerequisites
@@ -96,19 +96,21 @@ PriceZilla uses the concept of Web scraping to obtain a large amount of data fro
 
 - An IDE
 
-- Python app
+- Python
 
 - GIT
 
 ## Installation Guide
 - Clone the repo
-- Open command prompt and type git clone https://github.com/zuri-training/Price-Compare-Team-22.git
+- Open command prompt and type `git clone https://github.com/zuri-training/Price-Compare-Team-22.git`
 
 - Open the folder you just cloned using your IDE and open the terminal window.
-- To set up your virtual environment type, python -m venv env
+- To set up your virtual environment type, `python -m venv env`
 
-- To activate virtual environment: env\Scripts\activate
-- Install dependencies : pip install -r requirements.txt
+- To activate virtual environment: `env\Scripts\activate`
+- Install dependencies : `pip install -r requirements.txt`
+- To get the information from the websites, run the script `python manage.py runscript`
+- Navigate to the main project directory and run `python manage.py runserver`
 
  You're all set!
 
@@ -261,7 +263,44 @@ Congratulations
 You have successfully made an contribution to our repository!!!
 
 
+## Contributors
 
+- [Muibat](https://github.com/GbadamosiMuibat)
+- [Debbie](https://github.com/debbiejackson14) 
+- [Emmanuel](https://github.com/ProfUI) 
+- [Toluwase](https://github.com/Omojiba) 
+- [Kenechi](https://github.com/casey216) 
+- [Yinka](https://github.com/Yinkayoga)  
+- [Nurudeen](https://github.com/nurudeen2432)  
+- [Johanan](https://github.com/JohananOppongAmoateng) 
+- [Adewumi](https://github.com/Adelakin-Adewumi) 
+- [Fuad](https://github.com/Pixel123-web) 
+- [Sunday](https://github.com/Capablecode) 
+- [Femi](https://github.com/BrightFemi)  
+- [Jonathan](https://github.com/Jozz77) 
+- [Samson](https://github.com/adetoyese607)  
+- [Gideon](https://github.com/KINGDEON123) 
+- [Athar](https://github.com/Iamathar)
+- [Temidayo](https://github.com/Temyd)  
+- [Comfort](https://github.com/Comfort69) 
+- [Chi](https://github.com/Hurumnanya) 
+- [Michael](https://github.com/waleboluwatife) 
+- [Esther](https://github.com/Switestelle) 
+- [Toyosi](https://github.com/Omotoyosi1) 
+- [Chinyere](https://github.com/Pepmanda) 
+- [Adetimilehin](https://github.com/Yossee07)
+- [Chihurumnanya](https://github.com/Hurumnanya)
+
+
+
+## Project Links 
+- [Project Brief](#)
+- [Research Document](https://docs.google.com/document/d/1OPg5HSWbbmlPMnnfAD5XmaSgVHcy6vDnlAYaKgjDd6s/edit?usp=drivesdk)
+- [Figma Board](https://www.figma.com/file/U0Xnstw50gez563mofUHpm/TEAM-22_PRICE-COMPARE?node-id=4%3A3)
+- [FigJam](https://www.figma.com/file/wod7TOixiDgWd7lsEnRtfe/Pricezilla-User-Research?node-id=38%3A318)
+- [Database Schema](https://www.figma.com/file/4VALwAu6BfnKiHQDRDuvS5/Untitled?node-id=0%3A1)
+
+ 
 
 
 ## Acknowledgements

@@ -1,4 +1,6 @@
 {% load static from static %}
+{% comment %} {% load socialaccount %} {% endcomment %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href={% url 'index' %}>Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" 
@@ -57,15 +59,16 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
+              <a class="nav-link" href={% url 'about' %}>About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Wishlist</a>
             </li>
           </ul>
           <div class="form-inline my-lg-0 login-signup">
-            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+            
+            <a class="header-btn  my-sm-0" href={% url 'login' %}>Login</a>
+            <a class="header-btn  my-sm-0"  href={% url 'signup' %}> Sign Up</a>
           </div>
         </div>
       </nav>
@@ -75,22 +78,50 @@
       </header> 
 
 
-    <main class="container login">
+    <main class="container-lg login">
 
         <section class="login-first">
           <h6>SIGN IN TO ENJOY GREAT OFFERS FROM PRICEZILLA</h6>
         </section>
 
         <section class="login-second">
-          <form action="">
-            <p class="login-second-1">Email</p>
-            <input type="email" name="email" id="email" placeholder="eg. johndoe@gmail.com" required>
-            <p class="login-second-1">Password</p>
+          <form action={% url 'login' %} method="post">
+            {% csrf_token %}
+    
+           <p class="login-second-1">{{ form.email.label_tag }}</p>
+           <div class="login-second-1b">
+            {% render_field form.email class+="form-control" %}
+            {{ form.email.errors }}
+          </div>
+          <br>
+            <p class="login-second-1">{{ form.password.label_tag }}</p>
             <div class="login-second-1b">
-              <input type="password" name="password" id="password" required>
-              <a href=""><img src="{% static '/assets/icons/ant-design_eye-invisible-outlined.svg'%}" alt=""></a>
-            </div>
-
+               {% render_field form.password class+="form-control" %}
+              {{ form.password.errors }}
+              {% comment %} <input type="password" name="password" id="password" required>  {% endcomment %}
+              {% comment %} {% comment %} <a href=""><img src="{% static '/assets/icons/ant-design_eye-invisible-outlined.svg'%}" alt=""></a> {% endcomment %}
+            </div> 
+           {% comment %} <div class="form-group line-2">
+             {% comment %} <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com" required> {% endcomment %}
+               {% comment %} {{ form.email.label_tag }}
+              {% render_field form.email class+="form-control" %}
+              {{ form.email.errors }}
+            </div> 
+            {{form.as_p}} {% endcomment %}
+            
+    
+            {% comment %} <div class="form-group line-3">
+              <label for="password">Password</label>
+            <div class="toggle-password">
+              <input type="password" name="password" id="password" class="form-control" required>
+              <i class="bi bi-eye-slash visibility-icon"></i>
+              </div>
+              {{ form.password.label_tag }}
+              {% render_field form.password class+="form-control" %}
+              {{ form.password.errors }}
+            
+            </div> {% endcomment %}
             <div class="login-second-2">
               <div class="login-second-2-first">
                 <input type="checkbox" name="checkbox" id="checkbox">
@@ -120,7 +151,7 @@
 
                 <div class="login-second-6">
                   <p>Not a member?</p>
-                  <a href="">Sign up here</a>
+                  <a href={% url 'signup' %}>Sign up here</a>
                 </div>
           </form>
         </section>
