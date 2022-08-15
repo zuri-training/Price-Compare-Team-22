@@ -28,6 +28,8 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('accounts/', include('user.urls')),
     path('product/', include('product.urls')),
+    path('promo/', views.promodeal, name='promo'),
+    path('faq/', views.faq, name='faq')
 
 ]
 
