@@ -1,0 +1,74 @@
+ *{
+    scroll-behavior: smooth;
+    font-family:  'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.account-container{
+    font-weight: 700;
+    margin-top: 40px;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+.account-container h3{
+    margin: 40px 0;
+    text-align: center;
+}
+
+ .account-form{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+    margin-bottom:20px ;
+    width: 50%;
+    padding: 60px;
+    margin: auto;
+    
+    
+}
+form input, select {
+    width: 100%;
+    color: black;
+}
+.click{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+.save{
+    background-color: #FF7C44;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 9px 23px;
+}
+.cancel{
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 20px;
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width:575.98px){
+    form{
+        width: 100%;
+    }
+    form input{
+        width: 100%;
+    }
+    
+  .bot1, .bot2{
+    margin-left: 5px;
+    justify-content: center;
+  }
+
+}
+
