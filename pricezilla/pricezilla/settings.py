@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 ]
 
 
-# SITE_ID = 2
+SITE_ID = 1
 
 # # Provider specific settings
 # SOCIALACCOUNT_PROVIDERS = {

@@ -3,7 +3,11 @@
 {% block content %}
 
     <main class="">
+       {% if request.user.is_authenticated %}
+               <p style="color: #333; font-size:30px;">Hello {{request.user}}</p>
+            {% endif %}
       <section class="hero">
+         
         <div class="hero-search">
           <h4>Find the right price for your home!</h4>
           <p>Start comparing, save money and get the best deals on household items</p>

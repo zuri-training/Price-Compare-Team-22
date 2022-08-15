@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap.min.css'%}" />
+    <link rel="icon" href="{% static '/assets/pricezilla-favicon.png'%}" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -66,24 +67,28 @@
               Categories
             </a>
             <div class="dropdown-menu drop" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item " href="">Furniture</a>
-              <a class="dropdown-item" href="{% url 'unauthenticated'%}">Kitchen Equipment</a>
-              <a class="dropdown-item" href="  {% url 'unauthenticated'%}  ">Laundry / Dry cleaning</a>
-              <a class="dropdown-item " href="{% url 'unauthenticated'%}">Home Entertainment</a>
+              <a class="dropdown-item " href="{% url 'furniture'%}">Furnitures</a>
+              <a class="dropdown-item" href="{% url 'kitchen'%}">Kitchen Equipment</a>
+              <a class="dropdown-item" href="  {% url 'laundry'%}  ">Laundry / Dry cleaning</a>
+              <a class="dropdown-item " href="{% url 'entertainement'%}">Home Entertainment</a>
             </div>
           </li>
           <li class="spaced-link"><a class="spaced-link" href="{%url 'about'%}">About us</a></li>
           <li class="spaced-link"><a class="spaced-link" href="{%url 'wishlist'%}">Wishlist</a></li>
           <li><a class="nav-btn-mobile" href="{% url 'login'%}">Login</a></li>
           <li><a class="nav-btn-mobile" href="{%url 'signup' %}">Sign up</a></li>
+
         </ul>
       </div>
   
   
       <div class="nav2">
         <ul class="nav-buttons">
+          
+          
           <li><a href="{% url 'login'%}">Login</a></li>
           <li><a href="{% url 'signup'%}">Sign up</a></li>
+           <li><a href="{% url 'logout'%}">Logout</a></li>
         </ul>
       </div>
   

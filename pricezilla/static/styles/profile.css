@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.profile-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-left{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem 2rem;
+}
+.profile-left h5 a{
+    text-decoration: none;
+    color: rgba(187, 187, 187, 1);
+
+}
+.profile-right{
+    padding: 1rem 1rem;
+}
+.profile-right .edit-icon{
+    font-size: 28px;
+    color: black;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+}
+.profile-right .edit-icon:hover{
+    color: rgba(255, 124, 68, 1);
+}
+.profile-right .profile-form{
+    padding: 0 2rem;
+}
+
+.profile-form img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+}
+.profile-form input{
+    height: 3.5rem;
+    border-radius: 8px;
+}
+.profile-right .password-link a{
+    text-decoration: none;
+    color: rgba(255, 124, 68, 1);
+}
+
+.profile-right .profile-form .edit-icon-mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+    .profile-container{
+        width: 90%;
+        
+    }
+    .profile-left{
+        padding: 2rem 0rem 2rem 1rem;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .profile-left{
+        display: none;
+    }
+    .profile-container{
+        display: block;
+    }
+    .profile-right img{
+        display: none;
+    }
+    .profile-right h3{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .profile-right .profile-form{
+        padding: 1rem;
+    }
+    .profile-right{
+        padding: 1rem;
+    }
+    .profile-right .edit-icon{
+        display: none;
+    }
+    
+    .profile-right .profile-form .edit-icon-mobile{
+        color: black;
+        font-size: 18px;
+        display: block;
+    }
+    .password-link{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-right .profile-form .edit-icon-mobile:hover{
+        color: rgba(255, 124, 68, 1);
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .profile-container{
+        border: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .profile-right{
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    .profile-right .profile-form input{
+        height: 3rem;
+    }
+    .profile-container{
+        margin-top: 0;
+    }
+    
+}
