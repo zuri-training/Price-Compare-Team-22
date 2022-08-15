@@ -1,75 +1,78 @@
-
 {% extends 'baselayout.html'%}
-{% load widget_tweaks %}
-{% load socialaccount %}
-{% load static %}
-{% block content %}
-    
-        <link rel="stylesheet" type="text/css" href="{% static '/styles/login.css'%}">
-    <title>PriceZilla</title>
-</head>
-<body>
-    <header class="header"> 
-        <div class="header-inner" id="navscroll">
-          <div class="container">
-            <nav class="navbar navbar-expand-md my-navbar">
+{% load static from static %}
+<!-- {% comment %} {% load socialaccount %} {% endcomment %} -->
+<!-- {% load widget_tweaks %} -->
 
-                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="./index.html"><span>
-          <img src="{% static '/assets/Pricezilla logo.png'%}"  style="width: 8rem "></span>
-        </a>
-        <button class="navbar-toggler slime" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href={% url 'index' %}>Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                 href="#" id="navbarDropdown" 
-                 role="button" 
-                 data-toggle="dropdown" 
-                 aria-haspopup="true" 
-                 aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Laptops</a>
-                <a class="dropdown-item" href="#">Phones</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
+
+{%block content%}
+<link rel="stylesheet" href="{% static '/styles/login.css'%}">
+ <main class="container-lg login">
+
+        <section class="login-first">
+          <h6>SIGN IN TO ENJOY GREAT OFFERS FROM PRICEZILLA</h6>
+        </section>
+
+        <section class="login-first-mobile">
+          <h1>WELCOME BACK</h1>
+          <div class="login-first-mobile-1">
+            <p>Not a member?</p>
+            <a href="{% url 'signup'%}">Sign up here</a>
+          </div>
+        </section>
+
+        <section class="login-second">
+          <form class="form" method="post">
+            {% csrf_token %}
+            <p class="login-second-1">Username</p>
+            <input type="text" name="username" id="username" placeholder="eg. Debbie14" required>
+            <p class="login-second-1">Password</p>
+            <div class="login-second-1b">
+              <input type="password" name="password" id="password" required>
+              <a href=""><img src="{% static 'assets/icons/ant-design_eye-invisible-outlined.svg  '%}" alt=""></a>
+            </div>
+
+            <div class="login-second-2">
+              <div class="login-second-2-first">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <small>Stay signed in</small>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href={% url 'about' %}>About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Wishlist</a>
-            </li>
-          </ul>
-          <div class="form-inline my-lg-0 login-signup">
+              <div class="login-second-2-second">
+                <a href=""><small>Forget password?</small></a>
+              </div>
+            </div>
+            <input type="submit" value="Sign In" id="submit">
+            <div class="login-second-2-third">
+              <a href=""><small>Forget password?</small></a>
+            </div>
             
-            <a class="header-btn  my-sm-0" href={% url 'login' %}>Login</a>
-            <a class="header-btn  my-sm-0"  href={% url 'signup' %}> Sign Up</a>
-          </div>
-        </div>
-      </nav>
-      
-          </div>
-        </div>
-      </header> 
 
+            <div class="login-second-3">
+              <span></span>
+              <p>OR</p>
+              <span></span>
+            </div>
 
-    <main class="container-lg login">
+            <div class="login-second-4">
+              <img src="{% static 'assets/icons/flat-color-icons_google.svg '%}" alt="">
+              <a href=""><small>Continue with Google</small></a>
+              </div>
+
+              <div class="login-second-5">
+                <img src="{% static 'assets/icons/logos_facebook.svg  '%}" alt="">
+                <a href=""><small>Continue with FaceBook</small></a>
+                </div>
+
+                <div class="login-second-6">
+                  <p>Not a member?</p>
+                  <a href="{% url 'signup'%}">Sign up here</a>
+                </div>
+          </form>
+        </section>
+
+    </main>
+    {%endblock%}
+
+    <!-- <main class="container-lg login">
 
         <section class="login-first">
           <h6>SIGN IN TO ENJOY GREAT OFFERS FROM PRICEZILLA</h6>
@@ -132,12 +135,12 @@
 
             <div class="login-second-4">
               <img src="{% static '/assets/icons/flat-color-icons_google.svg'%}" alt="">
-              <a href="{% provider_login_url 'google' %}"><small>Continue with Google</small></a>
+              <a href=""><small>Continue with Google</small></a>
               </div>
 
               <div class="login-second-5">
                 <img src="{% static '/assets/icons/logos_facebook.svg'%}" alt="">
-                <a href="{% provider_login_url 'facebook' %}"><small>Continue with FaceBook</small></a>
+                <a href=""><small>Continue with FaceBook</small></a>
                 </div>
 
                 <div class="login-second-6">
@@ -145,7 +148,10 @@
                   <a href={% url 'signup' %}>Sign up here</a>
                 </div>
           </form>
-        </section>
+        </section> -->
 
-    </main>
-    {% endblock %}
+    <!-- </main> -->
+    
+
+
+   
