@@ -476,6 +476,147 @@ cursor: pointer;
 
 
 
+.page.three .electric{
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+
+.page.three h4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+.page.three .comments{
+   
+    margin-top: 42px;
+    margin-bottom: 140px;
+}
+
+.comments .comment{
+    padding-left: 20px;
+    padding-right: 102px;
+    
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  
+    
+
+}
+.comment .star{
+    display: flex;
+    gap: 4px;
+}
+.comment .star .fa{
+    font-size: 24px;
+    color: #FF7C44;
+
+}
+.comment .text-flex {
+   position: relative;
+   
+}
+.comment .text-flex .flex{
+    display: flex;
+   flex-direction: row;
+justify-content: space-between;
+
+}
+.comments p{
+    font-weight: 400;
+font-size: 21px;
+line-height: 36px;
+text-align: left;
+font-family: 'Roboto';
+font-style: normal;
+color: #000000;
+}
+
+.comment .star, 
+.comment p{
+align-self: flex-start;
+}
+
+.flex .verify{
+    display: flex;
+    gap: 8px;
+}
+.verify .fa{
+    font-size: 30px;
+    padding-top: 2px;
+}
+
+
+
+.type-comment .text{
+text-align: center;
+margin-bottom: 56px;
+}
+
+
+.text p{
+    margin: 0;
+    display: inline;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    align-items: center;
+    color: #262322;
+    padding-bottom: 16px;
+    border-bottom: 8px solid #FF7C44;
+ 
+}
+.type-comment form{
+    margin: 0 100px;
+    text-align: center;
+   
+
+}
+.type-comment  textarea{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px 25px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+     border: none;
+     color: #262322;
+padding: 42px 30px;
+/* opacity: 0.5; */
+     height: 400px;
+     margin-bottom: 40px;
+     transition: all 0.6s ease;
+  
+
+}
+textarea:focus{
+    border: 1px solid #BBBBBB;
+    transition: all 0.6s ease;
+  
+    
+}
+textarea::placeholder{
+   opacity: 0.5;
+}
+.page.three form input{
+ padding: 12px 20px;
+ background: #FF7C44;
+border-radius: 8px;
+border: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+input:hover{
+    transform: scale(1.05);
+    transition: all 0.6s ease;
+}
+
+
+
+
+
 
 
 
@@ -1220,7 +1361,7 @@ right: 70px;
         align-items: flex-start;
     }
     .frame-200 h5{
-        font-family: 'Poppins';
+        
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -1232,7 +1373,7 @@ right: 70px;
         color: #131313;
     }
     .frame-200 p{
-        font-family: 'Poppins';
+      
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -1243,7 +1384,6 @@ right: 70px;
         margin: 0;
         color: #131313;
     }
-
 }
 
 
@@ -1268,4 +1408,123 @@ position: relative;
 gap: 24px;
 /* height: 60px; */
 }
+.page.three h4{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+}
+
+.comments p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+text-align: left;
+font-style: normal;
+color: #000000;
+}
+
+.verify .fa{
+    font-size: 18px;
+    padding-top: 8px;
+}
+.comment .star .fa{
+    font-size: 16px;
+    color: #FF7C44;
+
+}
+.comment .text-flex .flex{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 8px;
+}
+
+.type-comment .text{
+    text-align: center;
+    margin-bottom: 36px;
+    }
+    
+    
+    .text p{
+        margin: 0;
+        display: inline;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 72px;
+        align-items: center;
+        color: #262322;
+        padding-bottom: 16px;
+        border-bottom: 8px solid #FF7C44;
+        
+     
+    }
+
+
+
+
+    form input{
+        padding: 12px 20px;
+        background: #FF7C44;
+       border-radius: 8px;
+       border: none;
+       font-weight: 300;
+       font-size: 15px;
+       line-height: 24px;
+       color: #FFFFFF;
+       }
+
+       .type-comment form{
+        margin: 10px;
+        text-align: center;
+       
+    
+    }
+    .type-comment  textarea{
+        background-color: #FFFFFF;
+        width: 100%;
+        padding: 3px 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 36px;
+         border: none;
+         color: #262322;
+    /* padding: 42px 30px; */
+    /* opacity: 0.5; */
+         height: 200px;
+         margin-bottom: 40px;
+         transition: all 0.6s ease;
+      
+    
+    }
+
+
+}
+@media screen and (max-width: 1024px){
+    .comments .comment{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+      
+        
+    
+    }
+}
+@media screen and (max-width: 500px){
+    .comment .text-flex .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .page.three h4{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 48px;
+    }   
+    .comment .star .fa{
+        font-size: 13px;
+        color: #FF7C44;
+    
+    }
 }
