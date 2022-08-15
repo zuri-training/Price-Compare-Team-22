@@ -1,5 +1,5 @@
 {% extends 'baselayout.html'%}
-{% load static from static %}
+{% load static %}
 {% block content %}
 
     <main class="">
@@ -228,7 +228,7 @@
         <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
 
           <div class="carousel-cell cell-1">
-             <img src="{% static ' /assets/home-slide1.jpg'%}" alt="banner"/> 
+             <img src="{% static '/assets/home-slide1.jpg'%}"> 
             </div>
 
           <div class="carousel-cell cell-2"> 
